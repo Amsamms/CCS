@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive analysis of Carbon Capture and Storage (CCS) technologies, global deployment status, economics, and challenges. Interactive report with data visualizations.">
+    <meta name="keywords" content="carbon capture, CCS, climate change, CO2 storage, environmental technology">
+    <meta name="author" content="Ahmed Sabri">
+    <title>Interactive Report on Carbon Capture & Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Chosen Palette: Modern Gradient Design with Enhanced Visuals -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.18);
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        /* Arabic RTL Support */
+        [dir="rtl"] {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .space-x-2 > * + * {
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+
+        [dir="rtl"] .mr-2,
+        [dir="rtl"] .mr-3 {
+            margin-right: 0;
+            margin-left: 0.5rem;
+        }
+
+        [dir="rtl"] .ml-4 {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+
+        [dir="rtl"] .text-left {
+            text-align: right;
+        }
+
+        /* Font support for Arabic */
+        [dir="rtl"] body,
+        [dir="rtl"] h1,
+        [dir="rtl"] h2,
+        [dir="rtl"] h3,
+        [dir="rtl"] p {
+            font-family: 'Amiri', 'Arabic UI Text', 'SF Pro Text', 'Inter', sans-serif;
+        }
+
+        /* Flexbox adjustments for RTL */
+        [dir="rtl"] .flex-items-center {
+            flex-direction: row-reverse;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            overflow-x: hidden;
+        }
+
+        .hero-bg {
+            background: var(--primary-gradient);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="300" cy="800" r="120" fill="url(%23a)"/></svg>') no-repeat center center;
+            background-size: cover;
+            opacity: 0.2;
+            z-index: 2;
+        }
+
+        /* Better text readability and content visibility */
+        .hero-bg h2,
+        .hero-bg p,
+        .hero-bg .glass-card {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 30;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            position: relative;
+            z-index: 20;
+        }
+
+        .gradient-text {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .active-tab {
+            background: var(--primary-gradient);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .tab {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 12px;
+            padding: 12px 24px;
+            margin: 0 4px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .chart-container {
+            position: relative; 
+            width: 100%; 
+            max-width: 900px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 45vh; 
+            max-height: 600px;
+            padding: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px -12px rgba(102, 126, 234, 0.25);
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .nav-link:hover {
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .process-step {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px -12px rgba(102, 126, 234, 0.25);
+        }
+
+        .process-step:hover::before {
+            left: 100%;
+        }
+
+        .floating-icon {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .pulse-ring {
+            animation: pulse-ring 2s infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(0.33); }
+            80%, 100% { opacity: 0; }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .modern-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .tech-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 24px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .gradient-border {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            background: var(--primary-gradient);
+            border-radius: inherit;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+        }
+
+        .icon-glow {
+            filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.3));
+        }
+
+        .animated-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .data-point {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-point::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .data-point:hover::after {
+            left: 100%;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-gradient);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg::before {
+                display: none;
+            }
+            
+            .stat-card:hover {
+                transform: translateY(-4px) scale(1.01);
+            }
+            
+            .process-step:hover {
+                transform: translateY(-3px) scale(1.01);
+            }
+            
+            .hero-bg {
+                padding: 60px 0;
+            }
+            
+            .hero-bg h2 {
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            
+            .hero-bg p {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .glass-card {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .process-step {
+                margin-bottom: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .process-step h3 {
+                font-size: 1.5rem;
+            }
+            
+            .process-step .rounded-full {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.5rem;
+            }
+            
+            .tab {
+                padding: 8px 12px;
+                font-size: 0.875rem;
+                margin: 2px;
+            }
+            
+            .tab i {
+                display: none;
+            }
+            
+            .tab-content {
+                padding: 1.5rem;
+            }
+            
+            .tech-card {
+                margin-bottom: 1.5rem;
+                padding: 1.5rem;
+            }
+            
+            .chart-container {
+                height: 35vh;
+                max-height: 400px;
+                padding: 10px;
+            }
+            
+            .stat-card {
+                margin-bottom: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .gradient-border {
+                padding: 1rem;
+            }
+            
+            .nav-link::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-bg h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-bg p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .process-step .flex {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .process-step .rounded-full {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+            
+            .tab-content h3 {
+                font-size: 1.5rem;
+            }
+            
+            .stat-card .text-4xl {
+                font-size: 2rem;
+            }
+            
+            .grid {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .hero-bg h2 {
+                font-size: 1.875rem;
+            }
+            
+            .glass-card {
+                padding: 1rem;
+            }
+            
+            .process-step {
+                padding: 1rem;
+            }
+            
+            .tab-content {
+                padding: 1rem;
+            }
+            
+            .tech-card {
+                padding: 1rem;
+            }
+            
+            .stat-card {
+                padding: 1rem;
+            }
+            
+            .chart-container {
+                height: 250px;
+                padding: 5px;
+            }
+        }
+
+        /* Mobile Navigation Styles */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: -8px 0 32px 0 rgba(31, 38, 135, 0.37);
+            z-index: 1000;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav-link {
+            padding: 1rem 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #4a5568;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-nav-link:hover {
+            color: #667eea;
+            padding-left: 0.5rem;
+        }
+
+        .mobile-nav-link i {
+            margin-right: 0.75rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #4a5568;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+        }
+
+        /* Improved Touch Targets */
+        .tab, .nav-link, button {
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Better text readability on mobile */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            
+            p {
+                margin-bottom: 1rem;
+            }
+            
+            .text-sm {
+                font-size: 14px;
+            }
+            
+            .text-xs {
+                font-size: 12px;
+            }
+        }
+
+        /* Optimized animations for mobile */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Mobile-specific utilities */
+        .mobile-only {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-only {
+                display: block;
+            }
+            
+            .desktop-only {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="modern-header sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center">
+                <div class="floating-icon mr-3">
+                    <i class="fas fa-leaf text-2xl gradient-text"></i>
+                </div>
+                <h1 class="text-xl md:text-2xl font-bold gradient-text" style="font-family: 'Space Grotesk', sans-serif;">
+                    <span class="hidden sm:inline" data-en="Carbon Capture & Storage" data-ar="احتجاز وتخزين الكربون">Carbon Capture & Storage</span>
+                    <span class="sm:hidden">CCS</span>
+                </h1>
+            </div>
+            <div class="hidden md:flex space-x-2 items-center">
+                <a href="#overview" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-home mr-2"></i><span data-en="Overview" data-ar="نظرة عامة">Overview</span>
+                </a>
+                <a href="#techniques" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-cogs mr-2"></i><span data-en="Techniques" data-ar="التقنيات">Techniques</span>
+                </a>
+                <a href="#status" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-chart-bar mr-2"></i><span data-en="Status" data-ar="الحالة">Status</span>
+                </a>
+                <a href="#impact" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-dollar-sign mr-2"></i><span data-en="Economics" data-ar="الاقتصاد">Economics</span>
+                </a>
+                <a href="#challenges" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-exclamation-triangle mr-2"></i><span data-en="Challenges" data-ar="التحديات">Challenges</span>
+                </a>
+                <a href="#geological" class="nav-link text-gray-600 font-medium">
+                    <i class="fas fa-mountain mr-2"></i><span data-en="Geology" data-ar="الجيولوجيا">Geology</span>
+                </a>
+                
+                <!-- Arabic Toggle Button -->
+                <button id="lang-toggle" class="ml-4 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors duration-200 flex items-center space-x-2">
+                    <i class="fas fa-language"></i>
+                    <span id="lang-text" data-en="عربي" data-ar="English">عربي</span>
+                </button>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="text-gray-600 hover:text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition-all duration-300" aria-label="Open mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation menu">
+            <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close mobile menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            
+            <div class="mb-8 text-center">
+                <div class="inline-block p-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-3">
+                    <i class="fas fa-leaf text-xl text-white"></i>
+                </div>
+                <h2 class="text-xl font-bold gradient-text" style="font-family: 'Space Grotesk', sans-serif;">
+                    <span data-en="Carbon Capture & Storage" data-ar="احتجاز وتخزين الكربون">Carbon Capture & Storage</span>
+                </h2>
+            </div>
+            
+            <nav class="flex-1">
+                <a href="#overview" class="mobile-nav-link">
+                    <i class="fas fa-home"></i><span data-en="Overview" data-ar="نظرة عامة">Overview</span>
+                </a>
+                <a href="#techniques" class="mobile-nav-link">
+                    <i class="fas fa-cogs"></i><span data-en="Techniques" data-ar="التقنيات">Techniques</span>
+                </a>
+                <a href="#status" class="mobile-nav-link">
+                    <i class="fas fa-chart-bar"></i><span data-en="Global Status" data-ar="الحالة العالمية">Global Status</span>
+                </a>
+                <a href="#impact" class="mobile-nav-link">
+                    <i class="fas fa-dollar-sign"></i><span data-en="Economics" data-ar="الاقتصاد">Economics</span>
+                </a>
+                <a href="#challenges" class="mobile-nav-link">
+                    <i class="fas fa-exclamation-triangle"></i><span data-en="Challenges" data-ar="التحديات">Challenges</span>
+                </a>
+                <a href="#geological" class="mobile-nav-link">
+                    <i class="fas fa-mountain"></i><span data-en="Geological Risks" data-ar="المخاطر الجيولوجية">Geological Risks</span>
+                </a>
+            </nav>
+            
+            <div class="mt-auto pt-4 border-t border-gray-200 text-center text-sm text-gray-500">
+                Made by Ahmed Sabri
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-4">
+
+        <!-- Hero Section -->
+        <section id="overview" class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Space Grotesk', sans-serif;" data-en="What is Carbon Capture and Storage?" data-ar="ما هو احتجاز وتخزين الكربون؟">
+                    What is Carbon Capture and Storage?
+                </h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed" data-en="CCS is a suite of technologies designed to prevent large amounts of carbon dioxide (CO₂) from being released into the atmosphere. Positioned at the intersection of industrial necessity and technological challenge, CCS is increasingly recognized as an indispensable tool for decarbonizing sectors where emissions are otherwise unavoidable." data-ar="احتجاز وتخزين الكربون هو مجموعة من التقنيات المصممة لمنع إطلاق كميات كبيرة من ثاني أكسيد الكربون (CO₂) في الغلاف الجوي. وباعتبارها تقع في تقاطع الضرورة الصناعية والتحدي التكنولوجي، تحظى هذه التقنية باعتراف متزايد كأداة لا غنى عنها لإزالة الكربون من القطاعات التي تعتبر انبعاثاتها غير قابلة للتجنب.">
+                    CCS is a suite of technologies designed to prevent large amounts of carbon dioxide (CO₂) from being released into the atmosphere. Positioned at the intersection of industrial necessity and technological challenge, CCS is increasingly recognized as an indispensable tool for decarbonizing sectors where emissions are otherwise unavoidable.
+                </p>
+                
+                <!-- Executive Summary Card -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 text-left">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center" style="font-family: 'Space Grotesk', sans-serif;">
+                        <i class="fas fa-chart-line mr-3 text-blue-500"></i><span data-en="Executive Summary" data-ar="الملخص التنفيذي">Executive Summary</span>
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-gray-600">
+                        <div>
+                            <p class="leading-relaxed" data-en="The strategic importance of CCS is underscored by its central role in climate mitigation scenarios of the IEA and IPCC. It's considered virtually the only viable pathway for deep emissions reductions in heavy industries such as cement, steel, and chemicals." data-ar="تتجلى الأهمية الاستراتيجية لتقنية احتجاز وتخزين الكربون في دورها المحوري في سيناريوهات التخفيف من تغير المناخ لدى وكالة الطاقة الدولية والهيئة الحكومية الدولية المعنية بتغير المناخ. وتُعتبر عملياً المسار الوحيد القابل للتطبيق لتحقيق تخفيضات عميقة في الانبعاثات في الصناعات الثقيلة مثل الأسمنت والصلب والمواد الكيميائية.">
+                                The strategic importance of CCS is underscored by its central role in climate mitigation scenarios of the IEA and IPCC. It's considered virtually the only viable pathway for deep emissions reductions in heavy industries such as cement, steel, and chemicals.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="leading-relaxed" data-en="As of early 2025, over 50 million tonnes of annual capture capacity are operational, with the pipeline promising a near nine-fold increase to approximately 430 Mt per year by 2030, driven primarily by policy support like the U.S. Section 45Q tax credit." data-ar="اعتباراً من أوائل عام ٢٠٢٥، تعمل أكثر من ٥٠ مليون طن من القدرة السنوية على الاحتجاز، مع وعد خط الأنابيب بزيادة تقارب التسعة أضعاف لتصل إلى حوالي ٤٣٠ مليون طن سنوياً بحلول ٢٠٣٠، مدفوعة في المقام الأول بالدعم السياسي مثل الائتمان الضريبي الأمريكي القسم ٤٥Q.">
+                                As of early 2025, over 50 million tonnes of annual capture capacity are operational, with the pipeline promising a near nine-fold increase to approximately 430 Mt per year by 2030, driven primarily by policy support like the U.S. Section 45Q tax credit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Steps Section -->
+        <section class="px-4 md:px-6 relative z-10 mb-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+                <div class="process-step p-4 md:p-8 fade-in-up lg:col-span-1 sm:col-span-2 lg:col-span-1" style="animation-delay: 0.1s;">
+                    <div class="flex items-center mb-4 md:mb-6 flex-col sm:flex-row text-center sm:text-left">
+                        <div class="relative mb-3 sm:mb-0 sm:mr-4">
+                            <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-full h-12 w-12 md:h-16 md:w-16 flex items-center justify-center text-xl md:text-2xl font-bold shadow-xl">
+                                1
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 pulse-ring desktop-only"></div>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800 flex items-center justify-center sm:justify-start" style="font-family: 'Space Grotesk', sans-serif;">
+                            <i class="fas fa-filter mr-2 text-blue-500"></i><span data-en="Capture" data-ar="الاحتجاز">Capture</span>
+                        </h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base" data-en="CO₂ is separated from other gases produced by industrial processes, like those at power plants or steel factories, using advanced chemical and physical separation techniques." data-ar="يتم فصل ثاني أكسيد الكربون عن الغازات الأخرى المنتجة من العمليات الصناعية، مثل تلك الموجودة في محطات الطاقة أو مصانع الصلب، باستخدام تقنيات الفصل الكيميائية والفيزيائية المتقدمة.">CO₂ is separated from other gases produced by industrial processes, like those at power plants or steel factories, using advanced chemical and physical separation techniques.</p>
+                </div>
+
+                <div class="process-step p-4 md:p-8 fade-in-up lg:col-span-1 sm:col-span-2 lg:col-span-1" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4 md:mb-6 flex-col sm:flex-row text-center sm:text-left">
+                        <div class="relative mb-3 sm:mb-0 sm:mr-4">
+                            <div class="bg-gradient-to-br from-green-500 to-teal-600 text-white rounded-full h-12 w-12 md:h-16 md:w-16 flex items-center justify-center text-xl md:text-2xl font-bold shadow-xl">
+                                2
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-teal-600 rounded-full opacity-20 pulse-ring desktop-only"></div>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800 flex items-center justify-center sm:justify-start" style="font-family: 'Space Grotesk', sans-serif;">
+                            <i class="fas fa-shipping-fast mr-2 text-green-500"></i><span data-en="Transport" data-ar="النقل">Transport</span>
+                        </h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base" data-en="The captured CO₂ is compressed into a supercritical state and transported via dedicated pipelines or specialized ships to carefully selected storage sites." data-ar="يتم ضغط ثاني أكسيد الكربون المحتجز إلى حالة فوق حرجة ونقله عبر خطوط أنابيب مخصصة أو سفن متخصصة إلى مواقع تخزين مختارة بعناية.">The captured CO₂ is compressed into a supercritical state and transported via dedicated pipelines or specialized ships to carefully selected storage sites.</p>
+                </div>
+
+                <div class="process-step p-4 md:p-8 fade-in-up sm:col-span-2 lg:col-span-1" style="animation-delay: 0.3s;">
+                    <div class="flex items-center mb-4 md:mb-6 flex-col sm:flex-row text-center sm:text-left">
+                        <div class="relative mb-3 sm:mb-0 sm:mr-4">
+                            <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-full h-12 w-12 md:h-16 md:w-16 flex items-center justify-center text-xl md:text-2xl font-bold shadow-xl">
+                                3
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-600 rounded-full opacity-20 pulse-ring desktop-only"></div>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800 flex items-center justify-center sm:justify-start" style="font-family: 'Space Grotesk', sans-serif;">
+                            <i class="fas fa-mountain mr-2 text-orange-500"></i><span data-en="Storage" data-ar="التخزين">Storage</span>
+                        </h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base" data-en="The CO₂ is injected deep underground into carefully selected geological formations for permanent storage, secured by multiple trapping mechanisms." data-ar="يتم حقن ثاني أكسيد الكربون في أعماق الأرض في تكوينات جيولوجية مختارة بعناية للتخزين الدائم، مؤمنة بآليات احتجاز متعددة.">The CO₂ is injected deep underground into carefully selected geological formations for permanent storage, secured by multiple trapping mechanisms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="techniques" class="mb-12">
+            <div class="text-center mb-12">
+                <div class="inline-block p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
+                    <i class="fas fa-cogs text-2xl text-white"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title" style="font-family: 'Space Grotesk', sans-serif;" data-en="Capture & Storage Techniques" data-ar="تقنيات الاحتجاز والتخزين">Capture & Storage Techniques</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed" data-en="The methods for capturing and storing CO₂ vary based on the industrial source and local geology. The capture process is the most complex and costly part of CCS. Explore the primary techniques used today." data-ar="تختلف طرق احتجاز وتخزين ثاني أكسيد الكربون بناءً على المصدر الصناعي والجيولوجيا المحلية. عملية الاحتجاز هي الجزء الأكثر تعقيداً وتكلفة في تقنية احتجاز وتخزين الكربون. استكشف التقنيات الأساسية المستخدمة اليوم.">
+                    The methods for capturing and storing CO₂ vary based on the industrial source and local geology. The capture process is the most complex and costly part of CCS. Explore the primary techniques used today.
+                </p>
+            </div>
+
+            <div>
+                <div class="flex justify-center mb-12">
+                    <div class="bg-white/90 backdrop-filter backdrop-blur-lg rounded-2xl p-2 shadow-xl border border-white/20">
+                        <div class="flex flex-wrap justify-center gap-2" aria-label="Tabs">
+                            <button id="tab-post-combustion" class="tab active-tab">
+                                <i class="fas fa-fire mr-2"></i><span data-en="Post-Combustion" data-ar="ما بعد الاحتراق">Post-Combustion</span>
+                            </button>
+                            <button id="tab-pre-combustion" class="tab">
+                                <i class="fas fa-atom mr-2"></i><span data-en="Pre-Combustion" data-ar="ما قبل الاحتراق">Pre-Combustion</span>
+                            </button>
+                            <button id="tab-oxy-fuel" class="tab">
+                                <i class="fas fa-burn mr-2"></i><span data-en="Oxy-Fuel" data-ar="الأكسي-وقود">Oxy-Fuel</span>
+                            </button>
+                            <button id="tab-dac" class="tab">
+                                <i class="fas fa-wind mr-2"></i><span data-en="Direct Air Capture" data-ar="الاحتجاز المباشر للهواء">Direct Air Capture</span>
+                            </button>
+                             <button id="tab-storage" class="tab">
+                                <i class="fas fa-warehouse mr-2"></i><span data-en="Storage Methods" data-ar="طرق التخزين">Storage Methods</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-post-combustion" class="tab-content tech-card p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-gradient-to-r from-red-500 to-orange-500 p-3 rounded-xl mr-4">
+                            <i class="fas fa-fire text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold gradient-text" style="font-family: 'Space Grotesk', sans-serif;" data-en="Post-Combustion Capture" data-ar="احتجاز ما بعد الاحتراق">Post-Combustion Capture</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed" data-en="This is the most mature and widely deployed capture methodology, where CO₂ is captured from flue gases after the fuel has been burned in a conventional combustion process using air. The process typically uses a chemical solvent to absorb the CO₂, which is then heated to release the pure CO₂ for compression and transport." data-ar="هذه هي منهجية الاحتجاز الأكثر نضجاً وانتشاراً، حيث يتم احتجاز ثاني أكسيد الكربون من غازات المداخن بعد احتراق الوقود في عملية احتراق تقليدية باستخدام الهواء. تستخدم العملية عادة مذيباً كيميائياً لامتصاص ثاني أكسيد الكربون، والذي يتم تسخينه بعد ذلك لإطلاق ثاني أكسيد الكربون النقي للضغط والنقل.">This is the most mature and widely deployed capture methodology, where CO₂ is captured from flue gases after the fuel has been burned in a conventional combustion process using air. The process typically uses a chemical solvent to absorb the CO₂, which is then heated to release the pure CO₂ for compression and transport.</p>
+                    
+                    <div class="gradient-border p-6 mb-6">
+                        <h4 class="font-bold text-gray-800 mb-4 text-xl flex items-center">
+                            <i class="fas fa-cog mr-3 text-blue-500"></i><span data-en="Key Technical Details:" data-ar="التفاصيل التقنية الرئيسية:">Key Technical Details:</span>
+                        </h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="space-y-3">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-percentage mr-3 text-green-500"></i>
+                                    <span data-en="CO₂ concentration: 3-4% (natural gas) to 13-15% (coal)" data-ar="تركيز CO₂: ٣-٤٪ (الغاز الطبيعي) إلى ١٣-١٥٪ (الفحم)"><strong>CO₂ concentration:</strong> 3-4% (natural gas) to 13-15% (coal)</span>
+                                </div>
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-chart-line mr-3 text-blue-500"></i>
+                                    <span data-en="Capture rates: Typically over 90%, with rates exceeding 95%" data-ar="معدلات الاحتجاز: عادة أكثر من ٩٠٪، مع معدلات تتجاوز ٩٥٪"><strong>Capture rates:</strong> Typically over 90%, with rates exceeding 95%</span>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-flask mr-3 text-purple-500"></i>
+                                    <span data-en="Technology: Amine-based solvents in absorber/stripper columns" data-ar="التقنية: المذيبات الأمينية في أعمدة الامتصاص/التجريد"><strong>Technology:</strong> Amine-based solvents in absorber/stripper columns</span>
+                                </div>
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-bolt mr-3 text-yellow-500"></i>
+                                    <span data-en="Energy penalty: Can increase electricity costs by up to 66%" data-ar="الجزاء الطاقي: يمكن أن يزيد تكاليف الكهرباء بنسبة تصل إلى ٦٦٪"><strong>Energy penalty:</strong> Can increase electricity costs by up to 66%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-2xl">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-star mr-3 text-green-500"></i><span data-en="Main Advantage:" data-ar="الميزة الأساسية:">Main Advantage:</span>
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed" data-en="Retrofitting capability - it can be added to existing power plants and industrial facilities without major modifications to the original combustion process, providing a crucial pathway to decarbonize long-lived assets." data-ar="قدرة التحديث التراجعي - يمكن إضافتها إلى محطات الطاقة والمرافق الصناعية الحالية دون تعديلات كبيرة على عملية الاحتراق الأصلية، مما يوفر مساراً بالغ الأهمية لإزالة الكربون من الأصول طويلة العمر.">Retrofitting capability - it can be added to existing power plants and industrial facilities without major modifications to the original combustion process, providing a crucial pathway to decarbonize long-lived assets.</p>
+                    </div>
+                </div>
+                <div id="content-pre-combustion" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-semibold mb-4">Pre-Combustion Capture</h3>
+                    <p class="text-gray-600 mb-4">In this method, carbon is removed from the fuel source before it is burned. The primary fuel undergoes gasification or steam methane reforming, reacting with steam and oxygen to form synthesis gas (syngas) - primarily carbon monoxide and hydrogen.</p>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Process Flow:</h4>
+                        <ol class="list-decimal list-inside text-gray-600 space-y-1">
+                            <li>Fuel undergoes gasification/steam reforming</li>
+                            <li>Water-gas-shift reaction converts CO to CO₂ + H₂</li>
+                            <li>High-pressure CO₂ separation (15-50% concentration)</li>
+                            <li>Hydrogen-rich fuel used for power generation</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-blue-800 mb-2">Advantages:</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Higher thermodynamic efficiency for capture</li>
+                            <li>Uses physical solvents (less energy-intensive)</li>
+                            <li>Core technology for low-carbon "blue" hydrogen production</li>
+                            <li>Lower cost increase (~37% vs 66% for post-combustion)</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="text-gray-600">This is more complex and typically better suited for new-build facilities rather than retrofits. It's fundamentally integrated into facility design and represents the pathway for hydrogen economy development.</p>
+                </div>
+                <div id="content-oxy-fuel" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-semibold mb-4" data-en="Oxy-Fuel Combustion" data-ar="احتراق الأكسي-وقود">Oxy-Fuel Combustion</h3>
+                    <p class="text-gray-600 mb-4" data-en="This technique involves burning fuel in nearly pure oxygen instead of regular air, producing a flue gas that is mostly water vapor and CO₂. This redesigned combustion environment facilitates easy carbon capture." data-ar="تتضمن هذه التقنية حرق الوقود في أكسجين نقي تقريباً بدلاً من الهواء العادي، مما ينتج غاز مداخن يتكون في معظمه من بخار الماء وCO₂. هذه البيئة الاحتراقية المعاد تصميمها تسهل احتجاز الكربون بسهولة.">This technique involves burning fuel in nearly pure oxygen instead of regular air, producing a flue gas that is mostly water vapor and CO₂. This redesigned combustion environment facilitates easy carbon capture.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-2" data-en="Process Requirements:" data-ar="متطلبات العملية:">Process Requirements:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li data-en="Cryogenic Air Separation Unit (ASU)" data-ar="وحدة فصل الهواء الباردة (ASU)">Cryogenic Air Separation Unit (ASU)</li>
+                                <li data-en="Combustion in ~pure oxygen environment" data-ar="الاحتراق في بيئة أكسجين نقي تقريباً">Combustion in ~pure oxygen environment</li>
+                                <li data-en="Flue gas recycling for temperature control" data-ar="إعادة تدوير غاز المداخن للتحكم في درجة الحرارة">Flue gas recycling for temperature control</li>
+                                <li data-en="Simple CO₂/water separation by cooling" data-ar="فصل CO₂/الماء البسيط بالتبريد">Simple CO₂/water separation by cooling</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2" data-en="Key Benefits:" data-ar="الفوائد الرئيسية:">Key Benefits:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li data-en="Near 100% capture rates possible" data-ar="معدلات احتجاز تقارب ١٠٠٪ ممكنة">Near 100% capture rates possible</li>
+                                <li data-en="High-purity CO₂ stream (~90% dry basis)" data-ar="تيار CO₂ عالي النقاء (~٩٠٪ على أساس جاف)">High-purity CO₂ stream (~90% dry basis)</li>
+                                <li data-en="60-70% reduction in NOx formation" data-ar="انخفاض بنسبة ٦٠-٧٠٪ في تكوين NOx">60-70% reduction in NOx formation</li>
+                                <li data-en="Simplified CO₂ processing" data-ar="معالجة CO₂ مبسّطة">Simplified CO₂ processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-yellow-800 mb-2" data-en="Main Challenge:" data-ar="التحدي الرئيسي:">Main Challenge:</h4>
+                        <p class="text-gray-600" data-en="The ASU is energy-intensive and represents significant capital and operational costs. However, the technology has been demonstrated at pilot scale, such as at the Schwarze Pumpe facility in Germany." data-ar="وحدة فصل الهواء الباردة كثيفة الطاقة وتمثل تكاليف رأسمالية وتشغيلية كبيرة. ومع ذلك، تم إثبات التقنية على نطاق تجريبي، مثل مرفق شفارتسه بومبه في ألمانيا.">The ASU is energy-intensive and represents significant capital and operational costs. However, the technology has been demonstrated at pilot scale, such as at the Schwarze Pumpe facility in Germany.</p>
+                    </div>
+                    
+                    <p class="text-gray-600" data-en="Can be applied to both new-build plants and, with significant modifications, to existing facilities. Represents the highest capture efficiency option available today." data-ar="يمكن تطبيقها على المحطات الجديدة وعلى المرافق الحالية بتعديلات كبيرة. تمثل خيار كفاءة الاحتجاز الأعلى المتاح اليوم.">Can be applied to both new-build plants and, with significant modifications, to existing facilities. Represents the highest capture efficiency option available today.</p>
+                </div>
+                <div id="content-dac" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-semibold mb-4" data-en="Direct Air Capture (DAC)" data-ar="الاحتجاز المباشر للهواء (DAC)">Direct Air Capture (DAC)</h3>
+                    <p class="text-gray-600 mb-4" data-en="DAC functions like an industrial-scale air filter for the planet, extracting CO₂ directly from ambient atmosphere at ~420 ppm (0.04%). Unlike point source methods, DAC plants can be built anywhere, addressing emissions from dispersed sources and legacy emissions." data-ar="يعمل الاحتجاز المباشر للهواء كمرشح هواء على نطاق صناعي للكوكب، يستخرج CO₂ مباشرة من الغلاف الجوي المحيط عند ~٤٢٠ جزء في المليون (٠.٠٤٪). بخلاف طرق المصادر النقطية، يمكن بناء محطات الاحتجاز المباشر للهواء في أي مكان، لمعالجة الانبعاثات من المصادر المبعثرة والانبعاثات التراثية.">DAC functions like an industrial-scale "air filter" for the planet, extracting CO₂ directly from ambient atmosphere at ~420 ppm (0.04%). Unlike point source methods, DAC plants can be built anywhere, addressing emissions from dispersed sources and legacy emissions.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2" data-en="Liquid DAC (L-DAC):" data-ar="الاحتجاز المباشر السائل (L-DAC):">Liquid DAC (L-DAC):</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li data-en="Uses aqueous potassium hydroxide (KOH)" data-ar="يستخدم هيدروكسيد البوتاسيوم المائي (KOH)">Uses aqueous potassium hydroxide (KOH)</li>
+                                <li data-en="High temperature regeneration (300-900°C)" data-ar="تجديد في درجة حرارة عالية (٣٠٠-٩٠٠°م)">High temperature regeneration (300-900°C)</li>
+                                <li data-en="Forms carbonate salts" data-ar="يشكل أملاح الكربونات">Forms carbonate salts</li>
+                                <li data-en="Higher energy requirements" data-ar="متطلبات طاقة أعلى">Higher energy requirements</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2" data-en="Solid DAC (S-DAC):" data-ar="الاحتجاز المباشر الصلب (S-DAC):">Solid DAC (S-DAC):</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li data-en="Uses solid sorbent materials" data-ar="يستخدم مواد مازة صلبة">Uses solid sorbent materials</li>
+                                <li data-en="Lower temperature regeneration (80-120°C)" data-ar="تجديد في درجة حرارة منخفضة (٨٠-١٢٠°م)">Lower temperature regeneration (80-120°C)</li>
+                                <li data-en="CO₂ adsorbs to surface" data-ar="CO₂ يمتز على السطح">CO₂ adsorbs to surface</li>
+                                <li data-en="More energy efficient" data-ar="أكثر كفاءة في الطاقة">More energy efficient</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-yellow-800 mb-2" data-en="Current Status & Economics:" data-ar="الحالة الحالية والاقتصاد:">Current Status & Economics:</h4>
+                        <p class="text-gray-600 mb-2" data-en="As of early 2024: 27 commissioned facilities globally (~0.01 Mt/year), 130+ planned facilities" data-ar="اعتباراً من أوائل عام ٢٠٢٤: ٢٧ مرفقاً مُخوّلاً عالمياً (~٠.٠١ مليون طن/سنة)، أكثر من ١٣٠ مرفق مخطط">As of early 2024: 27 commissioned facilities globally (~0.01 Mt/year), 130+ planned facilities</p>
+                        <p class="text-gray-600" data-en="Cost range: $152-$600+ per tonne CO₂ (target: <$100/tonne for gigaton-scale)" data-ar="نطاق التكلفة: ١٥٢-٦٠٠+ دولار لكل طن CO₂ (الهدف: <١٠٠ دولار/طن على نطاق الجيجاطن)">Cost range: $152-$600+ per tonne CO₂ (target: <$100/tonne for gigaton-scale)</p>
+                    </div>
+                    
+                    <p class="text-gray-600" data-en="DAC provides the net in net-zero, addressing impossible-to-eliminate emissions. Revenue comes from carbon removal credits or high-value products like synthetic aviation fuels." data-ar="يوفر الاحتجاز المباشر للهواء الصافي في الانبعاثات الصفرية الصافية، معالجاً الانبعاثات غير القابلة للإلغاء. تأتي الإيرادات من اعتمادات إزالة الكربون أو المنتجات عالية القيمة مثل وقود الطيران الاصطناعية.">DAC provides the "net" in net-zero, addressing impossible-to-eliminate emissions. Revenue comes from carbon removal credits or high-value products like synthetic aviation fuels.</p>
+                </div>
+                
+                <div id="content-storage" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-semibold mb-4" data-en="Permanent Storage Methods" data-ar="طرق التخزين الدائم">Permanent Storage Methods</h3>
+                    <p class="text-gray-600 mb-4" data-en="Once captured, CO₂ must be stored securely for centuries. Storage sites require two key features: porous reservoir rock for injection and impermeable caprock to prevent migration. Four trapping mechanisms ensure long-term security." data-ar="بمجرد احتجازه، يجب تخزين CO₂ بأمان لقرون. مواقع التخزين تتطلب ميزتين رئيسيتين: صخور خزان مسامية للحقن وغطاء علوي غير نفوذ لمنع الهجرة. أربع آليات احتجاز تضمن الأمن طويل المدى.">Once captured, CO₂ must be stored securely for centuries. Storage sites require two key features: porous reservoir rock for injection and impermeable caprock to prevent migration. Four trapping mechanisms ensure long-term security.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-semibold text-gray-800" data-en="Primary Storage Formations:" data-ar="تشكيلات التخزين الأولية:">Primary Storage Formations:</h4>
+                            
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-semibold text-blue-800 mb-2" data-en="Depleted Oil & Gas Reservoirs" data-ar="خزانات النفط والغاز المستنزفة">Depleted Oil & Gas Reservoirs</h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li data-en="Well-understood geology from decades of production" data-ar="جيولوجية مفهومة جيداً من عقود من الإنتاج">Well-understood geology from decades of production</li>
+                                    <li data-en="Proven containment for millions of years" data-ar="احتواء مؤكد لملايين السنين">Proven containment for millions of years</li>
+                                    <li data-en="Existing infrastructure can be repurposed" data-ar="يمكن إعادة توجيه البنية التحتية الحالية">Existing infrastructure can be repurposed</li>
+                                    <li data-en="Limited by original hydrocarbon volume" data-ar="محدودة بحجم الهيدروكربون الأصلي">Limited by original hydrocarbon volume</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h5 class="font-semibold text-green-800 mb-2" data-en="Deep Saline Aquifers" data-ar="طبقات المياه الجوفية المالحة العميقة">Deep Saline Aquifers</h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li data-en="Largest potential storage resource globally" data-ar="أكبر مورد تخزين محتمل عالمياً">Largest potential storage resource globally</li>
+                                    <li data-en="Filled with non-potable saline water" data-ar="مملوءة بالمياه المالحة غير الصالحة للشرب">Filled with non-potable saline water</li>
+                                    <li data-en="Geographically widespread" data-ar="منتشرة جغرافياً على نطاق واسع">Geographically widespread</li>
+                                    <li data-en="Require significant geological assessment" data-ar="تتطلب تقييماً جيولوجياً كبيراً">Require significant geological assessment</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h5 class="font-semibold text-purple-800 mb-2" data-en="Basalt Formations" data-ar="تشكيلات البازلت">Basalt Formations</h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li data-en="Reactive mineralogy enables rapid carbonation" data-ar="علم المعادن المتفاعل يمكّن الكربنة السريعة">Reactive mineralogy enables rapid carbonation</li>
+                                    <li data-en="CO₂ converts to solid carbonate quickly" data-ar="CO₂ يتحول إلى كربونات صلبة بسرعة">CO₂ converts to solid carbonate quickly</li>
+                                    <li data-en="Enhanced permanence and security" data-ar="ديمومة وأمن معززين">Enhanced permanence and security</li>
+                                    <li data-en="Limited geographical availability" data-ar="توفر جغرافي محدود">Limited geographical availability</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-semibold text-gray-800" data-en="Trapping Mechanisms (Increasing Security Over Time):" data-ar="آليات الاحتجاز (زيادة الأمن بمرور الوقت):">Trapping Mechanisms (Increasing Security Over Time):</h4>
+                            
+                            <div class="bg-orange-50 p-3 rounded-lg border-l-4 border-orange-400">
+                                <h5 class="font-semibold text-orange-800" data-en="1. Structural Trapping" data-ar="١. الاحتجاز الهيكلي">1. Structural Trapping</h5>
+                                <p class="text-gray-600 text-sm" data-en="Immediate: CO₂ rises until trapped beneath impermeable caprock" data-ar="فوري: CO₂ يرتفع حتى يحتجز تحت الغطاء العلوي غير النفوذ">Immediate: CO₂ rises until trapped beneath impermeable caprock</p>
+                            </div>
+                            
+                            <div class="bg-yellow-50 p-3 rounded-lg border-l-4 border-yellow-400">
+                                <h5 class="font-semibold text-yellow-800" data-en="2. Residual Trapping" data-ar="٢. الاحتجاز المتبقي">2. Residual Trapping</h5>
+                                <p class="text-gray-600 text-sm" data-en="Short-term: CO₂ droplets trapped in pore spaces by capillary forces" data-ar="قصير المدى: قطرات CO₂ محتجزة في المساحات المسامية بقوى شعرية">Short-term: CO₂ droplets trapped in pore spaces by capillary forces</p>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-400">
+                                <h5 class="font-semibold text-blue-800" data-en="3. Solubility Trapping" data-ar="٣. احتجاز الذوبانية">3. Solubility Trapping</h5>
+                                <p class="text-gray-600 text-sm" data-en="Decades: CO₂ dissolves in brine, becomes denser and sinks" data-ar="عقود: CO₂ يذوب في المحلول الملحي، يصبح أكثر كثافة ويغرق">Decades: CO₂ dissolves in brine, becomes denser and sinks</p>
+                            </div>
+                            
+                            <div class="bg-green-50 p-3 rounded-lg border-l-4 border-green-400">
+                                <h5 class="font-semibold text-green-800" data-en="4. Mineral Trapping" data-ar="٤. الاحتجاز المعدني">4. Mineral Trapping</h5>
+                                <p class="text-gray-600 text-sm" data-en="Millennia: CO₂ reacts with rock to form permanent carbonate minerals" data-ar="آلاف السنين: CO₂ يتفاعل مع الصخور لتكوين معادن كربونات دائمة">Millennia: CO₂ reacts with rock to form permanent carbonate minerals</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-2" data-en="Storage Security & Monitoring:" data-ar="أمن ومراقبة التخزين:">Storage Security & Monitoring:</h4>
+                        <p class="text-gray-600 mb-2" data-en="IPCC projects well-managed sites will retain >99% of stored CO₂ for >1,000 years. All projects require comprehensive Measurement, Monitoring, and Verification (MMV) programs using:" data-ar="تتوقع الهيئة الحكومية الدولية لتغير المناخ أن المواقع المدارة جيداً ستحتفظ بنسبة >٩٩٪ من CO₂ المخزّن لأكثر من ١٬٠٠٠ سنة. جميع المشاريع تتطلب برامج قياس ومراقبة وتحقيق شاملة باستخدام:">IPCC projects well-managed sites will retain >99% of stored CO₂ for >1,000 years. All projects require comprehensive Measurement, Monitoring, and Verification (MMV) programs using:</p>
+                        <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                            <li data-en="Seismic imaging to track CO₂ plume movement" data-ar="التصوير الزلزالي لتتبع حركة عمود CO₂">Seismic imaging to track CO₂ plume movement</li>
+                            <li data-en="Well-based monitoring of reservoir pressure" data-ar="مراقبة ضغط الخزان عبر الآبار">Well-based monitoring of reservoir pressure</li>
+                            <li data-en="Caprock and well integrity verification" data-ar="التحقق من سلامة الغطاء العلوي والآبار">Caprock and well integrity verification</li>
+                            <li data-en="Surface and groundwater monitoring" data-ar="مراقبة المياه السطحية والجوفية">Surface and groundwater monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="mb-12">
+            <div class="text-center mb-12">
+                <div class="inline-block p-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 mb-4">
+                    <i class="fas fa-globe text-2xl text-white"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title" style="font-family: 'Space Grotesk', sans-serif;" data-en="Global Project Status & Pipeline" data-ar="حالة المشاريع العالمية وخط الأنابيب">Global Project Status & Pipeline</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed" data-en="The global pipeline of CCS projects has grown significantly, driven by stronger climate policies and incentives. While progress is encouraging, the scale-up required to meet climate targets is immense." data-ar="نما خط الأنابيب العالمي لمشاريع احتجاز وتخزين الكربون بشكل كبير، مدفوعاً بسياسات مناخية أقوى وحوافز. وبينما التقدم مشجع، فإن التوسع المطلوب لتحقيق أهداف المناخ هائل.">
+                    The global pipeline of CCS projects has grown significantly, driven by stronger climate policies and incentives. While progress is encouraging, the scale-up required to meet climate targets is immense.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="stat-card p-8 text-center data-point">
+                    <div class="mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl mb-4">
+                            <i class="fas fa-industry text-2xl text-white"></i>
+                        </div>
+                        <div class="text-4xl font-bold gradient-text mb-2" style="font-family: 'Space Grotesk', sans-serif;">50+</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Space Grotesk', sans-serif;" data-en="Operational Facilities" data-ar="المرافق التشغيلية">Operational Facilities</h3>
+                    <p class="text-gray-600 leading-relaxed" data-en="~51 Mt/year capture capacity currently operational worldwide across various industrial sectors" data-ar="~٥١ مليون طن/سنوياً قدرة احتجاز تعمل حالياً في جميع أنحاء العالم عبر قطاعات صناعية متنوعة">~51 Mt/year capture capacity currently operational worldwide across various industrial sectors</p>
+                </div>
+                
+                <div class="stat-card p-8 text-center data-point">
+                    <div class="mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl mb-4">
+                            <i class="fas fa-chart-line text-2xl text-white"></i>
+                        </div>
+                        <div class="text-4xl font-bold gradient-text mb-2" style="font-family: 'Space Grotesk', sans-serif;">600+</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Space Grotesk', sans-serif;" data-en="Total Pipeline" data-ar="إجمالي خط الأنابيب">Total Pipeline</h3>
+                    <p class="text-gray-600 leading-relaxed" data-en="Facilities in all development stages: operational, construction, and planning phases" data-ar="المرافق في جميع مراحل التطوير: التشغيل والإنشاء ومراحل التخطيط">Facilities in all development stages: operational, construction, and planning phases</p>
+                </div>
+                
+                <div class="stat-card p-8 text-center data-point">
+                    <div class="mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl mb-4">
+                            <i class="fas fa-rocket text-2xl text-white"></i>
+                        </div>
+                        <div class="text-4xl font-bold gradient-text mb-2" style="font-family: 'Space Grotesk', sans-serif;">430 Mt</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Space Grotesk', sans-serif;" data-en="2030 Projection" data-ar="إسقاط ٢٠٣٠">2030 Projection</h3>
+                    <p class="text-gray-600 leading-relaxed" data-en="Annual capture capacity projected by 2030 (9x current operational level)" data-ar="القدرة السنوية على الاحتجاز المتوقعة بحلول ٢٠٣٠ (٩ أضعاف المستوى التشغيلي الحالي)">Annual capture capacity projected by 2030 (9x current operational level)</p>
+                </div>
+            </div>
+            
+            <div class="glass-card p-8 rounded-3xl mb-12 backdrop-filter backdrop-blur-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center flex items-center justify-center">
+                    <i class="fas fa-chart-bar mr-3 text-blue-500"></i>
+                    <span data-en="Global CCS Facility Development Status" data-ar="حالة تطوير مرافق احتجاز وتخزين الكربون العالمية">Global CCS Facility Development Status</span>
+                </h3>
+                <div class="chart-container">
+                    <canvas id="ccsProjectsChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Regional Distribution -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="tech-card p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-map-marked-alt mr-3 text-blue-500"></i>
+                        <span class="gradient-text" data-en="Regional Leadership" data-ar="القيادة الإقليمية">Regional Leadership</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mr-4 flex-shrink-0"></div>
+                            <div>
+                                <span class="font-bold text-gray-800" data-en="North America:" data-ar="أمريكا الشمالية:">North America:</span>
+                                <span class="text-gray-600 ml-2" data-en="~305 facilities (~250 Mt/year capacity)" data-ar="~٣٠٥ مرفقاً (~٢٥٠ مليون طن/سنوياً)">~305 facilities (~250 Mt/year capacity)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gradient-to-r from-green-50 to-teal-50 rounded-xl">
+                            <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg mr-4 flex-shrink-0"></div>
+                            <div>
+                                <span class="font-bold text-gray-800" data-en="Europe:" data-ar="أوروبا:">Europe:</span>
+                                <span class="text-gray-600 ml-2" data-en="~195 facilities (~100 Mt/year capacity)" data-ar="~١٩٥ مرفقاً (~١٠٠ مليون طن/سنوياً)">~195 facilities (~100 Mt/year capacity)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl">
+                            <div class="w-6 h-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg mr-4 flex-shrink-0"></div>
+                            <div>
+                                <span class="font-bold text-gray-800" data-en="Asia-Pacific:" data-ar="آسيا-المحيط الهادئ:">Asia-Pacific:</span>
+                                <span class="text-gray-600 ml-2" data-en="~85 facilities (~50 Mt/year capacity)" data-ar="~٨٥ مرفقاً (~٥٠ مليون طن/سنوياً)">~85 facilities (~50 Mt/year capacity)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-4 bg-yellow-50 rounded-xl border-l-4 border-yellow-400">
+                        <p class="text-sm text-gray-700">
+                            <i class="fas fa-info-circle mr-2 text-yellow-600"></i>
+                            <span data-en="North America leads due to strong policy support, particularly the U.S. 45Q tax credit" data-ar="تقود أمريكا الشمالية بسبب الدعم السياسي القوي، خاصة الائتمان الضريبي الأمريكي ٤٥Q">North America leads due to strong policy support, particularly the U.S. 45Q tax credit</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="tech-card p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-star mr-3 text-green-500"></i>
+                        <span class="gradient-text" data-en="Landmark Projects" data-ar="المشاريع المعلمية">Landmark Projects</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-6 p-4 bg-blue-50 rounded-r-xl">
+                            <h4 class="font-bold text-gray-800 flex items-center mb-2">
+                                <i class="fas fa-maple-leaf mr-2 text-blue-500"></i>
+                                <span data-en="Quest (Alberta, Canada)" data-ar="كويست (ألبيرتا، كندا)">Quest (Alberta, Canada)</span>
+                            </h4>
+                            <p class="text-sm text-gray-600" data-en="1+ Mt/year operational since 2015, >9Mt stored in deep saline aquifer" data-ar="أكثر من مليون طن/سنوياً تشغيلي منذ ٢٠١٥، أكثر من ٩ مليون طن مخزن في طبقة مياه جوفية مالحة عميقة">1+ Mt/year operational since 2015, >9Mt stored in deep saline aquifer</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-6 p-4 bg-green-50 rounded-r-xl">
+                            <h4 class="font-bold text-gray-800 flex items-center mb-2">
+                                <i class="fas fa-ship mr-2 text-green-500"></i>
+                                <span data-en="Northern Lights (Norway)" data-ar="الأضواء الشمالية (النرويج)">Northern Lights (Norway)</span>
+                            </h4>
+                            <p class="text-sm text-gray-600" data-en="Cross-border CO₂ transport & storage hub, operational 2025" data-ar="محور نقل وتخزين ثاني أكسيد الكربون عابر الحدود، تشغيلي ٢٠٢٥">Cross-border CO₂ transport & storage hub, operational 2025</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 pl-6 p-4 bg-orange-50 rounded-r-xl">
+                            <h4 class="font-bold text-gray-800 flex items-center mb-2">
+                                <i class="fas fa-anchor mr-2 text-orange-500"></i>
+                                <span data-en="Porthos (Netherlands)" data-ar="بورثوس (هولندا)">Porthos (Netherlands)</span>
+                            </h4>
+                            <p class="text-sm text-gray-600" data-en="Rotterdam industrial cluster hub, 2.5 Mt/year from 2026" data-ar="محور تجمع روتردام الصناعي، ٢.٥ مليون طن/سنوياً من ٢٠٢٦">Rotterdam industrial cluster hub, 2.5 Mt/year from 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title" data-en="Economics & Policy Drivers" data-ar="محركات الاقتصاد والسياسات">Economics & Policy Drivers</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8" data-en="CCS is capital-intensive and not commercially viable without policy support. The &quot;commerciality gap&quot; between high costs and revenue necessitates government intervention to create the business case." data-ar="تقنية احتجاز وتخزين الكربون كثيفة رؤوس الأموال وغير قابلة للتطبيق تجارياً بدون دعم سياسي. إن &quot;فجوة التجارية&quot; بين التكاليف العالية والإيرادات تتطلب تدخلاً حكومياً لإنشاء الحالة التجارية.">
+               CCS is capital-intensive and not commercially viable without policy support. The "commerciality gap" between high costs and revenue necessitates government intervention to create the business case.
+            </p>
+            
+            <!-- Cost Breakdown -->
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8">
+                <h3 class="text-xl font-semibold mb-4" data-en="Cost Structure by Source" data-ar="هيكل التكلفة حسب المصدر">Cost Structure by Source</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                        <h4 class="font-semibold text-green-800 mb-2" data-en="Low-Cost Sources" data-ar="مصادر منخفضة التكلفة">Low-Cost Sources</h4>
+                        <div class="text-2xl font-bold text-green-600 mb-1">$22-36</div>
+                        <p class="text-sm text-gray-600 mb-2" data-en="per tonne CO₂" data-ar="لكل طن CO₂">per tonne CO₂</p>
+                        <p class="text-sm text-gray-700" data-en="High-purity sources: ethanol fermentation, ammonia synthesis" data-ar="مصادر عالية النقاء: تخمر الإيثانول، تركيب الأمونيا">High-purity sources: ethanol fermentation, ammonia synthesis</p>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                        <h4 class="font-semibold text-yellow-800 mb-2" data-en="Medium-Cost Sources" data-ar="مصادر متوسطة التكلفة">Medium-Cost Sources</h4>
+                        <div class="text-2xl font-bold text-yellow-600 mb-1">$49-150</div>
+                        <p class="text-sm text-gray-600 mb-2" data-en="per tonne CO₂" data-ar="لكل طن CO₂">per tonne CO₂</p>
+                        <p class="text-sm text-gray-700" data-en="Natural gas power plants, some industrial processes" data-ar="محطات طاقة الغاز الطبيعي، بعض العمليات الصناعية">Natural gas power plants, some industrial processes</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                        <h4 class="font-semibold text-red-800 mb-2" data-en="High-Cost Sources" data-ar="مصادر عالية التكلفة">High-Cost Sources</h4>
+                        <div class="text-2xl font-bold text-red-600 mb-1">$20-205+</div>
+                        <p class="text-sm text-gray-600 mb-2" data-en="per tonne CO₂" data-ar="لكل طن CO₂">per tonne CO₂</p>
+                        <p class="text-sm text-gray-700" data-en="Coal power, cement, steel (wide range by technology)" data-ar="طاقة الفحم، الأسمنت، الصلب (نطاق واسع بحسب التكنولوجيا)">Coal power, cement, steel (wide range by technology)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-4" data-en="*Capture costs dominate, typically 75%+ of total project costs. Transport: $2-14/tonne, Storage: <$10/tonne" data-ar="*تهيمن تكاليف الاحتجاز، عادة ٧٥٪+ من إجمالي تكاليف المشروع. النقل: ٢-١٤ دولار/طن، التخزين: <١٠ دولار/طن">*Capture costs dominate, typically 75%+ of total project costs. Transport: $2-14/tonne, Storage: <$10/tonne</p>
+            </div>
+            
+            <!-- Policy Support -->
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200 mb-8">
+                <h3 class="text-xl font-semibold text-blue-800 mb-4" data-en="Key Policy Drivers" data-ar="محركات السياسات الرئيسية">Key Policy Drivers</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3" data-en="U.S. Section 45Q Tax Credit" data-ar="الائتمان الضريبي الأمريكي القسم ٤٥Q">U.S. Section 45Q Tax Credit</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-2">•</span>
+                                <span data-en="$85/tonne for geological storage" data-ar="٨٥ دولار/طن للتخزين الجيولوجي"><strong>$85/tonne</strong> for geological storage</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2">•</span>
+                                <span data-en="$60/tonne for utilization/EOR" data-ar="٦٠ دولار/طن للاستخدام/استخراج النفط المعزز"><strong>$60/tonne</strong> for utilization/EOR</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-600 mr-2">•</span>
+                                <span data-en="Direct pay & transferable credits" data-ar="دفع مباشر وائتمانات قابلة للتحويل">Direct pay & transferable credits</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">•</span>
+                                <span data-en="73 new facilities announced in 2023" data-ar="٧٣ مرفقاً جديداً أُعلن عنها في ٢٠٢٣">73 new facilities announced in 2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3" data-en="Other Global Policies" data-ar="السياسات العالمية الأخرى">Other Global Policies</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-red-600 mr-2">•</span>
+                                <span data-en="Canada: 50% investment tax credit" data-ar="كندا: ائتمان ضريبي للاستثمار بنسبة ٥٠٪"><strong>Canada:</strong> 50% investment tax credit</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2">•</span>
+                                <span data-en="EU: €38B Innovation Fund" data-ar="الاتحاد الأوروبي: صندوق الابتكار ٣٨ مليار يورو"><strong>EU:</strong> €38B Innovation Fund</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-2">•</span>
+                                <span data-en="UK: £1B CCS Infrastructure Fund" data-ar="المملكة المتحدة: صندوق البنية التحتية لاحتجاز وتخزين الكربون مليار جنيه"><strong>UK:</strong> £1B CCS Infrastructure Fund</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-600 mr-2">•</span>
+                                <span data-en="Norway: Direct state funding" data-ar="النرويج: التمويل المباشر من الدولة"><strong>Norway:</strong> Direct state funding</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Commerciality Gap" data-ar="فجوة التجارية">Commerciality Gap</h3>
+                    <p class="text-gray-600" data-en="CCS requires carbon prices of $25-30/tonne to begin deployment, but EU ETS historically too low. Government subsidies bridge this gap." data-ar="تحتاج تقنية احتجاز وتخزين الكربون إلى أسعار كربون ٢٥-٣٠ دولار/طن للبدء في النشر، لكن نظام تداول الانبعاثات الأوروبي منخفض تاريخياً. الدعم الحكومي يسد هذه الفجوة.">CCS requires carbon prices of $25-30/tonne to begin deployment, but EU ETS historically too low. Government subsidies bridge this gap.</p>
+                </div>
+                <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Industrial Competitiveness" data-ar="القدرة التنافسية الصناعية">Industrial Competitiveness</h3>
+                    <p class="text-gray-600" data-en="CCS increases steel costs <10%, while green hydrogen routes increase costs 35-70%. Often the least-cost decarbonization path." data-ar="تزيد تقنية احتجاز وتخزين الكربون تكاليف الصلب <١٠٪، بينما طرق الهيدروجين الأخضر تزيد التكاليف ٣٥-٧٠٪. غالباً المسار الأقل تكلفة لإزالة الكربون.">CCS increases steel costs <10%, while green hydrogen routes increase costs 35-70%. Often the least-cost decarbonization path.</p>
+                </div>
+                <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Stranded Assets" data-ar="الأصول العالقة">Stranded Assets</h3>
+                    <p class="text-gray-600" data-en="Retrofitting with CCS avoids premature retirement of trillions in industrial assets, maintaining operational life in low-carbon world." data-ar="التحديث التراجعي بتقنية احتجاز وتخزين الكربون يتجنب التقاعد المبكر للتريليونات من الأصول الصناعية، مع الحفاظ على الحياة التشغيلية في عالم منخفض الكربون.">Retrofitting with CCS avoids premature retirement of trillions in industrial assets, maintaining operational life in low-carbon world.</p>
+                </div>
+                 <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Hub Models" data-ar="نماذج المحاور">Hub Models</h3>
+                    <p class="text-gray-600" data-en="Shared transport & storage infrastructure spreads costs across multiple users, reducing per-ton costs and barriers to entry." data-ar="البنية التحتية المشتركة للنقل والتخزين توزع التكاليف عبر مستخدمين متعددين، مما يقلل التكاليف لكل طن وحواجز الدخول.">Shared transport & storage infrastructure spreads costs across multiple users, reducing per-ton costs and barriers to entry.</p>
+                </div>
+                <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Job Creation" data-ar="خلق الوظائف">Job Creation</h3>
+                    <p class="text-gray-600" data-en="U.S. Direct Air Capture industry alone projected to create 300,000+ jobs in construction, engineering, and manufacturing at scale." data-ar="صناعة الاحتجاز المباشر للهواء الأمريكية وحدها متوقع أن تخلق أكثر من ٣٠٠,٠٠٠ وظيفة في البناء والهندسة والتصنيع على نطاق واسع.">U.S. Direct Air Capture industry alone projected to create 300,000+ jobs in construction, engineering, and manufacturing at scale.</p>
+                </div>
+                 <div class="stat-card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2" data-en="Investment Scale" data-ar="حجم الاستثمار">Investment Scale</h3>
+                    <p class="text-gray-600" data-en="Meeting climate targets requires 70-fold capacity increase by 2040, demanding trillions in investment and stable policy frameworks." data-ar="تحقيق أهداف المناخ يتطلب زيادة القدرة بـ ٧٠ ضعفاً بحلول ٢٠٤٠، مما يتطلب تريليونات في الاستثمار وأطر سياسات مستقرة.">Meeting climate targets requires 70-fold capacity increase by 2040, demanding trillions in investment and stable policy frameworks.</p>
+                </div>
+            </div>
+        </section>
+        <section id="challenges" class="mb-20 bg-gray-50 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title" data-en="Challenges & Risk Management" data-ar="التحديات وإدارة المخاطر">Challenges & Risk Management</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8" data-en="While technically mature, CCS faces significant deployment challenges beyond technology, including operational risks, long-term liability, and public acceptance." data-ar="بينما تعتبر التقنية ناضجة تقنياً، تواجه تقنية احتجاز وتخزين الكربون تحديات نشر كبيرة تتجاوز التكنولوجيا، بما في ذلك المخاطر التشغيلية والمسؤولية طويلة المدى والقبول العام.">
+                While technically mature, CCS faces significant deployment challenges beyond technology, including operational risks, long-term liability, and public acceptance.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-red-100 text-red-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">⚠️</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Technical Risks" data-ar="المخاطر التقنية">Technical Risks</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="• Storage security & potential leakage pathways" data-ar="• أمان التخزين ومسارات التسرب المحتملة">• Storage security & potential leakage pathways</li>
+                        <li data-en="• Infrastructure corrosion from CO₂ + water" data-ar="• تآكل البنية التحتية من CO₂ + الماء">• Infrastructure corrosion from CO₂ + water</li>
+                        <li data-en="• Induced seismicity from pressure changes" data-ar="• الزلزالية المستحثة من تغيرات الضغط">• Induced seismicity from pressure changes</li>
+                        <li data-en="• High energy penalty (reduces plant efficiency)" data-ar="• الجزاء الطاقي المرتفع (يقلل كفاءة المحطة)">• High energy penalty (reduces plant efficiency)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">⚖️</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Legal & Liability" data-ar="القانونية والمسؤولية">Legal & Liability</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="Long-term liability (centuries-scale storage)" data-ar="المسؤولية طويلة المدى (تخزين بمقياس القرون)">• Long-term liability (centuries-scale storage)</li>
+                        <li data-en="Pore space ownership uncertainties" data-ar="عدم اليقين في ملكية المسامات">• Pore space ownership uncertainties</li>
+                        <li data-en="Complex permitting processes" data-ar="عمليات الترخيص المعقدة">• Complex permitting processes</li>
+                        <li data-en="Financial assurance requirements" data-ar="متطلبات الضمان المالي">• Financial assurance requirements</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">👥</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Social License" data-ar="الترخيص المجتمعي">Social License</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="Low public awareness & understanding" data-ar="ضعف الوعي والفهم العام">• Low public awareness & understanding</li>
+                        <li data-en="NIMBY resistance to local projects" data-ar="مقاومة نيمبي للمشاريع المحلية">• NIMBY resistance to local projects</li>
+                        <li data-en="False solution criticism from some groups" data-ar="انتقادات الحل الزائف من بعض المجموعات">• "False solution" criticism from some groups</li>
+                        <li data-en="Trust in operators & regulators" data-ar="الثقة في المشغلين والجهات المنظمة">• Trust in operators & regulators</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-green-100 text-green-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">💰</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Economic Challenges" data-ar="التحديات الاقتصادية">Economic Challenges</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="• &quot;Subsidy cliff&quot; when incentives expire" data-ar="• &quot;جرف الإعانات&quot; عند انتهاء الحوافز">• "Subsidy cliff" when incentives expire</li>
+                        <li data-en="• High upfront capital requirements" data-ar="• متطلبات رأس مال أولية عالية">• High upfront capital requirements</li>
+                        <li data-en="• Slow cost reduction vs. renewables" data-ar="• بطء تخفيض التكاليف مقارنة بالطاقة المتجددة">• Slow cost reduction vs. renewables</li>
+                        <li data-en="• Project execution risk (&quot;valley of death&quot;)" data-ar="• مخاطر تنفيذ المشروع (&quot;وادي الموت&quot;)">• Project execution risk ("valley of death")</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-purple-100 text-purple-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">🔧</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Operational Issues" data-ar="القضايا التشغيلية">Operational Issues</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="• Operating costs growing faster than capacity" data-ar="• نمو التكاليف التشغيلية أسرع من القدرة">• Operating costs growing faster than capacity</li>
+                        <li data-en="• Underperformance vs. design targets" data-ar="• الأداء دون مستوى أهداف التصميم">• Underperformance vs. design targets</li>
+                        <li data-en="• Complex integration with existing plants" data-ar="• التكامل المعقد مع المحطات الحالية">• Complex integration with existing plants</li>
+                        <li data-en="• Long-term monitoring requirements" data-ar="• متطلبات المراقبة طويلة المدى">• Long-term monitoring requirements</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-gray-100 text-gray-600 rounded-full h-10 w-10 flex items-center justify-center mr-3">🏗️</div>
+                        <h3 class="text-lg font-semibold text-gray-800" data-en="Infrastructure Scale" data-ar="نطاق البنية التحتية">Infrastructure Scale</h3>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li data-en="Pipeline network needs 100x expansion" data-ar="شبكة خطوط الأنابيب تحتاج توسيعاً بمقدار ١٠٠ ضعف">• Pipeline network needs 100x expansion</li>
+                        <li data-en="Complex permit acquisition for corridors" data-ar="الحصول على التراخيص المعقدة للممرات">• Complex permit acquisition for corridors</li>
+                        <li data-en="Coordination across multiple stakeholders" data-ar="التنسيق عبر أصحاب مصلحة متعددين">• Coordination across multiple stakeholders</li>
+                        <li data-en="Regional hub development challenges" data-ar="تحديات تطوير المحاور الإقليمية">• Regional hub development challenges</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-200">
+                <h3 class="text-lg font-semibold text-blue-800 mb-3" data-en="Risk Mitigation Strategies" data-ar="استراتيجيات تخفيف المخاطر">Risk Mitigation Strategies</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+                    <div>
+                        <h4 class="font-semibold mb-2" data-en="Technical Solutions:" data-ar="الحلول التقنية:">Technical Solutions:</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li data-en="Rigorous site characterization & selection" data-ar="توصيف واختيار المواقع الدقيق">Rigorous site characterization & selection</li>
+                            <li data-en="Advanced monitoring systems (MMV)" data-ar="أنظمة المراقبة المتقدمة">Advanced monitoring systems (MMV)</li>
+                            <li data-en="Material selection for corrosion resistance" data-ar="اختيار المواد لمقاومة التآكل">Material selection for corrosion resistance</li>
+                            <li data-en="Pressure management protocols" data-ar="بروتوكولات إدارة الضغط">Pressure management protocols</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2" data-en="Policy & Social:" data-ar="السياسات والمجتمع:">Policy & Social:</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li data-en="Clear liability transfer frameworks" data-ar="أطر واضحة لنقل المسؤولية">Clear liability transfer frameworks</li>
+                            <li data-en="Early community engagement programs" data-ar="برامج إشراك المجتمع المبكرة">Early community engagement programs</li>
+                            <li data-en="Transparent performance reporting" data-ar="تقارير الأداء الشفافة">Transparent performance reporting</li>
+                            <li data-en="Long-term policy certainty" data-ar="يقين السياسات طويلة المدى">Long-term policy certainty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="geological" class="bg-white p-8 rounded-lg shadow-md border border-gray-200 mb-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title" data-en="Geological & Seismic Impacts" data-ar="التأثيرات الجيولوجية والزلزالية">Geological & Seismic Impacts</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                <span data-en="Large-scale CO₂ injection impacts subsurface geology through geomechanical and geochemical processes. Understanding these interactions ensures safe, permanent storage." data-ar="حقن CO₂ على نطاق واسع يؤثر على جيولوجية تحت السطح من خلال عمليات جيوميكانيكية وجيوكيميائية. فهم هذه التفاعلات يضمن التخزين الآمن والدائم.">Large-scale CO₂ injection impacts subsurface geology through geomechanical and geochemical processes. Understanding these interactions ensures safe, permanent storage.</span>
+            </p>
+            
+            <!-- Geomechanical Impacts -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800" data-en="Geomechanical Effects" data-ar="التأثيرات الجيوميكانيكية">Geomechanical Effects</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+                        <h4 class="text-lg font-semibold text-red-800 mb-3" data-en="Induced Seismicity Risk" data-ar="مخاطر الزلزالية المستحثة">Induced Seismicity Risk</h4>
+                        <div class="space-y-3 text-gray-700">
+                            <p class="text-sm" data-en="CO₂ injection changes subsurface pressure, potentially affecting pre-existing faults:" data-ar="حقن CO₂ يغير ضغط الطبقة تحت السطحية، مما يؤثر محتملاً على الصدوع الموجودة مسبقاً:">CO₂ injection changes subsurface pressure, potentially affecting pre-existing faults:</p>
+                            <div class="bg-white p-3 rounded">
+                                <h5 class="font-semibold text-gray-800 mb-2" data-en="Risk Factors:" data-ar="عوامل المخاطر:">Risk Factors:</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li data-en="Proximity to critically-stressed faults" data-ar="القرب من الصدوع المجهدة بشكل حرج">• Proximity to critically-stressed faults</li>
+                                    <li data-en="Injection rate and pressure magnitude" data-ar="معدل الحقن وحجم الضغط">• Injection rate and pressure magnitude</li>
+                                    <li data-en="Pre-existing stress conditions" data-ar="ظروف الإجهاد الموجودة مسبقاً">• Pre-existing stress conditions</li>
+                                    <li data-en="Geological structure complexity" data-ar="تعقّد البنية الجيولوجية">• Geological structure complexity</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <h5 class="font-semibold text-gray-800 mb-2" data-en="Reality Check:" data-ar="فحص الواقع:">Reality Check:</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li data-en="Most events are micro-seismic (not felt)" data-ar="معظم الأحداث زلزالية ميكروية (غير محسوسة)">• Most events are micro-seismic (not felt)</li>
+                                    <li data-en="No large earthquakes from CCS to date" data-ar="لا زلازل كبيرة مرتبطة باحتجاز وتخزين الكربون حتى الآن">• No large earthquakes from CCS to date</li>
+                                    <li data-en="Risk is site-specific and manageable" data-ar="المخاطر محددة حسب الموقع وقابلة للإدارة">• Risk is site-specific and manageable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3" data-en="Surface Deformation" data-ar="تشوه السطح">Surface Deformation</h4>
+                        <div class="space-y-3 text-gray-700">
+                            <p class="text-sm" data-en="Reservoir pressure changes affect rock stress and surface elevation:" data-ar="تغيرات ضغط الخزان تؤثر على إجهاد الصخور وارتفاع السطح:">Reservoir pressure changes affect rock stress and surface elevation:</p>
+                            <div class="bg-white p-3 rounded">
+                                <h5 class="font-semibold text-gray-800 mb-2" data-en="Depletion Effects:" data-ar="تأثيرات النضوب:">Depletion Effects:</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li data-en="Oil/gas extraction causes rock compaction" data-ar="استخراج النفط/الغاز يسبب ضغط الصخور">• Oil/gas extraction causes rock compaction</li>
+                                    <li data-en="Surface subsidence up to 24cm possible" data-ar="هبوط السطح بما يصل إلى ٢٤ سم ممكن">• Surface subsidence up to 24cm possible</li>
+                                    <li data-en="Well-documented in many fields globally" data-ar="موثقة جيداً في العديد من الحقول عالمياً">• Well-documented in many fields globally</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <h5 class="font-semibold text-gray-800 mb-2" data-en="Re-injection Effects:" data-ar="تأثيرات إعادة الحقن:">Re-injection Effects:</h5>
+                                <ul class="text-xs space-y-1">
+                                    <li data-en="CO₂ injection re-pressurizes reservoir" data-ar="حقن CO₂ يعيد ضغط الخزان">• CO₂ injection re-pressurizes reservoir</li>
+                                    <li data-en="Can cause slight surface uplift" data-ar="يمكن أن يسبب ارتفاعاً طفيفاً في السطح">• Can cause slight surface uplift</li>
+                                    <li data-en="Monitored using satellite InSAR technology" data-ar="مراقبة باستخدام تقنية الأقمار الصناعية InSAR">• Monitored using satellite InSAR technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Geochemical Impacts -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800" data-en="Geochemical Reactions" data-ar="التفاعلات الجيوكيميائية">Geochemical Reactions</h3>
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <h4 class="text-lg font-semibold text-green-800 mb-3" data-en="CO₂-Rock-Fluid Interactions" data-ar="تفاعلات CO₂-الصخور-السوائل">CO₂-Rock-Fluid Interactions</h4>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-800 mb-2" data-en="1. Acidification" data-ar="١. التحمض">1. Acidification</h5>
+                            <p class="text-xs text-gray-600" data-en="CO₂ dissolves in brine → carbonic acid → lower pH environment" data-ar="CO₂ يذوب في المحلول الملحي → حمض الكربونيك → بيئة pH أقل">CO₂ dissolves in brine → carbonic acid → lower pH environment</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-800 mb-2" data-en="2. Mineral Dissolution" data-ar="٢. إذابة المعادن">2. Mineral Dissolution</h5>
+                            <p class="text-xs text-gray-600" data-en="Acidic brine dissolves carbonates & feldspars → increased porosity" data-ar="المحلول الملحي الحمضي يذيب الكربونات والفلدسبار → زيادة المسامية">Acidic brine dissolves carbonates & feldspars → increased porosity</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-800 mb-2" data-en="3. Precipitation" data-ar="٣. الترسيب">3. Precipitation</h5>
+                            <p class="text-xs text-gray-600" data-en="New minerals form (siderite, clays) → potential permeability changes" data-ar="تتشكل معادن جديدة (سيديريت، طين) → تغيرات محتملة في النفاذية">New minerals form (siderite, clays) → potential permeability changes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 bg-white p-4 rounded">
+                        <h5 class="font-semibold text-gray-800 mb-2" data-en="Operational Implications:" data-ar="الآثار التشغيلية:">Operational Implications:</h5>
+                        <div class="grid md:grid-cols-2 gap-4 text-xs text-gray-600">
+                            <div>
+                                <p data-en="Positive:" data-ar="إيجابي:"><strong>Positive:</strong></p>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li data-en="Enhanced storage capacity from dissolution" data-ar="تعزيز قدرة التخزين من الإذابة">Enhanced storage capacity from dissolution</li>
+                                    <li data-en="Long-term mineral trapping potential" data-ar="إمكانية الاحتجاز المعدني طويل المدى">Long-term mineral trapping potential</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p data-en="Challenges:" data-ar="التحديات:"><strong>Challenges:</strong></p>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li data-en="Pore throat clogging from precipitation" data-ar="انسداد فتحات المسامات من الترسيب">Pore throat clogging from precipitation</li>
+                                    <li data-en="Reduced injectivity over time" data-ar="انخفاض قابلية الحقن بمرور الوقت">Reduced injectivity over time</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Monitoring & Management -->
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="Comprehensive Monitoring & Modeling" data-ar="المراقبة والنمذجة الشاملة">Comprehensive Monitoring & Modeling</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3" data-en="Monitoring Technologies:" data-ar="تقنيات المراقبة:">Monitoring Technologies:</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2">📡</span>
+                                <span data-en="Seismic Monitoring: Arrays detect micro-earthquakes in real-time" data-ar="المراقبة الزلزالية: المصفوفات تكشف الزلازل الميكروية في الوقت الفعلي"><strong>Seismic Monitoring:</strong> Arrays detect micro-earthquakes in real-time</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-2">🛰️</span>
+                                <span data-en="InSAR Satellite: Millimeter-scale surface deformation detection" data-ar="الأقمار الصناعية InSAR: كشف تشوه السطح على نطاق المليمتر"><strong>InSAR Satellite:</strong> Millimeter-scale surface deformation detection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-600 mr-2">🔬</span>
+                                <span data-en="Geochemical Sampling: Monitor fluid chemistry changes" data-ar="أخذ العينات الجيوكيميائية: مراقبة تغيرات كيمياء السوائل"><strong>Geochemical Sampling:</strong> Monitor fluid chemistry changes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">📊</span>
+                                <span data-en="Pressure Monitoring: Track reservoir pressure evolution" data-ar="مراقبة الضغط: تتبع تطور ضغط الخزان"><strong>Pressure Monitoring:</strong> Track reservoir pressure evolution</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3" data-en="Modeling Approaches:" data-ar="مناهج النمذجة:">Modeling Approaches:</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-red-600 mr-2">⚙️</span>
+                                <span data-en="Geomechanical: Stress changes & fault stability analysis" data-ar="الجيوميكانيكية: تغيرات الإجهاد وتحليل استقرار الصدوع"><strong>Geomechanical:</strong> Stress changes & fault stability analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2">💧</span>
+                                <span data-en="Fluid Flow: CO₂ plume migration & pressure distribution" data-ar="تدفق السوائل: هجرة عمود CO₂ وتوزيع الضغط"><strong>Fluid Flow:</strong> CO₂ plume migration & pressure distribution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-2">🧪</span>
+                                <span data-en="Geochemical: Rock-fluid reactions & mineral changes" data-ar="جيوكيميائية: تفاعلات الصخر والسائل وتغيرات المعادن"><strong>Geochemical:</strong> Rock-fluid reactions & mineral changes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-600 mr-2">🔮</span>
+                                <span data-en="Predictive: Long-term behavior & risk assessment" data-ar="تنبؤية: السلوك طويل المدى وتقييم المخاطر"><strong>Predictive:</strong> Long-term behavior & risk assessment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-white p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2" data-en="Key Findings from Field Experience:" data-ar="النتائج الرئيسية من التجربة الميدانية:">Key Findings from Field Experience:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-700">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600 mb-1">0</div>
+                            <p data-en="Large earthquakes from dedicated CO₂ storage projects" data-ar="زلازل كبيرة من مشاريع تخزين CO₂ المخصصة">Large earthquakes from dedicated CO₂ storage projects</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 mb-1">>99%</div>
+                            <p data-en="Projected retention for well-managed sites over 1,000+ years" data-ar="الاحتفاظ المتوقع للمواقع المُدارة جيداً لأكثر من 1000+ سنة">Projected retention for well-managed sites over 1,000+ years</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-600 mb-1">Millions</div>
+                            <p data-en="Years of natural CO₂ accumulation prove storage viability" data-ar="سنوات من تراكم CO₂ الطبيعي تثبت جدوى التخزين">Years of natural CO₂ accumulation prove storage viability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <h4 class="font-semibold text-blue-800 mb-2" data-en="Scientific Consensus:" data-ar="الإجماع العلمي:">Scientific Consensus:</h4>
+                <p class="text-gray-700 text-sm" data-en="While CO₂ injection can induce seismicity and cause geochemical changes, these risks are well-understood and manageable through proper site selection, pressure management, and comprehensive monitoring. The IPCC concludes with &quot;high confidence&quot; that appropriately selected, designed, and managed storage sites can permanently isolate CO₂ from the atmosphere." data-ar="بينما يمكن لحقن CO₂ أن يحفز الزلزالية ويسبب تغيرات جيوكيميائية، فإن هذه المخاطر مفهومة جيداً وقابلة للإدارة من خلال الاختيار المناسب للموقع وإدارة الضغط والمراقبة الشاملة. تستنتج الهيئة الحكومية الدولية المعنية بتغير المناخ بـ &quot;ثقة عالية&quot; أن مواقع التخزين المختارة والمصممة والمُدارة بشكل مناسب يمكنها عزل CO₂ بشكل دائم عن الغلاف الجوي.">
+                    While CO₂ injection can induce seismicity and cause geochemical changes, these risks are well-understood and manageable through proper site selection, pressure management, and comprehensive monitoring. The IPCC concludes with "high confidence" that appropriately selected, designed, and managed storage sites can permanently isolate CO₂ from the atmosphere.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h3 class="text-xl font-semibold mb-4" data-en="The Global Carbon Capture & Storage Landscape" data-ar="المشهد العالمي لاحتجاز وتخزين الكربون">The Global Carbon Capture & Storage Landscape</h3>
+            <p class="mb-2" data-en="A Strategic Analysis of Technologies, Economics, and Deployment" data-ar="تحليل استراتيجي للتقنيات والاقتصاد والنشر">A Strategic Analysis of Technologies, Economics, and Deployment</p>
+            <p class="text-sm text-gray-400 mb-4" data-en="This comprehensive report synthesizes the latest developments in CCS technology, global deployment status, policy frameworks, and strategic outlook for achieving net-zero emissions." data-ar="يجمع هذا التقرير الشامل أحدث التطورات في تقنية احتجاز وتخزين الكربون، وحالة النشر العالمية، وأطر السياسات، والنظرة الاستراتيجية لتحقيق الانبعاثات الصفرية.">This comprehensive report synthesizes the latest developments in CCS technology, global deployment status, policy frameworks, and strategic outlook for achieving net-zero emissions.</p>
+            
+            <div class="border-t border-gray-700 pt-4 mt-4">
+                <p class="text-sm text-gray-400" data-en="Made by Ahmed Sabri with the help of AI" data-ar="من إعداد أحمد صبري بمساعدة الذكاء الاصطناعي">Made by <span class="text-blue-400 font-semibold">Ahmed Sabri</span> with the help of AI</p>
+                <p class="text-xs text-gray-500 mt-2" data-en="Data sources: Global CCS Institute, International Energy Agency (IEA), IPCC, and academic research • Last updated: September 2025" data-ar="مصادر البيانات: معهد احتجاز وتخزين الكربون العالمي، وكالة الطاقة الدولية، الهيئة الحكومية الدولية المعنية بتغير المناخ، والبحوث الأكاديمية • آخر تحديث: سبتمبر 2025">Data sources: Global CCS Institute, International Energy Agency (IEA), IPCC, and academic research • Last updated: September 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Check if GSAP is loaded
+        if (typeof gsap === 'undefined') {
+            console.error('GSAP is not loaded!');
+        } else {
+            // Initialize GSAP
+            try {
+                gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+                console.log('GSAP plugins registered successfully');
+            } catch (error) {
+                console.error('Failed to register GSAP plugins:', error);
+            }
+        }
+
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('DOM loaded, initializing...');
+            
+            // Arabic Language Toggle Functionality
+            let isArabic = false;
+            const langToggle = document.getElementById('lang-toggle');
+            const langText = document.getElementById('lang-text');
+
+            // Clean language switching function using only HTML data attributes
+            function switchLanguage() {
+                isArabic = !isArabic;
+                
+                // Toggle document direction
+                document.documentElement.setAttribute('dir', isArabic ? 'rtl' : 'ltr');
+                document.documentElement.setAttribute('lang', isArabic ? 'ar' : 'en');
+                
+                // Find all elements with translation data attributes and switch their content
+                const translatableElements = document.querySelectorAll('[data-en][data-ar]');
+                translatableElements.forEach(element => {
+                    const englishText = element.getAttribute('data-en');
+                    const arabicText = element.getAttribute('data-ar');
+                    
+                    if (isArabic) {
+                        element.textContent = arabicText;
+                    } else {
+                        element.textContent = englishText;
+                    }
+                });
+                
+                // Update button text
+                langText.textContent = isArabic ? 'English' : 'عربي';
+                
+                // Save preference
+                localStorage.setItem('preferred-language', isArabic ? 'ar' : 'en');
+                
+                console.log(`Language switched to: ${isArabic ? 'Arabic' : 'English'}`);
+            }
+
+            // Add click event to language toggle button  
+            if (langToggle) {
+                langToggle.addEventListener('click', switchLanguage);
+            }
+
+            // Load saved language preference
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang === 'ar') {
+                switchLanguage();
+            }
+            
+            // Animate elements on scroll
+            gsap.utils.toArray('.fade-in-up').forEach((element, i) => {
+                gsap.from(element, {
+                    duration: 1,
+                    y: 60,
+                    opacity: 0,
+                    delay: i * 0.1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: element,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+            });
+
+            // Animate stat cards
+            gsap.utils.toArray('.stat-card').forEach((card, i) => {
+                gsap.from(card, {
+                    duration: 0.8,
+                    y: 40,
+                    opacity: 0,
+                    delay: i * 0.15,
+                    ease: "back.out(1.7)",
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 90%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+            });
+
+            // Animate process steps
+            gsap.utils.toArray('.process-step').forEach((step, i) => {
+                gsap.from(step, {
+                    duration: 1,
+                    x: i % 2 === 0 ? -60 : 60,
+                    opacity: 0,
+                    delay: i * 0.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: step,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+            });
+
+            // Tab functionality with smooth transitions
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.id.replace('tab-', 'content-');
+                    
+                    // Remove active class from all tabs
+                    tabs.forEach(t => {
+                        t.classList.remove('active-tab');
+                        t.style.transform = '';
+                    });
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active-tab');
+                    
+                    // Hide all content with fade out
+                    tabContents.forEach(content => {
+                        if (content.classList.contains('tab-content')) {
+                            gsap.to(content, {
+                                duration: 0.3,
+                                opacity: 0,
+                                y: 20,
+                                onComplete: () => {
+                                    content.classList.add('hidden');
+                                }
+                            });
+                        }
+                    });
+                    
+                    // Show target content with fade in
+                    setTimeout(() => {
+                        const targetContent = document.getElementById(targetId);
+                        if (targetContent) {
+                            targetContent.classList.remove('hidden');
+                            gsap.fromTo(targetContent, 
+                                { opacity: 0, y: 20 }, 
+                                { duration: 0.5, opacity: 1, y: 0, ease: "power3.out" }
+                            );
+                        }
+                    }, 300);
+                });
+            });
+            
+            // Smooth scroll navigation
+            const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        try {
+                            // Try GSAP scrollTo first
+                            gsap.to(window, {
+                                duration: 1.5,
+                                scrollTo: { y: targetSection.offsetTop - 100, autoKill: true },
+                                ease: "power3.inOut"
+                            });
+                        } catch (error) {
+                            console.warn('GSAP scrollTo failed, using native scrolling:', error);
+                            // Fallback to native smooth scrolling
+                            window.scrollTo({
+                                top: targetSection.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Enhanced chart with better styling and error handling
+            const chartCanvas = document.getElementById('ccsProjectsChart');
+            if (chartCanvas && typeof Chart !== 'undefined') {
+                try {
+                    const ctx = chartCanvas.getContext('2d');
+                    const ccsProjectsChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['In Operation', 'In Construction', 'In Development'],
+                            datasets: [{
+                                label: 'Number of CCS Facilities (Global)',
+                                data: [41, 26, 325],
+                                backgroundColor: [
+                                    '#667eea',
+                                    '#f5576c',
+                                    '#00f2fe'
+                                ],
+                                borderColor: [
+                                    '#667eea',
+                                    '#f5576c',
+                                    '#00f2fe'
+                                ],
+                                borderWidth: 2,
+                                borderRadius: 12,
+                                borderSkipped: false,
+                            }]
+                        },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Global CCS Facility Pipeline (Source: Global CCS Institute 2025)',
+                            font: {
+                                size: 18,
+                                family: 'Space Grotesk',
+                                weight: '600'
+                            },
+                            color: '#2d3748',
+                            padding: 20
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                            titleColor: '#2d3748',
+                            bodyColor: '#4a5568',
+                            borderColor: '#e2e8f0',
+                            borderWidth: 1,
+                            cornerRadius: 12,
+                            displayColors: false,
+                            titleFont: {
+                                family: 'Space Grotesk',
+                                weight: '600'
+                            },
+                            bodyFont: {
+                                family: 'Inter'
+                            },
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.parsed.x} facilities`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Number of Facilities',
+                                font: {
+                                    family: 'Inter',
+                                    size: 14,
+                                    weight: '600'
+                                },
+                                color: '#4a5568'
+                            },
+                            grid: {
+                                color: 'rgba(226, 232, 240, 0.6)',
+                                borderWidth: 0
+                            },
+                            ticks: {
+                                color: '#718096',
+                                font: {
+                                    family: 'Inter'
+                                }
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#2d3748',
+                                font: {
+                                    family: 'Space Grotesk',
+                                    weight: '500',
+                                    size: 13
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    }
+                }
+            });
+            console.log('Chart initialized successfully');
+            
+            } catch (error) {
+                console.error('Failed to initialize chart:', error);
+            }
+            } else {
+                console.warn('Chart canvas not found or Chart.js not loaded');
+            }
+
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.stat-card, .tech-card, .process-step');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    gsap.to(this, {
+                        duration: 0.3,
+                        scale: 1.02,
+                        y: -8,
+                        ease: "power2.out"
+                    });
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    gsap.to(this, {
+                        duration: 0.3,
+                        scale: 1,
+                        y: 0,
+                        ease: "power2.out"
+                    });
+                });
+            });
+
+            // Parallax effect for hero section
+            gsap.to('.hero-bg', {
+                yPercent: -50,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: '.hero-bg',
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+
+            // Counter animation
+            const counters = document.querySelectorAll('.data-point .text-4xl');
+            counters.forEach(counter => {
+                const target = counter.textContent;
+                const number = parseInt(target.replace(/\D/g, ''));
+                
+                ScrollTrigger.create({
+                    trigger: counter,
+                    start: "top 80%",
+                    onEnter: () => {
+                        gsap.from({ val: 0 }, {
+                            duration: 2,
+                            val: number,
+                            ease: "power2.out",
+                            onUpdate: function() {
+                                const currentVal = Math.round(this.targets()[0].val);
+                                if (target.includes('+')) {
+                                    counter.textContent = currentVal + '+';
+                                } else if (target.includes('Mt')) {
+                                    counter.textContent = currentVal + ' Mt';
+                                } else {
+                                    counter.textContent = currentVal;
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+
+            // Mobile JavaScript functionality
+            function initializeMobileFeatures() {
+                const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const mobileMenuClose = document.getElementById('mobile-menu-close');
+                const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+                // Check if elements exist
+                if (!mobileMenuToggle || !mobileMenu || !mobileMenuClose || !mobileMenuOverlay) {
+                    console.warn('Some mobile menu elements not found');
+                    return;
+                }
+
+                // Open mobile menu
+                function openMobileMenu() {
+                    mobileMenu.classList.add('active');
+                    mobileMenuOverlay.classList.add('active');
+                    mobileMenuToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                    // Focus the close button for accessibility
+                    setTimeout(() => mobileMenuClose.focus(), 100);
+                }
+
+                // Close mobile menu
+                function closeMobileMenu() {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuOverlay.classList.remove('active');
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    // Return focus to toggle button
+                    mobileMenuToggle.focus();
+                }
+
+                // Event listeners with error handling
+                try {
+                    mobileMenuToggle.addEventListener('click', openMobileMenu);
+                    mobileMenuClose.addEventListener('click', closeMobileMenu);
+                    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+                    // Close menu when clicking on navigation links
+                    const mobileNavLinks = mobileMenu.querySelectorAll('a');
+                    mobileNavLinks.forEach(link => {
+                        link.addEventListener('click', closeMobileMenu);
+                    });
+
+                    // Handle escape key
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                            closeMobileMenu();
+                        }
+                    });
+
+                    // Handle window resize
+                    window.addEventListener('resize', function() {
+                        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
+                            closeMobileMenu();
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error initializing mobile menu:', error);
+                }
+            }
+
+            // Touch and swipe handling for mobile
+            function initializeTouchHandling() {
+                let startX, startY, distX, distY;
+                const threshold = 150;
+                const restraint = 100;
+
+                document.addEventListener('touchstart', function(e) {
+                    const touchobj = e.changedTouches[0];
+                    startX = touchobj.pageX;
+                    startY = touchobj.pageY;
+                });
+
+                document.addEventListener('touchend', function(e) {
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu) return;
+
+                    const touchobj = e.changedTouches[0];
+                    distX = touchobj.pageX - startX;
+                    distY = touchobj.pageY - startY;
+
+                    // Swipe right to close menu (if menu is open)
+                    if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+                        if (distX < 0 && mobileMenu.classList.contains('active')) {
+                            // Swipe left - close menu
+                            mobileMenu.classList.remove('active');
+                            document.getElementById('mobile-menu-overlay').classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                    }
+                });
+            }
+
+            // Optimize animations for mobile
+            function optimizeForMobile() {
+                const isMobile = window.innerWidth <= 768;
+                const body = document.body;
+
+                if (isMobile) {
+                    body.classList.add('mobile-device');
+                    // Reduce motion for better performance on mobile
+                    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                        body.classList.add('reduced-motion');
+                    }
+                } else {
+                    body.classList.remove('mobile-device');
+                    body.classList.remove('reduced-motion');
+                }
+            }
+
+            // Initialize mobile features
+            initializeMobileFeatures();
+            initializeTouchHandling();
+            optimizeForMobile();
+            
+            // Re-optimize on window resize
+            window.addEventListener('resize', optimizeForMobile);
+
+        }); // End DOMContentLoaded
+
+        // Add some visual feedback for scroll progress
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.documentElement.style.setProperty('--scroll-progress', scrolled + '%');
+        });
+    </script>
+
+</body>
+</html>

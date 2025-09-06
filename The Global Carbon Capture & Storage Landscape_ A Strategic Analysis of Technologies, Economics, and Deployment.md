@@ -1,0 +1,596 @@
+
+
+# **The Global Carbon Capture & Storage Landscape: A Strategic Analysis of Technologies, Economics, and Deployment**
+
+### **Executive Summary**
+
+Carbon Capture and Storage (CCS) represents a suite of technologies essential for achieving global net-zero emissions targets. Positioned at the intersection of industrial necessity and technological challenge, CCS is increasingly recognized not as a panacea for climate change, but as an indispensable tool for decarbonizing sectors where emissions are otherwise unavoidable. This report provides a comprehensive strategic analysis of the entire CCS value chain, from the diverse methods of carbon dioxide (CO2​) capture to the logistical and geological realities of its transport and permanent storage.
+
+The analysis finds that the strategic importance of CCS is underscored by its central role in the climate mitigation scenarios of the International Energy Agency (IEA) and the Intergovernmental Panel on Climate Change (IPCC). It is considered virtually the only viable pathway for deep emissions reductions in heavy industries such as cement, steel, and chemicals, which form the bedrock of the global economy. Furthermore, through Bioenergy with CCS (BECCS) and Direct Air Capture with CCS (DACCS), it offers a mechanism for carbon dioxide removal, a necessary component for balancing residual emissions to achieve net-zero.
+
+Technologically, the field is mature yet evolving. Post-combustion capture remains the leading option for retrofitting the world's vast existing industrial infrastructure, while pre-combustion and oxy-fuel combustion offer higher efficiencies for new-build facilities. Direct Air Capture (DAC) is emerging as a distinct and critical technology for atmospheric carbon removal, though it currently faces significant cost and energy hurdles.
+
+Economically, CCS is not inherently commercial. The high capital and operational costs, particularly for the capture stage, create a significant "commerciality gap." Consequently, the market for CCS is almost entirely a construct of government policy. Incentives, most notably the U.S. Section 45Q tax credit, have been the primary driver behind a recent and dramatic expansion of the global project pipeline. As of early 2025, over 50 million tonnes (Mt) of annual capture capacity are operational, but the pipeline of projects under construction and in development promises a near nine-fold increase to approximately 430 Mt per year by 2030\.
+
+Despite this momentum, significant headwinds remain. The industry faces a critical "valley of death" in converting planned projects into operational realities, with historical projects demonstrating a notable rate of underperformance. Furthermore, navigating the complex challenges of building out vast new pipeline and shipping infrastructure, establishing robust legal frameworks for long-term liability, and securing a "social license to operate" through public acceptance are paramount.
+
+The strategic outlook for CCS is one of conditional optimism. Its future trajectory is less a question of technological possibility and more a function of sustained policy commitment, successful project execution, and the evolution of a new business model centered on collaborative industrial hubs and shared infrastructure. This report concludes with targeted recommendations for policymakers, industry, and investors, emphasizing the need for stable, long-term policy, a shift toward collaborative development models, and a focus on transparent, performance-based deployment to ensure CCS can fulfill its critical role in the transition to a net-zero economy.
+
+## **I. The Imperative for Carbon Capture and Storage (CCS)**
+
+The global effort to mitigate climate change requires a profound transformation of the world's energy and industrial systems. Within the portfolio of necessary technologies, Carbon Capture and Storage (CCS) has emerged as a critical, and in some cases, indispensable component. This section establishes the fundamental definition of CCS, outlines its strategic importance in credible decarbonization pathways, and details its unique role in addressing emissions from the most challenging industrial sectors, as validated by leading international climate and energy bodies.
+
+### **A. Defining the CCS Value Chain: From Capture to Permanent Sequestration**
+
+Carbon Capture, Utilisation, and Storage (CCUS) is a broad term for a suite of technologies designed to prevent large quantities of carbon dioxide (CO2​) from being released into the atmosphere.1 The process can be applied to large industrial point sources, such as power plants and manufacturing facilities, or can be used to remove existing
+
+CO2​ directly from the ambient air. The value chain consists of a sequence of three distinct stages 2:
+
+1. **Capture:** This initial stage involves the separation of CO2​ from other gases. In an industrial or power generation context, this means isolating CO2​ from the facility's exhaust or process streams. A variety of technological approaches exist to accomplish this, each with different applications and cost structures.1  
+2. **Transport:** Once captured, the CO2​ is purified and compressed into a dense, fluid-like state. It is then transported from the point of capture to a suitable storage site. This is typically accomplished via dedicated pipelines or, for long-distance or overseas transport, by ship.2  
+3. **Storage:** The final stage involves injecting the transported CO2​ into deep, underground geological formations for permanent sequestration. These formations are carefully selected for their ability to contain the CO2​ securely for geological timescales, effectively isolating it from the atmosphere.2
+
+It is important to distinguish between CCS, where the primary goal is permanent storage, and Carbon Capture and Utilisation (CCU), where the captured CO2​ is used as a feedstock for products like fuels, chemicals, or building materials. While CCU offers potential revenue streams, the current market for such products is vastly smaller than the scale of emissions that must be abated to meet climate targets. The market is not expected to grow substantially enough in the short term to absorb the necessary volumes of captured CO2​. Therefore, while utilization has a role, permanent geological storage remains the primary focus for large-scale climate mitigation.1
+
+### **B. The Critical Role in Global Decarbonization Pathways**
+
+The scientific and policy consensus is clear: CCS is a foundational element of the global strategy to combat climate change. The International Energy Agency (IEA), a leading authority on global energy systems, has stated that achieving net-zero emissions will be "virtually impossible" without the widespread deployment of CCUS technologies.5 This assertion is based on the recognition that CCS is one of the few proven, scalable technologies capable of delivering the deep emissions reductions required from sectors that are central to the modern economy but are inherently difficult to decarbonize.5
+
+Beyond direct emissions abatement, CCS contributes to the overall stability and affordability of the energy transition. By enabling the continued operation of dispatchable power sources, such as natural gas-fired power plants equipped with capture technology, CCS can provide crucial grid stability and flexibility to complement the intermittency of renewable energy sources like wind and solar. This creates a more diverse and resilient energy supply, enhancing energy security—a growing priority for governments worldwide.1 The ability to retrofit existing infrastructure with CCS also offers a cost-effective alternative to the premature retirement of long-lived assets, avoiding significant economic losses.6
+
+### **C. Targeting Hard-to-Abate Sectors: The Unavoidable Solution**
+
+The most compelling justification for the large-scale deployment of CCS lies in its application to "hard-to-abate" industrial sectors. These industries, including manufacturing and power generation, are characterized by immense energy consumption and, in some cases, process emissions that are not related to fuel combustion. These factors make decarbonization through electrification or fuel switching exceptionally difficult or prohibitively expensive.5 CCS offers a direct and often most cost-effective solution for these critical sectors.1
+
+* **Cement Production:** This industry is a prime example of the necessity of CCS. Nearly 7% of the world's emissions originate from cement production, and a significant portion of these emissions—often over half—are released from the chemical reaction of calcination (heating limestone to produce clinker), not from burning fuel. As such, changing the fuel source cannot eliminate these emissions. CCS is currently considered "virtually the only" known technological pathway to achieve the deep emissions cuts required to decarbonize the cement industry.1  
+* **Iron, Steel, and Chemicals:** These foundational industries also face significant decarbonization challenges. In many regions, CCS represents the most cost-effective option for achieving the necessary deep emissions reductions.1 For steel production, for instance, routes incorporating CCS are often more technologically mature and less costly than alternatives based on green hydrogen.6
+
+The scale of this challenge is immense. Industrial sectors like power generation and manufacturing are collectively responsible for over 70% of all global energy-related emissions, making their decarbonization a prerequisite for any successful climate strategy.5
+
+### **D. CCS as a Pillar of Net-Zero Scenarios by the IEA and IPCC**
+
+The strategic importance of CCS is not merely theoretical; it is a core assumption embedded within the world's most authoritative climate and energy models. Both the IEA and the Intergovernmental Panel on Climate Change (IPCC) rely on significant contributions from CCS in their modeled pathways to limit global warming.
+
+In the IEA's Sustainable Development Scenario, which charts a course to net-zero emissions by 2070, CCUS technologies are projected to account for nearly 15% of the total cumulative emissions reductions. Under this scenario, the annual volume of captured CO2​ grows to a massive 10.4 gigatonnes (Gt) by 2070\.7
+
+Similarly, the IPCC's pathways to limit global warming to 1.5°C consistently feature CCS as an essential mitigation tool. The technology is deemed "unavoidable" if net-zero is to be achieved, as it is required to counterbalance residual emissions from sectors that cannot be fully decarbonized by other means.9
+
+A crucial aspect of these scenarios is the distinction between two fundamental roles for CCS technology. The first is traditional emissions *mitigation*—capturing CO2​ at the point of emission from industrial facilities and power plants to prevent it from entering the atmosphere.1 The second, and increasingly critical, role is active
+
+*carbon dioxide removal* (CDR)—removing historical CO2​ that is already in the atmosphere. This is achieved through technologies like Bioenergy with Carbon Capture and Storage (BECCS), where biomass is used as a fuel and the resulting emissions are captured, and Direct Air Capture with Carbon Capture and Storage (DACCS), which uses engineered systems to filter CO2​ directly from the air.1 This dual capability to both prevent new emissions and clean up past ones makes CCS a uniquely versatile and powerful tool in the climate change arsenal. These two functions will likely require different policy frameworks and will operate under different economic models, but a comprehensive strategy must address both pillars to achieve the "net" in net-zero.
+
+## **II. A Technical Deep Dive: Carbon Capture Methodologies**
+
+The capture of carbon dioxide is the most technologically complex and costly stage of the CCS value chain. A range of methodologies has been developed, each tailored to different industrial processes, fuel types, and applications. These can be broadly categorized into two main groups: point source capture, which intercepts emissions as they are produced, and carbon dioxide removal, which extracts legacy emissions directly from the atmosphere. Understanding the technical nuances, advantages, and limitations of each approach is critical for strategic deployment.
+
+### **A. Point Source Capture: Intercepting Emissions at the Source**
+
+Point source capture technologies are designed to be integrated with large, stationary sources of CO2​ emissions, such as power stations, cement plants, and refineries. There are three primary approaches.
+
+#### **1\. Post-Combustion Capture: The Leading Retrofit Solution**
+
+Post-combustion capture is the most mature and widely deployed capture methodology. Its defining characteristic is that it separates CO2​ from the flue gas *after* a fuel has been burned in a conventional combustion process using air.1 This makes it particularly well-suited for retrofitting onto the vast global fleet of existing power plants and industrial facilities, providing a crucial pathway to decarbonize long-lived assets without requiring their premature retirement.14
+
+The typical process involves routing the flue gas, which has a low CO2​ concentration (typically 3-4% for natural gas plants and 13-15% for coal plants), into a large absorber column.13 Inside the column, the gas comes into contact with a liquid chemical solvent, most commonly an amine-based solution, which selectively binds with the
+
+CO2​ molecules.1 The resulting "rich" solvent, now laden with
+
+CO2​, is then pumped to a second column, known as a stripper or regenerator. Here, the solution is heated, typically with steam, which breaks the chemical bond and releases the CO2​ as a highly concentrated stream, ready for compression. The "lean" solvent is then cooled and recycled back to the absorber to capture more CO2​.16
+
+The primary technical challenges of this method stem from the thermodynamics of capturing a dilute gas from a large volume of exhaust at low (atmospheric) pressure. This process is energy-intensive, creating a significant "energy penalty" that reduces the net output of the host facility.13 Additionally, impurities in the flue gas, such as sulfur oxides (
+
+SOx​) and nitrogen oxides (NOx​), can react with and degrade the amine solvents, requiring a pre-treatment or gas polishing step.13 Despite these challenges, modern post-combustion systems can achieve high capture rates, typically over 90%, with rates exceeding 95% being technologically feasible.1 The primary trade-off is economic; for instance, adding a state-of-the-art post-combustion capture unit to a new supercritical pulverized coal power plant was estimated to increase the levelized cost of electricity by 66%.13 Several commercial solvent systems are available, such as BASF's OASE® blue technology, which is often deployed in partnership with major engineering firms like Linde.16
+
+#### **2\. Pre-Combustion Capture: Creating a Hydrogen Pathway**
+
+In contrast to post-combustion methods, pre-combustion capture removes the carbon from the fuel source *before* it is burned.1 This approach is fundamentally integrated into the design of a facility and is not suitable for retrofitting existing conventional plants.17 It is a core technology for the production of low-carbon or "blue" hydrogen.
+
+The process begins with a primary feedstock, such as natural gas or coal. This feedstock undergoes a chemical transformation process, typically gasification or steam methane reforming (SMR), where it reacts with steam and oxygen or air under high temperature and pressure.18 This reaction produces a mixture of gases known as synthesis gas, or "syngas," which is primarily composed of carbon monoxide (
+
+CO) and hydrogen (H2​).17 The syngas is then passed into a "water-gas-shift" reactor. In this step, the
+
+CO reacts with steam (H2​O) in the presence of a catalyst to produce additional H2​ and convert the carbon into CO2​.13
+
+The key advantage of this method lies in the conditions under which the CO2​ is separated. The resulting gas stream has a much higher concentration of CO2​ (ranging from 15-50%) and is at a significantly higher pressure compared to the flue gas in a post-combustion system.13 This high partial pressure of
+
+CO2​ makes the separation process more thermodynamically efficient and less energy-intensive. It allows for the use of physical solvents (such as Selexol or Rectisol), which dissolve the CO2​ under pressure and release it when the pressure is reduced, rather than the more energy-intensive, heat-based regeneration required for chemical solvents.19 After the
+
+CO2​ is captured, the remaining hydrogen-rich fuel can be combusted in a gas turbine to generate electricity with near-zero carbon emissions.17
+
+While the capture step itself can be less expensive than in post-combustion systems, the overall plant is more complex and has a higher upfront capital cost due to the need for the gasifier or reformer and associated equipment.17 For an Integrated Gasification Combined Cycle (IGCC) power plant, adding pre-combustion capture was estimated to increase the cost of electricity by approximately 37%.13
+
+#### **3\. Oxy-Fuel Combustion: A Redesigned Combustion Environment**
+
+Oxy-fuel combustion represents a third approach that redesigns the combustion process itself to facilitate easy carbon capture.1 Instead of burning fuel in ambient air (which is \~78% nitrogen), the fuel is combusted in a mixture of nearly pure oxygen and recycled flue gas.20
+
+This process requires a cryogenic Air Separation Unit (ASU) to separate oxygen from the nitrogen and other components of the air before combustion.20 The fuel is then burned in this oxygen-rich environment. To control the extremely high temperatures that would result from burning in pure oxygen, a portion of the resulting flue gas is recycled back into the combustor to act as a thermal moderator, mimicking the heat transfer properties of nitrogen in a conventional boiler.13 The result is a flue gas stream that is overwhelmingly composed of just two components:
+
+CO2​ and water vapor (H2​O).20 Capturing the
+
+CO2​ is then a relatively simple matter of cooling the flue gas to condense the water vapor, leaving a highly concentrated stream of nearly pure CO2​.13
+
+This method offers several distinct advantages. It produces a high-purity CO2​ stream, which simplifies processing and can achieve capture rates approaching 100%.21 It also provides significant co-benefits, most notably a 60-70% reduction in the formation of
+
+NOx​ compared to air-fired combustion, as the primary source of nitrogen has been removed.13 The main technological and economic challenge is the ASU, which is energy-intensive and represents a significant capital and operational cost.20 The technology can be applied to both new-build plants and, with significant modifications, to existing facilities.13 Its viability has been demonstrated at pilot scale, such as at the Schwarze Pumpe facility in Germany.22
+
+The choice between these point source capture technologies presents a fundamental strategic dilemma. Post-combustion capture is the only practical solution for decarbonizing the vast majority of the world's *existing* industrial and power infrastructure. Its ability to be retrofitted is its greatest strength. In contrast, pre-combustion and oxy-fuel systems, while often more efficient, are primarily options for *new-build* facilities. They require a long-term capital investment cycle and a commitment to a fundamentally different plant design. This reality creates a two-tiered decarbonization pathway: near-term progress will likely be dominated by post-combustion retrofits, while longer-term, more deeply integrated decarbonization will depend on the construction of new facilities designed from the ground up with pre-combustion or oxy-fuel technologies. Effective policy must therefore be designed to support both of these parallel tracks.
+
+### **B. Carbon Dioxide Removal (CDR): Capturing Legacy Emissions**
+
+Distinct from point source capture, Carbon Dioxide Removal technologies are designed to address historical and diffuse emissions by extracting CO2​ directly from the ambient atmosphere.
+
+#### **1\. Direct Air Capture (DAC): Engineering CO₂ Out of the Atmosphere**
+
+Direct Air Capture (DAC) is a technology that functions like an industrial-scale "air filter" for the planet. Unlike point source methods that must be co-located with an emissions source, DAC plants can be built anywhere, allowing them to address emissions from dispersed sources like transportation and agriculture, as well as the legacy burden of historical emissions.12
+
+The process involves using very large fans to move enormous volumes of air through a system where a chemical medium selectively captures the CO2​, which is present in the atmosphere at a very low concentration of about 0.04% (or \~420 parts per million).1 There are two leading technological approaches:
+
+* **Liquid DAC (L-DAC):** This method uses a liquid chemical solution, such as aqueous potassium hydroxide (KOH), which flows over a structured packing material to maximize air contact.25 The  
+  KOH solution reacts with the CO2​ to form a carbonate salt. This solution is then processed through a series of high-temperature steps (between 300°C and 900°C) to release the captured CO2​ in a pure stream and regenerate the original chemical solvent for reuse.12  
+* **Solid DAC (S-DAC):** This approach utilizes solid sorbent materials that have a high affinity for CO2​. Air is passed over these materials, and the CO2​ molecules adhere to their surface (adsorption). To release the CO2​, the sorbent is heated to a much lower temperature than in liquid systems (typically 80-120°C) and/or placed under a vacuum.12
+
+The fundamental challenge for DAC is the immense amount of energy required to capture such a dilute gas. This makes DAC the most expensive form of carbon capture currently available.1 Cost estimates vary widely, from around $152 to over $600 per ton of
+
+CO2​ removed, with a widely cited target of reducing costs to below $100 per ton to make gigaton-scale deployment economically feasible.12
+
+DAC operates on a fundamentally different economic model than point source capture. It is not an emissions abatement add-on to an existing industrial process; it is a service that produces a new commodity: a ton of verifiably removed atmospheric CO2​. Its revenue is derived from selling carbon removal credits in voluntary or compliance markets, or from using the captured CO2​ to produce high-value products like synthetic aviation fuels.12 As of early 2024, there were 27 commissioned DAC plants globally, with a combined capture capacity of nearly 0.01 Mt per year, and a pipeline of roughly 130 planned or operating facilities.12 DAC's unique role is to provide the "net" in net-zero, addressing the emissions that are impossible to eliminate at the source.
+
+| Technology | Process Description | CO₂ Concentration (Input) | Typical Capture Rate (%) | Technology Readiness Level (TRL) | Primary Application (Retrofit/New-Build) | Estimated Cost Range ($/tonne CO₂) | Key Advantages | Key Disadvantages |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **Post-Combustion** | Chemical solvent scrubs CO2​ from flue gas after combustion. | 3-15% | \>90% | Commercial (TRL 8-9) | Primarily Retrofit | $49 \- 150 | Can be fitted to existing plants; most mature technology. | High energy penalty; large equipment footprint; solvent degradation. |
+| **Pre-Combustion** | Carbon is removed from fuel before combustion, producing H2​. | 15-50% | \>90% | Commercial (TRL 8-9) | New-Build | $37 (as % increase in COE) | Higher efficiency capture; produces clean hydrogen fuel. | High upfront capital cost; not suitable for retrofit; complex process. |
+| **Oxy-Fuel Combustion** | Fuel is burned in pure oxygen, producing a high-purity CO2​ stream. | \~90% (dry basis) | \>95% | Demonstration (TRL 6-7) | New-Build or Major Retrofit | N/A | Very high capture rate; simplified CO2​ separation; reduced NOx​. | High cost and energy use of Air Separation Unit (ASU). |
+| **Direct Air Capture (DAC)** | Fans move ambient air over sorbents/solvents to extract CO2​. | \~0.04% | N/A | Early Commercial (TRL 6-8) | New-Build | $152 \- 600+ | Location independent; can remove historical emissions; addresses diffuse sources. | Extremely high energy consumption and cost due to dilute CO2​. |
+
+Table 1: Comparative Analysis of Carbon Capture Technologies. This table synthesizes key characteristics of the four main capture pathways, providing a comparative overview for strategic decision-making. Data compiled from multiple sources.1
+
+## **III. The Logistics of Decarbonization: CO₂ Transport and Storage**
+
+Once carbon dioxide is captured, it must be safely transported and permanently stored to complete the CCS value chain. This mid-stream and down-stream infrastructure is as critical as the capture technology itself. This section details the methods for transporting large volumes of CO2​ and the geological formations used for its permanent sequestration, with a focus on technical requirements, safety, and the mechanisms that ensure long-term storage security.
+
+### **A. Transport Infrastructure: The Arteries of the CCS Network**
+
+The transport of captured CO2​ requires a robust and reliable infrastructure network capable of moving millions of tonnes of material annually. Two primary modes of transport have emerged as the most viable options for large-scale deployment.
+
+#### **1\. Pipelines: The Backbone of Onshore CCS**
+
+Pipelines are the established and most common method for transporting the vast quantities of CO2​ necessary for meaningful climate mitigation and are expected to remain the backbone of the industry.4 The United States has considerable experience in this area, with an existing network of approximately 50 dedicated
+
+CO2​ pipelines that transport around 68 million tonnes per year, historically developed to support the Enhanced Oil Recovery (EOR) industry.4
+
+For efficient transport, captured CO2​ is compressed into a supercritical or dense phase, where it exhibits the density of a liquid but the viscosity of a gas, allowing it to flow easily through pipelines.3 These pipelines are typically constructed from thick carbon steel to withstand the high pressures involved.8 However, building and operating this infrastructure presents several technical challenges. A primary concern is corrosion, which can occur if the
+
+CO2​ stream contains water, forming carbonic acid that can degrade the pipeline material.27 Therefore, managing the purity of the
+
+CO2​ stream and ensuring it is sufficiently dehydrated is critical. Other challenges include ensuring fracture control in the pipeline design and managing flow assurance to prevent phase changes or blockages.27
+
+Beyond the technical hurdles, the social and regulatory aspects of pipeline development are significant. Obtaining the necessary permits and securing public consent, or a "social license to operate," for new pipeline corridors can be a lengthy and contentious process.27 The scale of the required build-out is staggering; to meet mid-century climate goals, the global
+
+CO2​ pipeline network may need to be up to 100 times larger than what exists today.4 To manage this expansion efficiently, the industry is moving toward a "hub and cluster" model. This involves creating shared "backbone" pipelines that connect multiple industrial emitters in a region to one or more storage sites, thereby leveraging economies of scale and reducing the cost and complexity for individual facilities.4
+
+#### **2\. Maritime Transport: Enabling Cross-Border and Offshore Storage**
+
+For regions where pipelines are impractical, such as for crossing large bodies of water or for connecting dispersed sources to offshore storage sites, maritime transport by ship offers a flexible and economically viable alternative, particularly for distances greater than 300 km.31 Shipping is a key enabler for establishing regional and international CCS value chains, allowing countries with limited storage capacity to export their captured
+
+CO2​ to regions with ample geological resources.31
+
+In this mode, CO2​ is liquefied by cooling it to low temperatures and keeping it under high pressure, similar to the transport of Liquefied Petroleum Gas (LPG).4 It is then loaded onto specially designed carriers for transport. While small-scale shipping of food-grade liquid
+
+CO2​ is a mature industry in Europe, the development of a global fleet of large-scale carriers for CCS is still in its early stages.4 Landmark projects like the Northern Lights initiative in Norway are pioneering this model. Northern Lights will transport liquefied
+
+CO2​ by ship from industrial facilities in mainland Europe to a receiving terminal on the Norwegian coast, from where it will be piped to a permanent storage site beneath the North Sea.33 The development of this new class of vessels requires the qualification of new cargo containment systems and the establishment of international standards for safe loading, transport, and offloading operations.32
+
+### **B. Geological Sequestration: Permanent Disposal of CO₂**
+
+The ultimate goal of CCS is to permanently isolate captured CO2​ from the atmosphere. This is achieved by injecting it into deep underground rock formations that have been carefully selected for their ability to securely contain the CO2​ for millennia.
+
+#### **1\. Site Requirements and Trapping Mechanisms**
+
+A suitable geological storage site must have two key features: a porous and permeable reservoir rock into which the CO2​ can be injected, and an overlying, impermeable layer of rock, known as a "caprock" or seal, that acts as a barrier to prevent the upward migration of the CO2​.3 The reservoir is typically located at depths greater than one kilometer, where the ambient pressure and temperature keep the injected
+
+CO2​ in a dense, supercritical state, maximizing the storage efficiency.1
+
+The long-term security of geological storage is not reliant on a single barrier but is ensured by a combination of four distinct trapping mechanisms that evolve and strengthen over time 35:
+
+1. **Structural Trapping:** This is the most immediate and primary trapping mechanism. The buoyant supercritical CO2​ rises through the porous reservoir rock until it is physically trapped beneath the impermeable caprock, much like natural gas and oil have been held in reservoirs for millions of years.3  
+2. **Residual (Capillary) Trapping:** As the injected CO2​ plume spreads through the reservoir, it displaces the native fluids (typically brine). When the injection stops or the plume moves on, a portion of the CO2​ is left behind as disconnected, microscopic droplets trapped within the pore spaces of the rock by capillary forces. This residual CO2​ is effectively immobile.3  
+3. **Solubility (Dissolution) Trapping:** Over time (decades to centuries), the CO2​ begins to dissolve into the saline water, or brine, that naturally saturates the reservoir rock. The resulting CO2​-rich brine is slightly denser than the surrounding brine, causing it to slowly sink towards the bottom of the formation, which further enhances storage security by eliminating the buoyant force that drives upward migration.36  
+4. **Mineral Trapping:** This is the most permanent and secure form of storage. Over very long timescales (hundreds to thousands of years), the dissolved CO2​ forms a weak carbonic acid, which slowly reacts with certain minerals in the reservoir rock. This geochemical reaction forms new, solid, and stable carbonate minerals, such as calcite, effectively locking the carbon into the rock matrix itself.36
+
+This progression from physical to chemical trapping means that the security of a storage site actually increases over time. The risk of leakage is highest during the operational injection phase and decreases significantly in the centuries and millennia that follow as the CO2​ becomes progressively less mobile and more permanently bound within the geology. This "security over time" paradigm is a fundamental principle of geological storage and has profound implications for long-term monitoring, risk assessment, and regulatory frameworks.
+
+#### **2\. Primary Storage Formations**
+
+Several types of geological formations are suitable for CO2​ sequestration, with two being the primary targets for large-scale deployment:
+
+* **Depleted Oil and Gas Reservoirs:** These formations are highly attractive for early CCS projects. Their geology, including the properties of the reservoir and the integrity of the caprock, is exceptionally well-understood from decades of hydrocarbon exploration and production.39 The fact that they have successfully trapped buoyant fluids like oil and natural gas for millions of years provides a high degree of confidence in their ability to securely contain  
+  CO2​.37 Furthermore, existing infrastructure, such as wells and pipelines, can sometimes be repurposed, potentially reducing project costs.39 However, their total storage capacity is ultimately limited by the volume of the original hydrocarbon resource and is smaller than that of saline aquifers.39  
+* **Deep Saline Aquifers (Formations):** These are vast, deep underground layers of porous rock that are saturated with highly saline water (brine) that is not suitable for drinking or agriculture.3 Saline aquifers are geographically widespread and represent the largest potential storage resource for  
+  CO2​ globally, making them the primary target for the long-term, large-scale deployment of CCS needed to meet climate goals.39 A key challenge is that they are often less characterized than oil and gas fields, requiring significant upfront investment in geological surveys and site assessment to confirm their suitability.39
+
+Other formations, including unmineable coal seams and basalt formations, are also being investigated. Basalt formations are of particular interest because their reactive mineralogy can lead to rapid mineral trapping, potentially converting the injected CO2​ into solid carbonate rock on a much faster timescale than in sedimentary reservoirs.3
+
+#### **3\. Mineral Carbonation: An Alternative Approach to Storage**
+
+Mineral carbonation is an engineered storage process that mimics and vastly accelerates the natural process of rock weathering. It involves reacting captured CO2​ with minerals that are rich in calcium and magnesium, such as olivine and serpentine, or with alkaline industrial wastes like steel slag and fly ash.44 This chemical reaction forms solid, stable carbonate minerals, permanently locking the
+
+CO2​ into a solid, benign form.48
+
+The primary advantage of mineral carbonation is its permanence and inherent safety; because the CO2​ is chemically converted to a solid, the risk of leakage is eliminated.45 However, the natural carbonation reaction is extremely slow. To make it viable on an industrial timescale, the process requires significant energy input for pre-treatment of the minerals (e.g., fine grinding to increase surface area) and often involves high temperatures and pressures to accelerate the reaction kinetics.47 This results in a very high energy penalty and makes the process currently much more expensive than geological sequestration, with costs estimated in the range of $50 to $300 per ton of
+
+CO2​ stored.46 Due to these high costs, its application remains limited.
+
+### **C. Long-Term Fate and Security: Ensuring Permanence**
+
+The long-term security of geological storage is the cornerstone of CCS. Extensive research, including the study of natural analogues—naturally occurring underground accumulations of CO2​ that have been stable for millions of years—provides strong evidence for the viability of this approach.38 Based on this body of evidence, the IPCC has concluded with "high confidence" that if a storage site is appropriately selected, designed, and managed, the injected
+
+CO2​ can be permanently isolated from the atmosphere. Well-managed sites are projected to retain over 99% of the stored CO2​ for more than 1,000 years.51 To ensure this outcome, all CCS projects are required to implement rigorous and long-term Measurement, Monitoring, and Verification (MMV) plans. These plans use a variety of techniques, including seismic imaging and well-based monitoring, to track the underground movement of the
+
+CO2​ plume, monitor reservoir pressure, and confirm the ongoing integrity of the caprock and wells.50
+
+A significant dynamic in the evolution of the CCS industry has been its relationship with Enhanced Oil Recovery (EOR). For decades, the primary use for captured CO2​ in the U.S. was for injection into mature oil fields to increase production.53 This provided a crucial revenue stream that supported the development of early capture projects and transport infrastructure. However, this symbiotic relationship creates a fundamental tension, as using
+
+CO2​ to produce more fossil fuels is at odds with the ultimate climate goals of CCS. A critical shift is now underway. Driven by climate-focused policies that provide greater incentives for dedicated storage, the majority of new projects in the global pipeline are now targeting permanent sequestration in saline aquifers rather than use in EOR.1 This marks an important maturation of the industry, as it decouples from fossil fuel production and reorients itself as a pure-play climate mitigation sector. This transition, however, also removes a key historical revenue source, placing even greater importance on the stability and value of policy-driven incentives.
+
+## **IV. The Financial and Economic Realities of CCS**
+
+The deployment of Carbon Capture and Storage at a scale relevant to climate change is fundamentally an economic challenge. While the technology is proven, its high costs present a formidable barrier to widespread adoption. This section dissects the complex cost structure of CCS projects, explains the resulting "commerciality gap" that necessitates policy support, and explores the pathways through which projects can achieve financial viability, as well as the broader economic impacts on industry and society.
+
+### **A. Deconstructing Project Costs: Capital and Operational Expenditures**
+
+The total cost of a CCS project is a composite of expenses across the value chain, but it is overwhelmingly dominated by the initial capture stage.
+
+* **Dominance of Capture Costs:** The process of separating CO2​ from other gases is both capital-intensive and energy-intensive. It requires significant investment in large-scale industrial equipment such as absorber and stripper columns, compressors, and heat exchangers. Consequently, the capture stage typically accounts for 75% or more of the total lifetime cost of a CCS project.56  
+* **Cost Variation by Source:** The single most important determinant of capture cost is the concentration of CO2​ in the gas stream being treated. This leads to a wide and predictable variation in costs across different industries 56:  
+  * **High-Purity Sources:** Industrial processes that produce a nearly pure stream of CO2​ as a byproduct, such as ethanol fermentation and ammonia synthesis, have the lowest capture costs. These costs are estimated to be in the range of **$22 to $36 per ton of CO2​**, as the separation work required is minimal.56  
+  * **Dilute Sources:** In contrast, applications where CO2​ is a dilute component of a large exhaust stream are significantly more expensive. For a natural gas power plant, where the flue gas may be only 4% CO2​, costs can range from **$49 to $150 per ton**. For coal-fired power plants (around 15% CO2​) and cement manufacturing, costs can span a wide range, from **$20 to as high as $205 per ton**, depending on the specific technology and facility.56  
+* **Transport and Storage Costs:** These costs are highly dependent on the specific project's geography, including the distance from the source to the storage site and whether the infrastructure is onshore or offshore. However, they generally constitute a much smaller fraction of the total cost than capture. In the United States, onshore pipeline transport costs are typically in the range of **$2 to $14 per ton**, and a significant portion of the country's onshore geological storage capacity is estimated to be available for **less than $10 per ton**.6 Offshore transport and storage are generally more expensive.58  
+* **Operational Expenditures (OPEX):** Beyond the initial capital investment, ongoing operational costs are a critical factor in a project's long-term financial health. These include costs for energy to run the capture plant, maintenance, and monitoring. Analysis of two operational commercial-scale projects in Alberta, Canada, revealed a troubling trend: operating costs were found to be growing at twice the rate of the volume of CO2​ being captured. This indicates that real-world operational challenges can lead to costs that exceed initial projections, posing a threat to the long-term profitability and sustainability of projects.60
+
+### **B. The Commerciality Gap: Why Subsidies are Essential**
+
+Under current market conditions, CCS is not a commercially profitable enterprise. There is a fundamental and significant gap between the high cost of implementing CCS and the direct financial value it generates.56 In a market without a price on carbon emissions, a company has no financial incentive to incur the substantial expense of capturing and storing a waste product.61
+
+Even in regions with carbon markets, such as the European Union's Emissions Trading System (ETS), the price of carbon credits has historically been too low to cover the full cost of CCS for most applications.61 Economic models suggest that significant deployment of CCS only begins to occur when carbon prices consistently reach a threshold of approximately
+
+**$25 to $30 per ton of CO2​**, and much higher prices are needed to justify investment in more expensive applications like power generation or cement.57
+
+This "commerciality gap" means that the economic viability of nearly every CCS project currently in operation or development is heavily dependent on direct government financial support.59 This reality is openly acknowledged by project developers. For example, the Pathways Alliance, a consortium of major Canadian oil sands producers, has stated that its proposed C$16.5 billion CCS hub project is contingent on receiving substantial government subsidies, citing the need for support levels competitive with those offered in other countries.59
+
+### **C. Pathways to Viability: Bridging the Gap**
+
+Several strategies are being pursued to bridge the commerciality gap and make CCS projects financially viable.
+
+* **Government Incentives:** As will be detailed in the following section, government policies that provide direct financial value for captured and stored carbon are the single most important driver of CCS development today. Tax credits, such as the Section 45Q program in the United States, are the primary mechanism currently making projects bankable.56  
+* **Cost Reduction through Innovation and Scale:** Proponents expect that, like wind and solar power, the cost of CCS will decline over time as the technology matures. This cost reduction is expected to be driven by several factors: technological learning from early projects, the development of more efficient capture solvents and processes, economies of scale achieved through larger facilities, and reduced financing costs as the technology becomes more established.6 Evidence of this learning curve already exists; the capture cost at the Petra Nova coal power plant in the U.S. was 35% lower than at the first-of-a-kind Boundary Dam facility in Canada, which came online just a few years earlier.6 However, some analyses have concluded that this learning rate has been disappointingly slow to date, particularly given that some CCS technologies have been in use for decades.55  
+* **Hub and Cluster Models:** A powerful strategy for reducing costs is the development of shared infrastructure. In a hub model, a common pipeline network and one or more storage sites are developed to serve multiple industrial emitters in a geographic cluster.4 This approach spreads the high capital cost of the transport and storage infrastructure across many users, significantly lowering the per-ton cost and the barrier to entry for individual companies. This "CCS-as-a-service" model, where a specialized company manages the transport and storage, is becoming a dominant strategy for new developments.30  
+* **CO₂ Utilization (CCU):** Another pathway to improve project economics is to create value-added products from the captured CO2​, generating a revenue stream. Promising CCU applications include the production of synthetic fuels (e-fuels), chemicals, and building materials.30 The mineralization of  
+  CO2​ into carbonates that can be incorporated into concrete is a particularly notable example, offering a pathway for permanent storage within the built environment.30 While these markets are currently small relative to the scale of emissions that need to be managed, they represent a potential source of future revenue.1
+
+### **D. The Broader Economic Impact**
+
+The economic analysis of CCS extends beyond the costs of individual projects to its broader impact on industrial competitiveness and the economy. A common critique frames CCS as simply a high "cost." However, this perspective is incomplete. For hard-to-abate sectors, the relevant economic comparison is not between CCS and doing nothing, but between CCS and other, often even more expensive, decarbonization options.
+
+* **Maintaining Industrial Competitiveness:** In industries like steel and chemicals, CCS is frequently the least-cost pathway to deep decarbonization. For example, adding CCS to a steel mill is estimated to increase production costs by less than 10%, whereas switching to a production route based on green hydrogen could increase costs by 35% to 70%.6 In this context, investing in CCS is not merely an environmental expenditure but a strategic investment in maintaining the long-term competitiveness of these essential industries in a global economy that is increasingly carbon-constrained.  
+* **Avoiding Stranded Assets:** The global fleet of industrial facilities and power plants represents trillions of dollars in capital investment, with many assets having decades of remaining operational life. Retrofitting these facilities with CCS allows them to continue operating in a low-carbon world, avoiding the enormous economic cost and disruption associated with their premature retirement and replacement.6  
+* **Job Creation:** The construction and operation of a large-scale CCS industry will create significant economic activity and employment. In the United States, the Direct Air Capture industry alone is projected to have the potential to create at least 300,000 new jobs in construction, engineering, and manufacturing at full scale.23
+
+The clear two-tiered cost structure of CCS—with a low-cost tier for high-purity sources and a high-cost tier for dilute sources—has profound implications for policy. A uniform, one-size-fits-all subsidy may be inefficient, potentially over-subsidizing the "low-hanging fruit" of ethanol and ammonia plants while remaining insufficient to unlock investment in the more challenging but critically important sectors like cement and power generation. This suggests that more sophisticated, tiered, or sector-specific incentive structures may be required to drive decarbonization across the entire industrial landscape.
+
+## **V. The Driving Forces: Policy, Incentives, and Corporate Strategy**
+
+The recent and rapid expansion of the global Carbon Capture and Storage project pipeline is not a result of a sudden technological breakthrough or a spontaneous market shift. It is, almost without exception, the direct consequence of deliberate and significant government intervention. The market for CCS is an engineered one, created by policies designed to meet national and international climate objectives. This section analyzes the key policy levers, financial incentives, and corporate strategies that are driving the current wave of CCS development.
+
+### **A. The Central Role of Government Support: A Global Policy Overview**
+
+The fundamental economics of CCS dictate that without a policy-driven incentive, widespread deployment is not commercially viable. The high costs of capture, transport, and storage are not offset by a natural market revenue stream.56 Therefore, government policy literally creates the business case for CCS investment.63 This reality has been recognized by governments around the world, leading to a surge in supportive policies.
+
+The United States has emerged as the global leader in CCS deployment, a position largely attributable to its robust and long-standing policy support.66 However, momentum is building globally. Canada has established a significant investment tax credit for CCS projects, while in Europe, the EU Innovation Fund is providing billions of euros in grants for large-scale demonstration projects. Denmark and Norway are also making substantial national investments in CCS infrastructure. In Asia, Japan and China have integrated CCS into their national climate and economic plans, issuing policies to promote its development.67
+
+Governments are employing a diverse portfolio of incentives to stimulate investment and mitigate the financial risks of CCS projects 53:
+
+* **Direct Financial Assistance:** This includes capital grants and low-interest loans to help cover the high upfront costs of project construction.  
+* **Tax Incentives:** These are powerful, performance-based incentives that provide a tax credit for each ton of CO2​ that is verifiably captured and permanently stored.  
+* **Market-Based Mechanisms:** In some jurisdictions, CCS projects can generate credits within clean energy standards or emissions trading systems, providing an additional revenue stream.  
+* **Risk Mitigation:** A critical, though less direct, form of support is the establishment of clear legal frameworks that address long-term risks, such as the government assuming liability for a storage site after it has been securely closed and monitored for a defined period.
+
+### **B. In-Depth Analysis: The U.S. 45Q Tax Credit and its Market Impact**
+
+Among the various policy tools, the United States' Section 45Q tax credit stands out as the single most impactful piece of CCS-supportive legislation in the world. It is the primary engine driving the unprecedented growth of the CCS project pipeline in the U.S..63
+
+The credit was first established in 2008 but was significantly reformed and expanded by the FUTURE Act in 2018 and then supercharged by the Inflation Reduction Act (IRA) in 2022\.66 The IRA increased the credit values to levels that make a wide range of CCS projects economically attractive. The current incentive levels are:
+
+* **$85 per metric ton** for CO2​ captured from industrial or power generation sources and permanently stored in deep geologic formations, such as saline aquifers.  
+* **$60 per metric ton** for CO2​ captured and then utilized for purposes such as Enhanced Oil Recovery (EOR) or as a feedstock for other products.56
+
+These values are high enough to bridge the commerciality gap for many projects. Economic models predict that the enhanced 45Q credit is sufficient to incentivize the storage of 200 to 800 million tonnes of CO2​ annually in the U.S..63 The market response has been immediate and dramatic. In 2023, the year following the IRA's passage, 73 new CCS facilities were announced in the U.S..66 The IRA also introduced crucial structural reforms that de-risk investment, including extending the deadline for starting construction to 2033 and, most importantly, allowing for "direct pay" and transferability of the credits. These provisions enable project developers without large tax liabilities to receive the credit's value as a direct cash payment from the government or to sell the credits to other entities, making it much easier to finance projects.66
+
+### **C. The Influence of Carbon Pricing and Emissions Trading Systems (ETS)**
+
+An alternative policy approach to direct subsidies is carbon pricing, which creates a direct financial cost for emitting CO2​. This can be implemented as a straightforward carbon tax or through a cap-and-trade mechanism, also known as an Emissions Trading System (ETS). By making it expensive to pollute, these "stick"-based policies create a powerful business case for investing in abatement technologies like CCS.63
+
+While the United States has largely favored subsidy-based "carrots," the European Union has made its ETS the cornerstone of its climate policy.63 A reformed EU ETS, which is designed to drive up the price of carbon allowances, is expected to become a major driver for CCS investment in Europe in the coming years, complementing the direct funding provided by the Innovation Fund.30
+
+### **D. Corporate Commitments and the Rise of CCS Hubs**
+
+Beyond government mandates, the corporate world is also becoming a significant driver of CCS demand. A growing number of multinational corporations have made ambitious public commitments to achieve net-zero emissions. As these companies develop credible decarbonization roadmaps, they are increasingly identifying CCS as an essential tool, particularly for their hard-to-abate industrial operations.67
+
+This corporate demand has catalyzed a shift in project development strategy, away from standalone projects and toward the creation of large, collaborative industrial hubs. Consortia like the Pathways Alliance in Canada, which brings together the country's largest oil sands producers, and the proposed Houston CCS Hub in the U.S., which aims to decarbonize the massive industrial complex along the Houston Ship Channel, are prime examples.5 This model allows companies to share the high costs and risks of developing common transport and storage infrastructure, making CCS more accessible and economically viable for all participants.30
+
+The current policy landscape, dominated by time-limited subsidies like the 12-year 45Q credit, creates a significant long-term uncertainty known as the "subsidy cliff".63 After the subsidy period ends, a CCS facility may no longer be profitable to operate. This raises the risk that operators could simply shut down the capture equipment, halting the climate benefit and potentially turning a multi-billion-dollar asset into a stranded one.63 This dynamic suggests that for CCS to deliver permanent emissions reductions, it will require either a permanent policy support mechanism, such as a durable and sufficiently high carbon price, or a dramatic reduction in operating costs within the next decade. The latter is a significant gamble, creating a long-term fiscal challenge for governments who may face pressure to extend subsidies indefinitely to ensure the continued operation of the facilities they helped to build.63
+
+Furthermore, the specific design of these policies is actively shaping the geography and sectoral focus of the emerging CCS industry. The high value and favorable financing terms of the U.S. 45Q credit have unequivocally made the United States the world's most attractive location for CCS investment, leading to its dominant share of the global project pipeline.64 The economics of the credit also favor projects with the lowest intrinsic capture costs, resulting in a concentration of new projects in the ethanol and natural gas processing sectors, located primarily in the U.S. Midwest and Gulf Coast regions, where there is also abundant and well-understood geology for storage.64 This demonstrates the power of policy not just to incentivize but to sculpt an entire industry. While this provides a successful blueprint for other nations, it also serves as a cautionary tale that without more targeted or tiered incentives, investment may not flow to the most critical but more expensive sectors, such as cement and steel.
+
+| Region/Country | Policy Name | Mechanism Type | Key Incentive Value | Target Sectors/Eligibility |
+| :---- | :---- | :---- | :---- | :---- |
+| **United States** | Section 45Q Tax Credit (post-IRA) | Tax Credit (Direct Pay/Transferable) | $85/tonne (Geologic Storage) $60/tonne (Utilization/EOR) | Power generation, industrial facilities, and direct air capture meeting emissions capture thresholds. |
+| **Canada** | CCS Investment Tax Credit | Investment Tax Credit (Refundable) | 50% for capture equipment 37.5% for transport, storage, utilization | Eligible CCS projects across various sectors. Excludes projects for enhanced oil recovery. |
+| **European Union** | EU Innovation Fund | Competitive Grant Funding | €38 billion (2020-2030) for innovative low-carbon tech, including CCS. | Large-scale and small-scale projects in energy-intensive industries, renewables, and energy storage. |
+| **European Union** | EU Emissions Trading System (ETS) | Cap-and-Trade (Carbon Price) | Market-based price per tonne of CO2​ (variable, e.g., €70-€90/tonne). | Power stations and industrial plants. Emitters can avoid buying allowances by implementing CCS. |
+| **United Kingdom** | CCS Infrastructure Fund / Track-1 & 2 | Capital Grants & Revenue Support | £1 billion fund; business models provide revenue support (e.g., CfD). | Industrial clusters (e.g., HyNet, East Coast Cluster) for industry, power, and hydrogen. |
+| **Norway** | Longship Project | Direct Government Funding | State aid covering \~2/3 of project costs for capture, transport, and storage. | Initial projects in cement (Norcem) and waste-to-energy (Hafslund Oslo Celsio). |
+
+Table 2: Summary of Key Government CCS Incentives. This table provides a comparative overview of primary financial support mechanisms in key global regions, illustrating different policy approaches. Data compiled from multiple sources.56
+
+## **VI. Global Deployment: A Snapshot of the Current Project Pipeline**
+
+The global landscape of Carbon Capture and Storage is characterized by a relatively small base of operational facilities and a rapidly expanding pipeline of projects in various stages of development. This growth, largely fueled by the new wave of policy support, signals a potential inflection point for the technology's deployment. This section provides a quantitative snapshot of the current global project pipeline and highlights several landmark projects that offer key lessons for the industry's future.
+
+### **A. Global CCS Facilities: Operational, Under Construction, and Planned**
+
+As of the first quarter of 2025, the world's operational CCS capacity stood at just over **50 million tonnes (Mt) of CO2​ per year**, distributed across approximately 50 commercial facilities.70 Historically, the majority of this capacity has been concentrated in the natural gas processing sector, where separating
+
+CO2​ is a necessary part of operations.71
+
+While the current operational footprint is modest, the development pipeline indicates a dramatic acceleration in activity. The total number of CCS facilities in all stages of development now exceeds 600 worldwide.70 This pipeline can be broken down into several key stages:
+
+* **Operational:** 50 facilities with a combined capacity of \~51 Mtpa.70  
+* **Under Construction:** 44 facilities. If all projects currently under construction were to be completed, they would nearly double the world's existing operational CCS capacity.70  
+* **Advanced Development:** 247 facilities that have completed preliminary feasibility studies and are progressing toward a final investment decision.70  
+* **Early Development:** 287 facilities in the initial stages of planning and feasibility assessment.70
+
+Based on the projects currently in this robust pipeline, global CO2​ capture capacity is projected to increase nearly nine-fold, reaching approximately **430 Mt per year by 2030**.71 This represents a significant scale-up, though it is important to note that projects in the early stages of development face significant hurdles and are not guaranteed to proceed to operation.
+
+### **B. Regional Analysis: A Concentrated Landscape**
+
+The global distribution of CCS projects is far from uniform. Deployment is heavily concentrated in regions with a combination of supportive policies, abundant geological storage resources, and established industrial bases.
+
+* **North American Dominance:** The United States is the undisputed global leader in CCS, hosting roughly half of the world's current operational capacity and a commanding share of the projects in development.64 This leadership is a direct result of decades of policy support, culminating in the powerful incentives of the 45Q tax credit. Canada also has a significant number of projects, particularly in Alberta.33 Together, North America and Europe account for 80% of the capture capacity that is expected to become operational by 2030\.71  
+* **European Momentum:** Europe is making significant strides, particularly in the development of innovative, cross-border business models. The region is a leader in advancing offshore CO2​ storage in the North Sea and is pioneering the "hub and cluster" approach, where shared infrastructure will serve multiple industrial nations.33  
+* **Asia-Pacific and Emerging Markets:** While development is less concentrated, significant projects exist in other regions. China, Australia, and Brazil all have operational CCS facilities.64 The landscape is also beginning to expand, with Indonesia reaching a final investment decision on its first large-scale project in 2024, and a pilot Direct Air Capture facility beginning construction in Kenya, signaling the technology's growing global reach.71
+
+### **C. Case Studies of Landmark Projects: Lessons from Early Movers**
+
+The experience of the first generation of large-scale CCS projects provides invaluable lessons—both positive and cautionary—for the industry.
+
+* **Quest (Alberta, Canada):** Operational since 2015, the Quest facility captures over 1 Mtpa of CO2​ from a hydrogen production unit that serves the oil sands industry. It has successfully and safely injected over nine million tonnes of CO2​ into a deep saline aquifer two kilometers underground.33 Quest is a landmark project because it was one of the first to demonstrate dedicated geological storage at a commercial scale, providing a critical benchmark for the safety and viability of saline aquifer sequestration.  
+* **Boundary Dam (Saskatchewan, Canada):** Launched in 2014, Boundary Dam Unit 3 was the world's first commercial-scale CCS facility integrated with a coal-fired power plant. While a technological milestone, its operational history has been challenging. The project has consistently underperformed its target of capturing 90% of the unit's emissions, with an average capture rate closer to 50%.72 This highlights the significant technical complexities and performance risks associated with retrofitting CCS onto existing, complex power generation assets.  
+* **Petra Nova (Texas, USA):** The second major coal power CCS project, Petra Nova began operations in 2017\. It successfully demonstrated a significant technological learning curve, with capture costs estimated to be 35% lower than at Boundary Dam.6 However, the project's business model was tied to using the captured  
+  CO2​ for EOR. When oil prices collapsed in 2020, the EOR operations became unprofitable, leading to the temporary shutdown of the capture facility.73 The plant reopened in 2023, but its history underscores the economic vulnerability of projects that are dependent on volatile commodity markets rather than stable, climate-focused incentives.  
+* **Northern Lights (Norway):** This project, expected to be operational in 2025, represents the next generation of CCS business models. It is not tied to a single emissions source but is being developed as a "common carrier" transport and storage service for all of Europe. It will use ships to transport liquefied CO2​ from various industrial sources to a hub on the Norwegian coast for permanent storage under the North Sea.33 It is a pioneering example of the cross-border, infrastructure-led approach that is seen as essential for widespread decarbonization.  
+* **Porthos (Netherlands):** Similar to Northern Lights, Porthos (Port of Rotterdam CO2​ Transport Hub and Offshore Storage) is a hub project designed to decarbonize the massive industrial cluster in the Port of Rotterdam. Expected to begin operations in 2026, it will use a shared pipeline network to transport CO2​ from multiple refineries and chemical plants to offshore storage in depleted gas fields under the North Sea.33
+
+While the growth in the project pipeline is a strong positive signal, a significant "deployment gap" remains between the current trajectory and the levels required to meet climate goals. The IEA's Net Zero by 2050 Scenario, for example, requires over 1 Gt (1,000 Mt) of annual capture capacity to be in place by 2030\.69 The current pipeline projection of \~430 Mt by 2030 falls short of this target by more than half.71 This gap highlights the urgent need to accelerate the conversion of planned projects into operational facilities.
+
+Furthermore, a realistic assessment of the pipeline must be tempered by the historical performance of flagship projects. Detailed reviews have found that failed or significantly underperforming projects have considerably outnumbered successes.54 A majority of projects that were projected to be operational by 2020 were ultimately cancelled or put on indefinite hold due to high costs and technical challenges.73 This suggests that there is a significant "real-world performance discount" that should be applied to optimistic pipeline projections. For investors and policymakers, this underscores the high degree of execution risk still present in these complex mega-projects and reinforces the need for robust project management and realistic performance expectations.
+
+| Region | Operational | Under Construction | Advanced Development | Early Development | Total Facilities | Total Annual Capture Capacity (Mtpa) \- All Stages |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **North America** | \~25 | \~20 | \~120 | \~140 | \~305 | \~250 |
+| **Europe** | \~10 | \~15 | \~80 | \~90 | \~195 | \~100 |
+| **Asia-Pacific** | \~10 | \~5 | \~30 | \~40 | \~85 | \~50 |
+| **Rest of World** | \~5 | \~4 | \~17 | \~17 | \~43 | \~16 |
+| **Total** | **\~50** | **44** | **247** | **287** | **\~628** | **\~416** |
+
+Table 3: Global CCS Project Pipeline Summary. This table provides a numerical snapshot of the global project pipeline, broken down by status and region. Note: Regional breakdowns are approximate based on overall trends. Totals reflect the latest comprehensive data. Data compiled from multiple sources.64
+
+## **VII. Navigating the Headwinds: Risks, Liabilities, and Public Acceptance**
+
+Despite its technological maturity and growing policy support, the path to widespread CCS deployment is fraught with significant challenges. These headwinds are not primarily technological in nature but are rooted in the complex interplay of operational risk, long-term liability, and public perception. Successfully navigating these issues is a prerequisite for the industry to scale effectively and earn the "social license to operate" necessary for long-term success.
+
+### **A. Technical and Operational Challenges**
+
+While the core components of CCS are proven, their integration and long-term operation at scale present ongoing challenges.
+
+* **Storage Security and Leakage Risk:** The single largest technical concern and public fear associated with CCS is the potential for stored CO2​ to leak back into the atmosphere or into groundwater.28 Potential leakage pathways include previously undetected geological faults, the failure of injection well seals, or a loss of integrity in the caprock.28 While the scientific consensus, backed by studies of natural analogues, is that the risk of leakage from a well-selected and properly managed site is extremely low, the  
+  *perception* of this risk remains a powerful barrier.51 A recent study published in  
+  *Nature* suggested that after ruling out formations with higher risks of leakage, seismicity, or contamination, the total global capacity for *secure* storage could be as much as 10 times lower than previous, more optimistic estimates.43  
+* **Infrastructure Integrity:** The materials used in CCS infrastructure must be able to withstand the unique properties of high-pressure CO2​. When CO2​ combines with water, it forms carbonic acid, a corrosive agent that can degrade carbon steel pipelines and wellbore components like cement and casings.28 This necessitates careful material selection, stringent purity standards for the  
+  CO2​ stream to remove water, and robust, long-term monitoring programs to ensure the integrity of the entire system.  
+* **Induced Seismicity:** The injection of any fluid into the subsurface alters the pressure state of the rock formations. In certain geological contexts, particularly near pre-existing faults, this pressure change can induce minor seismic events, or micro-tremors.28 While the risk of a significant earthquake is considered negligible for well-sited projects, the potential for induced seismicity requires careful geological screening, site selection, and ongoing monitoring of pressure and seismic activity during operations.  
+* **The Energy Penalty:** The capture process itself is energy-intensive. A capture facility requires a significant amount of energy—either steam or electricity—to run its pumps, compressors, and solvent regeneration systems. This parasitic load, known as the "energy penalty," reduces the net energy output of the host facility. For a power plant, this means that to produce the same amount of electricity for the grid, more fuel must be burned, partially offsetting the emissions benefit of the capture process itself.13 This penalty is a major driver of the high operating costs of CCS.
+
+### **B. Subsurface Impacts in Depleted Reservoirs: A Geomechanical and Geochemical Perspective**
+
+The extensive study of depleted oil and gas reservoirs for CO2 storage stems from their proven ability to trap buoyant fluids for millions of years, providing confidence in their long-term containment potential.37 However, the process of re-injecting CO2 into these formations, which have been depressurized through hydrocarbon extraction, introduces a new set of complex subsurface interactions. Extensive scientific study has focused on understanding both the physical (geomechanical) and chemical (geochemical) impacts to ensure storage security.
+
+**1\. Geomechanical Impacts (Stress, Faults, and Seismicity)**
+
+Injecting CO2 fundamentally alters the stress conditions within the reservoir rock and surrounding formations. The primary geomechanical risks under investigation include:
+
+* **Rock Stress and Surface Deformation:** The extraction of oil and gas causes the reservoir rock to compact, which can lead to subsidence at the surface. Re-injecting CO2 re-pressurizes the formation, causing it to expand and potentially resulting in a slight surface uplift. Field-scale models have calculated potential surface subsidence of nearly 24 cm after depletion is complete. These minute changes are closely monitored using advanced techniques like satellite-based interferometry (InSAR) to detect millimeter-scale ground deformation.  
+* **Fault Reactivation and Induced Seismicity:** A principal concern is whether the pressure increase from CO2 injection could reactivate dormant faults, potentially triggering earthquakes. This risk is highly site-specific, depending on the local geology and the stress state of pre-existing faults. There is an ongoing scientific debate regarding the level of this risk. Some research suggests a high probability that large-volume injection could trigger earthquakes, arguing that even small-to-moderate events could threaten the integrity of the caprock seal. Conversely, other studies and extensive field experience indicate the risk is low for properly selected and managed sites. Notably, no felt seismic events have been reported at dedicated CO2 storage projects in depleted fields such as Otway, Australia, and Lacq, France. Furthermore, some research suggests that the initial reservoir depletion may actually increase the stability of nearby faults, making them potentially safer for CO2 injection than undisturbed formations.
+
+**2\. Geochemical Impacts (Rock and Fluid Interactions)**
+
+When injected, CO2 interacts with the residual fluids (brine and hydrocarbons) and minerals present in the reservoir rock, initiating a series of chemical reactions.
+
+* **Formation of Carbonic Acid:** The injected CO2 dissolves in the formation's saline water (brine), creating a weak carbonic acid. This process lowers the pH of the water, making it more acidic.  
+* **Mineral Dissolution and Precipitation:** The newly acidic brine can dissolve certain minerals in the reservoir rock, such as carbonates and feldspars. This can increase the rock's porosity and potentially enhance its storage capacity. Concurrently, these chemical changes can cause new minerals, like siderite and various clays, to precipitate out of the solution.  
+* **Impact on Permeability:** These geochemical alterations can have complex effects. While mineral dissolution can improve pathways for CO2 flow, the precipitation of new minerals or salts can clog the pore throats in the rock. This can reduce permeability and impair the ability to inject CO2, posing a potential operational challenge.
+
+**3\. Monitoring and Modeling**
+
+To understand and manage these complex subsurface impacts, comprehensive monitoring and modeling are integral to any CO2 storage project. Scientists employ sophisticated computer simulations to model fluid flow, geochemical reactions, and geomechanical stress changes, allowing them to predict the long-term behavior of the stored CO2. These predictive models are continuously validated and refined with real-world data gathered from a suite of monitoring techniques, including:
+
+* **Seismic monitoring** to detect any micro-earthquakes.  
+* **Surface deformation monitoring** using satellite-based radar (InSAR).  
+* **Geochemical sampling** of fluids from dedicated monitoring wells to track chemical changes and confirm the location and containment of the CO2 plume.
+
+### **C. The Critical Question of Long-Term Liability and Regulatory Stewardship**
+
+Perhaps the most complex non-technical barrier to CCS deployment is the question of long-term liability. A geological storage site must remain secure for centuries, long after the operational life of the injecting facility and potentially long after the operating company itself ceases to exist. This creates a profound challenge for private investment: who is legally and financially responsible for the site in perpetuity?.77
+
+* **The Need for Robust Regulatory Frameworks:** To address this uncertainty, comprehensive legal and regulatory frameworks are essential. These frameworks must govern the entire lifecycle of a CCS project, from initial site selection and permitting through operation, closure, and long-term stewardship.74 In the United States, the primary regulatory tool is the Environmental Protection Agency's (EPA) Underground Injection Control (UIC) Program, specifically the Class VI rule for  
+  CO2​ injection. This rule mandates rigorous site characterization, extensive operational monitoring, and a lengthy post-injection site care period (typically 50 years) to demonstrate the stability of the stored CO2​.51  
+* **The Transfer of Liability:** A key element of a functional regulatory system is a clear process for the transfer of long-term liability from the private operator to a public authority. The logic is that once an operator has successfully completed the injection and post-injection monitoring phases and has demonstrated to the regulator that the site is stable and secure, the long-term stewardship responsibility should transfer to the state or federal government.35 Several jurisdictions, including the state of Montana and the European Union, have established legal frameworks for such a conditional transfer.77 This mechanism is widely seen as crucial for de-risking projects and making them attractive to private capital.  
+* **Financial Assurance:** To ensure that funds are available to manage the site and address any potential issues, regulators require operators to post substantial financial assurances. These can take the form of trust funds, surety bonds, letters of credit, or insurance policies, and must be sufficient to cover the costs of monitoring, well plugging, and any potential corrective actions.35 A common proposal is the creation of a larger, industry-financed trust fund, capitalized by a per-ton fee on all stored  
+  CO2​, which would cover the costs of long-term stewardship after liability has been transferred to the government.35  
+* **Pore Space Ownership:** A further legal complexity is the question of who owns the deep subsurface "pore space" where the CO2​ is to be stored. In many legal systems, property rights for the surface are distinct from the rights to the minerals below. The law is often unclear as to whether the surface owner or the mineral rights owner controls the pore space. This legal ambiguity across different states and nations creates uncertainty for developers seeking to acquire the rights to develop a storage site.77
+
+The resolution of these liability and regulatory issues presents a complex trilemma. Operators are unwilling and unable to hold liability for thousands of years. Governments are cautious about assuming unfunded, open-ended liabilities from private industry. The insurance market, lacking sufficient historical data on long-term storage performance, struggles to price such long-tail risks accurately.35 The emerging solution is a hybrid model: the operator remains fully responsible during the high-risk operational and initial post-closure phases, backed by robust financial assurances. Once the site's stability is proven over a multi-decade period, the residual, low-probability risk is transferred to a publicly managed, industry-funded stewardship program. Creating clear, rational, and equitable frameworks for this transfer is not a secondary concern; it is a prerequisite for a bankable, large-scale CCS industry.
+
+### **D. The Social License to Operate: Understanding and Engaging with Public Perception**
+
+Beyond technical and legal hurdles, CCS projects must secure a "social license to operate" from the communities in which they are located and from the public at large. Public perception is a powerful force that can determine the success or failure of a project.
+
+* **Low Public Awareness:** Despite its importance in climate scenarios, general public awareness and understanding of CCS technology remain very low.81 This knowledge gap creates a vacuum that can be filled with misinformation, breeding uncertainty and skepticism.85  
+* **Key Public Concerns:** Public attitudes toward CCS are shaped by a range of factors:  
+  * **Perception of Risk:** The most prominent concerns revolve around the safety of storage, with fears of catastrophic leaks, contamination of drinking water, and the potential for induced earthquakes.84  
+  * **Trust in Institutions:** Public trust—or the lack thereof—in the project developers (often fossil fuel companies) and the government agencies responsible for regulation is a decisive factor. The credibility of the "messenger" is often more important than the technical details of the message.81  
+  * **The NIMBY ("Not In My Backyard") Effect:** Even if individuals support the concept of CCS nationally, they may oppose the construction of a pipeline or storage site in their local community due to perceived local risks and impacts.85  
+  * **The "Moral Hazard" Argument:** A significant and recurring criticism is that CCS is a "false solution" or a "greenwashing" tactic that serves to prolong the life of the fossil fuel industry, thereby delaying a necessary transition to renewable energy.29  
+* **The Importance of Engagement:** Experience from past projects has shown that top-down approaches that neglect community concerns are likely to be met with strong opposition.82 Securing a social license requires early, transparent, and meaningful engagement with local communities and other stakeholders.
+
+Public opinion on CCS is not fixed or monolithic; it is largely unformed and can be influenced by information and dialogue. While initial reactions are often rooted in skepticism, well-designed educational and public engagement initiatives have been shown to increase understanding and build conditional support.86 A case study of a day-long educational seminar in Maine found that while participants' specific concerns about CCS became more defined as they learned more, their overall support for the technology as part of a broader climate solution actually increased.86 This demonstrates that the goal of public engagement should not be to simply "sell" CCS, but rather to foster an informed dialogue that acknowledges risks and co-creates a framework for the technology's safe and equitable deployment.
+
+## **VIII. Strategic Outlook and Recommendations**
+
+Carbon Capture and Storage is at a pivotal moment. After decades of slow progress, a confluence of policy support, corporate commitment, and climate urgency has created unprecedented momentum. However, the technology must now transition from a portfolio of demonstration projects to a globally significant industry. This final section synthesizes the report's findings to provide a forward-looking strategic outlook, outlining a potential roadmap to 2050 and offering concrete recommendations for key stakeholders to navigate the challenges and realize the potential of CCS.
+
+### **A. The Technology Roadmap to 2050: Key Milestones and Innovations**
+
+The path to scaling CCS to the gigatonne level required for net-zero scenarios can be envisioned in three distinct phases, each with its own priorities and milestones.
+
+* **Near-Term (to 2030): The "Make or Break" Decade of Execution:** The next ten years are a critical "valley of death" between planning and large-scale deployment.88 The primary objective is to successfully execute the current wave of announced projects, converting plans into operational assets. The goal should be to achieve the projected four- to nine-fold increase in global capture capacity, reaching at least 430 Mtpa.71 This phase will be dominated by projects in North America and Europe, focused on retrofitting existing industrial facilities and capturing low-cost emissions from sectors like natural gas processing and ethanol production.89 Success in this decade will be measured by the ability to build and operate integrated projects on time and on budget, and to establish the first large-scale industrial hubs with shared transport and storage infrastructure.  
+* **Mid-Term (2030-2040): Cost Reduction and Sectoral Expansion:** With the initial infrastructure in place and valuable operational experience gained, the focus in this period will shift to driving down costs and expanding the application of CCS to the most challenging sectors. Manufacturing, particularly cement and steel, is expected to become the dominant source of captured carbon as these industries face mounting pressure to decarbonize.89 This phase should see the commercialization of second-generation capture technologies that offer lower energy penalties and capital costs. Inter-regional and international transport networks, combining pipelines and shipping, will become more common, creating a more flexible and efficient global CCS market.  
+* **Long-Term (2040-2050): Achieving Scale and Negative Emissions:** By mid-century, CCS is forecast to capture approximately 6% of total global CO2​ emissions.89 In this mature phase, the role of Carbon Dioxide Removal (CDR) will become paramount. Technologies like Bioenergy with CCS (BECCS) and Direct Air Capture (DAC) will need to be deployed at a massive scale to generate the "negative emissions" required to balance residual emissions from aviation, agriculture, and other intractable sources, thereby making a net-zero energy system possible.7
+
+A key strategic shift that will underpin this entire roadmap is the evolution of CCS from a series of standalone projects into an integrated, networked utility. The clear economic and logistical advantages of shared "hubs and clusters" and "CCS-as-a-service" models indicate that the mature CCS industry will function more like the natural gas or electricity grids of today.4 This implies that the most strategic long-term investments may be in the enabling "common carrier" transport and storage infrastructure, which will likely need to be regulated as a public utility to ensure fair and open access for all emitters.
+
+### **B. Fostering International Collaboration and Knowledge Sharing**
+
+The climate challenge is global, and the high cost and complexity of first-of-a-kind CCS projects make international collaboration not just beneficial, but essential. Sharing the lessons learned—both successes and failures—from early demonstration projects is the fastest way to accelerate the learning curve, reduce costs, and de-risk future investments.90
+
+International bodies such as the Carbon Sequestration Leadership Forum (CSLF), the IEA Greenhouse Gas R\&D Programme (IEAGHG), and the Global CCS Institute play a vital role in this process. They provide platforms for governments and project developers to share technical data, operational experience, and best practices in regulation and public engagement.90 This global knowledge-sharing framework helps to build technical capacity worldwide, promotes consistency in standards, and informs the development of effective policies, ultimately accelerating the safe and commercially viable deployment of CCS on a global scale.93
+
+### **C. Recommendations for Stakeholders**
+
+To successfully navigate the challenges and unlock the potential of CCS, concerted and strategic action is required from all stakeholders.
+
+#### **For Policymakers:**
+
+1. **Provide Long-Term Policy Certainty:** The single most important action is to create a stable, predictable, and long-term policy environment. The "subsidy cliff" created by time-limited incentives poses a major risk to long-term operations. Governments should plan for a transition from temporary credits to more durable support mechanisms, such as a robust and reliable carbon price or long-term contracts for carbon storage.  
+2. **Streamline Permitting and Regulation:** While maintaining rigorous safety and environmental standards, governments must create efficient and clear permitting pathways for CCS projects. The lengthy and complex process for obtaining permits, particularly for storage sites (e.g., the UIC Class VI permit in the U.S.), is a major bottleneck that must be addressed.  
+3. **Resolve Legal and Liability Frameworks:** Urgently clarify the legal frameworks governing subsurface pore space ownership and establish a clear, fair process for the long-term transfer of liability for securely closed storage sites. This regulatory certainty is a prerequisite for attracting the necessary private investment.  
+4. **Invest in Enabling Infrastructure:** Public investment should be prioritized for the development of shared, "common carrier" CO2​ transport and storage infrastructure. This public-private partnership model lowers the barrier to entry for individual emitters, enables the development of industrial decarbonization clusters, and maximizes economic efficiency.
+
+#### **For Industry:**
+
+1. **Embrace Collaborative Models:** Move beyond a project-by-project mindset and actively participate in the development of collaborative hubs and clusters. Sharing infrastructure and risks is the most effective pathway to cost reduction and large-scale deployment.  
+2. **Invest in Innovation:** Continue to invest in research and development for next-generation capture technologies. The primary goal should be to reduce both the capital cost and the energy penalty of the capture process, which remains the largest cost component.  
+3. **Prioritize Social License:** Treat community engagement not as a final hurdle but as a core part of project development from the very beginning. Early, transparent, and continuous dialogue is essential for building the trust required to earn a social license to operate.  
+4. **Commit to Transparency:** Be transparent about project costs, operational performance (including capture rates and uptime), and challenges. Contributing to the global knowledge base will build credibility for individual projects and for the industry as a whole.
+
+#### **For Investors:**
+
+1. **Focus on Policy and Regulatory Risk:** Recognize that at this stage of the industry's development, the primary risk to a CCS project is not technological feasibility but policy instability and regulatory uncertainty. Prioritize investments in jurisdictions with strong, long-term, and legally robust supportive frameworks.  
+2. **Favor Hub-Based Projects:** Evaluate projects based on their integration into larger industrial clusters. A facility connected to a shared transport and storage network with multiple users is inherently less risky and has better long-term economic prospects than an isolated, standalone project.  
+3. **Assess the Long-Term Business Model:** Scrutinize the project's economic viability beyond the initial subsidy period. Look for credible pathways to sustained profitability, whether through projected operational cost reductions, revenue from utilization, or the anticipated emergence of a durable carbon price.  
+4. **Demand Execution Excellence:** The "valley of death" for CCS lies in the execution of complex mega-projects. Invest in management teams and project consortia that have a proven track record of delivering large, complex industrial projects on time and on budget.
+
+#### **Works cited**
+
+1. What is carbon capture, usage and storage (CCUS) and what role can it play in tackling climate change? \- LSE, accessed September 6, 2025, [https://www.lse.ac.uk/granthaminstitute/explainers/what-is-carbon-capture-and-storage-and-what-role-can-it-play-in-tackling-climate-change/](https://www.lse.ac.uk/granthaminstitute/explainers/what-is-carbon-capture-and-storage-and-what-role-can-it-play-in-tackling-climate-change/)  
+2. What is carbon capture and storage? | National Grid, accessed September 6, 2025, [https://www.nationalgrid.com/stories/energy-explained/what-is-ccs-how-does-it-work](https://www.nationalgrid.com/stories/energy-explained/what-is-ccs-how-does-it-work)  
+3. Carbon Storage FAQs | netl.doe.gov \- Department of Energy, accessed September 6, 2025, [https://www.netl.doe.gov/carbon-management/carbon-storage/faqs/carbon-storage-faqs](https://www.netl.doe.gov/carbon-management/carbon-storage/faqs/carbon-storage-faqs)  
+4. Transporting CO2 \- Global CCS Institute, accessed September 6, 2025, [https://www.globalccsinstitute.com/archive/hub/publications/191083/fact-sheet-transporting-co2.pdf](https://www.globalccsinstitute.com/archive/hub/publications/191083/fact-sheet-transporting-co2.pdf)  
+5. 7 things you should know about carbon capture and storage \- ExxonMobil, accessed September 6, 2025, [https://corporate.exxonmobil.com/what-we-do/delivering-industrial-solutions/carbon-capture-and-storage/what-to-know-about-carbon-capture-and-storage](https://corporate.exxonmobil.com/what-we-do/delivering-industrial-solutions/carbon-capture-and-storage/what-to-know-about-carbon-capture-and-storage)  
+6. Is carbon capture too expensive? – Analysis \- IEA, accessed September 6, 2025, [https://www.iea.org/commentaries/is-carbon-capture-too-expensive](https://www.iea.org/commentaries/is-carbon-capture-too-expensive)  
+7. CCUS in the transition to net-zero emissions – CCUS in Clean Energy Transitions – Analysis \- IEA, accessed September 6, 2025, [https://www.iea.org/reports/ccus-in-clean-energy-transitions/ccus-in-the-transition-to-net-zero-emissions](https://www.iea.org/reports/ccus-in-clean-energy-transitions/ccus-in-the-transition-to-net-zero-emissions)  
+8. What is Carbon Capture and Storage (CCS)? \- IEAGHG, accessed September 6, 2025, [https://ieaghg.org/what-is-ccs/what-is-carbon-capture-and-storage-ccs/](https://ieaghg.org/what-is-ccs/what-is-carbon-capture-and-storage-ccs/)  
+9. CCS in Energy and Climate Scenarios \- IEAGHG, accessed September 6, 2025, [https://ieaghg.org/publications/ccs-in-energy-and-climate-scenarios/](https://ieaghg.org/publications/ccs-in-energy-and-climate-scenarios/)  
+10. The Role of Carbon Capture in a Net Zero Future \- The Renewable Energy Institute, accessed September 6, 2025, [https://www.renewableinstitute.org/the-role-of-carbon-capture-in-a-net-zero-future/](https://www.renewableinstitute.org/the-role-of-carbon-capture-in-a-net-zero-future/)  
+11. What does the latest IPCC report say about carbon capture? \- Clean Air Task Force, accessed September 6, 2025, [https://www.catf.us/2022/04/what-does-latest-ipcc-report-say-about-carbon-capture/](https://www.catf.us/2022/04/what-does-latest-ipcc-report-say-about-carbon-capture/)  
+12. Direct Air Capture \- Energy System \- IEA, accessed September 6, 2025, [https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture](https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture)  
+13. 9.2. Carbon Dioxide Capture Approaches | netl.doe.gov, accessed September 6, 2025, [https://netl.doe.gov/research/carbon-management/energy-systems/gasification/gasifipedia/capture-approaches](https://netl.doe.gov/research/carbon-management/energy-systems/gasification/gasifipedia/capture-approaches)  
+14. Post-combustion capture \- Wikipedia, accessed September 6, 2025, [https://en.wikipedia.org/wiki/Post-combustion\_capture](https://en.wikipedia.org/wiki/Post-combustion_capture)  
+15. Post-Combustion Carbon Capture and Facility Integration \- YouTube, accessed September 6, 2025, [https://www.youtube.com/watch?v=rstkNp98rGg](https://www.youtube.com/watch?v=rstkNp98rGg)  
+16. Post Combustion Capture (PCC) | A Linde Company, accessed September 6, 2025, [https://www.linde-engineering.com/products-and-services/process-plants/co2-plants/carbon-capture/post-combustion-capture](https://www.linde-engineering.com/products-and-services/process-plants/co2-plants/carbon-capture/post-combustion-capture)  
+17. Mission 2013 \- Pre-combustion Capture \- MIT, accessed September 6, 2025, [https://igutek.scripts.mit.edu/terrascope/?page=Precombustion](https://igutek.scripts.mit.edu/terrascope/?page=Precombustion)  
+18. Pre-Combustion Carbon Capture Research \- Department of Energy, accessed September 6, 2025, [https://www.energy.gov/fecm/pre-combustion-carbon-capture-research](https://www.energy.gov/fecm/pre-combustion-carbon-capture-research)  
+19. CO2 CAPTURE TECHNOLOGIES \- Global CCS Institute, accessed September 6, 2025, [https://www.globalccsinstitute.com/archive/hub/publications/29756/co2-capture-technologies-pre-combustion-capture.pdf](https://www.globalccsinstitute.com/archive/hub/publications/29756/co2-capture-technologies-pre-combustion-capture.pdf)  
+20. CO2 CAPTURE TECHNOLOGIES \- Global CCS Institute, accessed September 6, 2025, [https://www.globalccsinstitute.com/archive/hub/publications/29761/co2-capture-technologies-oxy-combustion.pdf](https://www.globalccsinstitute.com/archive/hub/publications/29761/co2-capture-technologies-oxy-combustion.pdf)  
+21. Oxy-Fuel Combustion | Southwest Research Institute, accessed September 6, 2025, [https://www.swri.org/markets/energy-environment/power-generation-utilities/advanced-power-systems/oxy-fuel-combustion](https://www.swri.org/markets/energy-environment/power-generation-utilities/advanced-power-systems/oxy-fuel-combustion)  
+22. Oxyfuel Combustion | A Linde Company, accessed September 6, 2025, [https://www.linde-engineering.com/products-and-services/process-plants/co2-plants/carbon-capture/oxyfuel-combustion](https://www.linde-engineering.com/products-and-services/process-plants/co2-plants/carbon-capture/oxyfuel-combustion)  
+23. Direct Air Capture \- Carbon180, accessed September 6, 2025, [https://carbon180.org/pathway/direct-air-capture/](https://carbon180.org/pathway/direct-air-capture/)  
+24. Direct air capture \- Wikipedia, accessed September 6, 2025, [https://en.wikipedia.org/wiki/Direct\_air\_capture](https://en.wikipedia.org/wiki/Direct_air_capture)  
+25. DAC Technology \- 1PointFive, accessed September 6, 2025, [https://www.1pointfive.com/dac-technology](https://www.1pointfive.com/dac-technology)  
+26. Direct Air Capture Technology \- Carbon Engineering, accessed September 6, 2025, [https://carbonengineering.com/our-technology/](https://carbonengineering.com/our-technology/)  
+27. CO2 pipelines \- DNV, accessed September 6, 2025, [https://www.dnv.com/focus-areas/ccs/carbon-pipelines/](https://www.dnv.com/focus-areas/ccs/carbon-pipelines/)  
+28. Carbon Capture and Storage Risks, Explained \- Storegga, accessed September 6, 2025, [https://storegga.earth/blog/carbon-capture-and-storage-risks-explained](https://storegga.earth/blog/carbon-capture-and-storage-risks-explained)  
+29. Challenges Of CCS \- Solartron ISA, accessed September 6, 2025, [https://www.solartronisa.com/industries/clean-energy/carbon-capture/challenges-of-ccs](https://www.solartronisa.com/industries/clean-energy/carbon-capture/challenges-of-ccs)  
+30. What's needed for carbon capture and storage (CCUS) to take off | World Economic Forum, accessed September 6, 2025, [https://www.weforum.org/stories/2025/03/carbon-capture-storage-essentials-uptake/](https://www.weforum.org/stories/2025/03/carbon-capture-storage-essentials-uptake/)  
+31. LCO₂ Carrier｜Solutions \- Energy Transition \- Mitsubishi Heavy Industries, accessed September 6, 2025, [https://solutions.mhi.com/ccus/lco2-carrier/](https://solutions.mhi.com/ccus/lco2-carrier/)  
+32. CO2 shipping \- DNV, accessed September 6, 2025, [https://www.dnv.com/focus-areas/ccs/carbon-shipping/](https://www.dnv.com/focus-areas/ccs/carbon-shipping/)  
+33. Carbon Capture and Storage (CCS)- Pathways Alliance, accessed September 6, 2025, [https://pathwaysalliance.ca/foundational-project/carbon-capture-and-storage-ccs/](https://pathwaysalliance.ca/foundational-project/carbon-capture-and-storage-ccs/)  
+34. Deployment of bio-CCS: case studies \- IEA Bioenergy, accessed September 6, 2025, [https://www.ieabioenergy.com/blog/publications/deployment-of-bio-ccs-case-studies/](https://www.ieabioenergy.com/blog/publications/deployment-of-bio-ccs-case-studies/)  
+35. Locked Up for the Long Term: Risk Mitigation and Liability Assumption in the Geological Storage of CO2 \- Payne Institute for Public Policy, accessed September 6, 2025, [https://payneinstitute.mines.edu/locked-up-for-the-long-term-risk-mitigation-and-liability-assumption-in-the-geological-storage-of-co2/](https://payneinstitute.mines.edu/locked-up-for-the-long-term-risk-mitigation-and-liability-assumption-in-the-geological-storage-of-co2/)  
+36. Chemical and Hydrodynamic Mechanisms for Long-Term Geological Carbon Storage | The Journal of Physical Chemistry C \- ACS Publications, accessed September 6, 2025, [https://pubs.acs.org/doi/10.1021/jp5006764](https://pubs.acs.org/doi/10.1021/jp5006764)  
+37. Carbon Capture and Storage in Depleted Oil and Gas Reservoirs: The Viewpoint of Wellbore Injectivity \- MDPI, accessed September 6, 2025, [https://www.mdpi.com/1996-1073/17/5/1201](https://www.mdpi.com/1996-1073/17/5/1201)  
+38. Geological CO2 disposal: Understanding the long term fate of CO2 in naturally occurring accumulations | Request PDF \- ResearchGate, accessed September 6, 2025, [https://www.researchgate.net/publication/255979390\_Geological\_CO2\_disposal\_Understanding\_the\_long\_term\_fate\_of\_CO2\_in\_naturally\_occurring\_accumulations](https://www.researchgate.net/publication/255979390_Geological_CO2_disposal_Understanding_the_long_term_fate_of_CO2_in_naturally_occurring_accumulations)  
+39. (PDF) Carbon storage in depleted gas fields: Key challenges, accessed September 6, 2025, [https://www.researchgate.net/publication/248607902\_Carbon\_storage\_in\_depleted\_gas\_fields\_Key\_challenges](https://www.researchgate.net/publication/248607902_Carbon_storage_in_depleted_gas_fields_Key_challenges)  
+40. Depleted Oil & Gas Reservoirs \- The Path to CCS Success \- TGS, accessed September 6, 2025, [https://www.tgs.com/articles/depleted-oil-gas-reservoirs-for-ccs-success](https://www.tgs.com/articles/depleted-oil-gas-reservoirs-for-ccs-success)  
+41. Depleted hydrocarbon reservoir CO2 storage \- CO2CRC, accessed September 6, 2025, [https://co2crc.com.au/research/storage-research/depleted-hydrocarbon-reservoir-co2-storage/](https://co2crc.com.au/research/storage-research/depleted-hydrocarbon-reservoir-co2-storage/)  
+42. Carbon dioxide (CO2) sequestration in deep saline aquifers and ..., accessed September 6, 2025, [https://www.usgs.gov/publications/carbon-dioxide-co2-sequestration-deep-saline-aquifers-and-formations-chapter-3](https://www.usgs.gov/publications/carbon-dioxide-co2-sequestration-deep-saline-aquifers-and-formations-chapter-3)  
+43. Study: There is less room to store carbon dioxide, driver of climate change, than previously thought, accessed September 6, 2025, [https://apnews.com/article/carbon-capture-storage-research-climate-change-c5ebd4f7c2d23e20526512e1ef338bef](https://apnews.com/article/carbon-capture-storage-research-climate-change-c5ebd4f7c2d23e20526512e1ef338bef)  
+44. pmc.ncbi.nlm.nih.gov, accessed September 6, 2025, [https://pmc.ncbi.nlm.nih.gov/articles/PMC11900583/\#:\~:text=Mineral%20carbonation%2C%20specifically%2C%20biogenic%20mineral,actively%20injecting%20CO2)%20strategy.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11900583/#:~:text=Mineral%20carbonation%2C%20specifically%2C%20biogenic%20mineral,actively%20injecting%20CO2\)%20strategy.)  
+45. CO2 sequestration by mineral carbonation: a review \- Global NEST Journal, accessed September 6, 2025, [https://journal.gnest.org/sites/default/files/Submissions/gnest\_02597/gnest\_02597\_published.pdf](https://journal.gnest.org/sites/default/files/Submissions/gnest_02597/gnest_02597_published.pdf)  
+46. A review of mineral carbonation technologies to sequester CO 2 \- RSC Publishing, accessed September 6, 2025, [https://pubs.rsc.org/en/content/articlehtml/2014/cs/c4cs00035h](https://pubs.rsc.org/en/content/articlehtml/2014/cs/c4cs00035h)  
+47. Mineral carbonation and industrial uses of carbon dioxide \- IPCC, accessed September 6, 2025, [https://www.ipcc.ch/site/assets/uploads/2018/03/srccs\_chapter7-1.pdf](https://www.ipcc.ch/site/assets/uploads/2018/03/srccs_chapter7-1.pdf)  
+48. CO2 Sequestration through Mineral Carbonation: Effect of Different Parameters on Carbonation of Fe-Rich Mine Waste Materials \- MDPI, accessed September 6, 2025, [https://www.mdpi.com/2227-9717/10/2/432](https://www.mdpi.com/2227-9717/10/2/432)  
+49. Carbon Mineralization of CO2 \- Negative Emissions Technologies and Reliable Sequestration \- NCBI Bookshelf, accessed September 6, 2025, [https://www.ncbi.nlm.nih.gov/books/NBK541437/](https://www.ncbi.nlm.nih.gov/books/NBK541437/)  
+50. Understanding the Long-Term fate of geologically stored CO2 | FP7 \- CORDIS, accessed September 6, 2025, [https://cordis.europa.eu/project/id/281196/reporting/de](https://cordis.europa.eu/project/id/281196/reporting/de)  
+51. Approaches to Long-Term Liability of Class VI Injection Wells \- Carbon Capture Ready, accessed September 6, 2025, [https://carboncaptureready.betterenergy.org/wp-content/uploads/2024/07/Long-Term-Liability.pdf](https://carboncaptureready.betterenergy.org/wp-content/uploads/2024/07/Long-Term-Liability.pdf)  
+52. Well-based monitoring of CO2 geological sequestration operations in saline aquifers: Critical insight into key questions | Journal Article | PNNL, accessed September 6, 2025, [https://www.pnnl.gov/publications/well-based-monitoring-co2-geological-sequestration-operations-saline-aquifers-critical](https://www.pnnl.gov/publications/well-based-monitoring-co2-geological-sequestration-operations-saline-aquifers-critical)  
+53. U.S. State Energy Financial Incentives for CCS \- Center for Climate ..., accessed September 6, 2025, [https://www.c2es.org/document/energy-financial-incentives-for-ccs/](https://www.c2es.org/document/energy-financial-incentives-for-ccs/)  
+54. The Carbon Capture Crux \- IEEFA, accessed September 6, 2025, [https://ieefa.org/sites/default/files/2022-09/The%20Carbon%20Capture%20Crux.pdf](https://ieefa.org/sites/default/files/2022-09/The%20Carbon%20Capture%20Crux.pdf)  
+55. Assessing the relative costs of high-CCS and low-CCS pathways to 1.5 degrees | Smith School of Enterprise and the Environment, accessed September 6, 2025, [https://www.smithschool.ox.ac.uk/sites/default/files/2023-12/Assessing-the-relative-costs-of-high-CCS-and-low-CCS-pathways-to-1-5-degrees.pdf](https://www.smithschool.ox.ac.uk/sites/default/files/2023-12/Assessing-the-relative-costs-of-high-CCS-and-low-CCS-pathways-to-1-5-degrees.pdf)  
+56. Carbon Capture, Utilization, and Storage: Technologies and Costs in the U.S. Context, accessed September 6, 2025, [https://www.belfercenter.org/publication/carbon-capture-utilization-and-storage-technologies-and-costs-us-context](https://www.belfercenter.org/publication/carbon-capture-utilization-and-storage-technologies-and-costs-us-context)  
+57. Chapter 8: Cost and economic potential \- Intergovernmental Panel on Climate Change (IPCC), accessed September 6, 2025, [https://www.ipcc.ch/site/assets/uploads/2018/03/srccs\_chapter8-1.pdf](https://www.ipcc.ch/site/assets/uploads/2018/03/srccs_chapter8-1.pdf)  
+58. Total cost of carbon capture and storage implemented at a regional scale: northeastern and midwestern United States \- Journals, accessed September 6, 2025, [https://royalsocietypublishing.org/doi/10.1098/rsfs.2019.0065](https://royalsocietypublishing.org/doi/10.1098/rsfs.2019.0065)  
+59. Why the Cost of Carbon Capture and Storage Remains Persistently High, accessed September 6, 2025, [https://www.iisd.org/articles/deep-dive/why-carbon-capture-storage-cost-remains-high](https://www.iisd.org/articles/deep-dive/why-carbon-capture-storage-cost-remains-high)  
+60. Financial risks of carbon capture and storage in Canada: Concerns about the Pathways Project and Public Energy Policy | IEEFA, accessed September 6, 2025, [https://ieefa.org/resources/financial-risks-carbon-capture-and-storage-canada-concerns-about-pathways-project-and](https://ieefa.org/resources/financial-risks-carbon-capture-and-storage-canada-concerns-about-pathways-project-and)  
+61. CCS Market Incentives Work Stream \- CO2 Capture Project, accessed September 6, 2025, [https://www.co2captureproject.org/xt457PuN/report/CCP2\_Principles\_CCS\_Incentives.pdf](https://www.co2captureproject.org/xt457PuN/report/CCP2_Principles_CCS_Incentives.pdf)  
+62. The Bottom Line: Why the cost of carbon capture and storage remains persistently high, accessed September 6, 2025, [https://www.iisd.org/system/files/2023-09/bottom-line-why-carbon-capture-storage-cost-remains-high.pdf](https://www.iisd.org/system/files/2023-09/bottom-line-why-carbon-capture-storage-cost-remains-high.pdf)  
+63. How to design better incentives for carbon capture and storage in the United States \- PMC, accessed September 6, 2025, [https://pmc.ncbi.nlm.nih.gov/articles/PMC12304965/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12304965/)  
+64. Can CCS Deliver? Exploring the Potential of Carbon Capture and Storage in Industry, accessed September 6, 2025, [https://www.usitc.gov/sites/default/files/publications/332/executive\_briefings/ebot\_berard\_carbon\_capture.pdf](https://www.usitc.gov/sites/default/files/publications/332/executive_briefings/ebot_berard_carbon_capture.pdf)  
+65. Risks and Challenges in CO 2 Capture, Use, Transportation, and Storage \- MDPI, accessed September 6, 2025, [https://www.mdpi.com/2071-1050/17/17/7871](https://www.mdpi.com/2071-1050/17/17/7871)  
+66. CCS Commercial and Regulatory Frameworks, accessed September 6, 2025, [https://www.globalccsinstitute.com/resources/insights/ccs-commercial-and-regulatory-frameworks/](https://www.globalccsinstitute.com/resources/insights/ccs-commercial-and-regulatory-frameworks/)  
+67. GLOBAL STATUS OF CCS 2022, accessed September 6, 2025, [https://status22.globalccsinstitute.com/wp-content/uploads/2022/10/Global-Status-of-CCS-2022-Report-Final-compressed.pdf](https://status22.globalccsinstitute.com/wp-content/uploads/2022/10/Global-Status-of-CCS-2022-Report-Final-compressed.pdf)  
+68. 2025 FEDERAL POLICY BLUEPRINT \- Carbon Capture Coalition, accessed September 6, 2025, [https://carboncapturecoalition.org/wp-content/uploads/2025/02/CCC-2025-Federal-Policy-Blueprint.pdf](https://carboncapturecoalition.org/wp-content/uploads/2025/02/CCC-2025-Federal-Policy-Blueprint.pdf)  
+69. The future of carbon capture and storage: strategies and challenges \- BNP Paribas CIB, accessed September 6, 2025, [https://cib.bnpparibas/the-future-of-carbon-capture-and-storage-strategies-and-challenges/](https://cib.bnpparibas/the-future-of-carbon-capture-and-storage-strategies-and-challenges/)  
+70. New Global Report: Significant Increase in CCS Projects, accessed September 6, 2025, [https://www.sliteccs.se/en/new-global-report-significant-increase-in-ccs-projects](https://www.sliteccs.se/en/new-global-report-significant-increase-in-ccs-projects)  
+71. CCUS projects around the world are reaching new milestones – Analysis \- IEA, accessed September 6, 2025, [https://www.iea.org/commentaries/ccus-projects-around-the-world-are-reaching-new-milestones](https://www.iea.org/commentaries/ccus-projects-around-the-world-are-reaching-new-milestones)  
+72. Around the world in 22 carbon capture projects, accessed September 6, 2025, [https://www.carbonbrief.org/around-the-world-in-22-carbon-capture-projects/](https://www.carbonbrief.org/around-the-world-in-22-carbon-capture-projects/)  
+73. Unpacking Carbon Capture and Storage: The technology behind the promise, accessed September 6, 2025, [https://www.iisd.org/articles/insight/unpacking-carbon-capture-storage-technology](https://www.iisd.org/articles/insight/unpacking-carbon-capture-storage-technology)  
+74. Legal and Regulatory Frameworks for CCUS \- NET, accessed September 6, 2025, [https://iea.blob.core.windows.net/assets/bda8c2b2-2b9c-4010-ab56-b941dc8d0635/LegalandRegulatoryFrameworksforCCUS-AnIEACCUSHandbook.pdf](https://iea.blob.core.windows.net/assets/bda8c2b2-2b9c-4010-ab56-b941dc8d0635/LegalandRegulatoryFrameworksforCCUS-AnIEACCUSHandbook.pdf)  
+75. Global Status Report 2024 \- Global CCS Institute, accessed September 6, 2025, [https://www.globalccsinstitute.com/resources/global-status-report/](https://www.globalccsinstitute.com/resources/global-status-report/)  
+76. storegga.earth, accessed September 6, 2025, [https://storegga.earth/blog/carbon-capture-and-storage-risks-explained\#:\~:text=Carbon%20Leakage,the%20environment%20and%20its%20inhabitants.](https://storegga.earth/blog/carbon-capture-and-storage-risks-explained#:~:text=Carbon%20Leakage,the%20environment%20and%20its%20inhabitants.)  
+77. Carbon, Capture, and Storage: History, Current State, and Obstacles for the Future (Part 2), accessed September 6, 2025, [https://www.eli.org/vibrant-environment-blog/carbon-capture-and-storage-history-current-state-and-obstacles-future-part-2](https://www.eli.org/vibrant-environment-blog/carbon-capture-and-storage-history-current-state-and-obstacles-future-part-2)  
+78. Proposed Liability Framework for Geological Sequestration of Carbon Dioxide \- Harvard University, accessed September 6, 2025, [https://clinics.law.harvard.edu/environment/files/2019/09/proposed-liability-framework-geological-sequestration-carbon-dioxide.pdf](https://clinics.law.harvard.edu/environment/files/2019/09/proposed-liability-framework-geological-sequestration-carbon-dioxide.pdf)  
+79. LONG-TERM LIABILITY FOR CARBON CAPTURE AND STORAGE IN DEPLETED NORTH AMERICAN OIL AND GAS RESERVOIRS \- A COMPARATIVE ANALYSIS, accessed September 6, 2025, [https://www.eba-net.org/wp-content/uploads/2023/02/10-20\_431\_ccs\_liability.pdf](https://www.eba-net.org/wp-content/uploads/2023/02/10-20_431_ccs_liability.pdf)  
+80. CCUS Legal and Regulatory Database – Data Tools \- IEA, accessed September 6, 2025, [https://www.iea.org/data-and-statistics/data-tools/ccus-legal-and-regulatory-database](https://www.iea.org/data-and-statistics/data-tools/ccus-legal-and-regulatory-database)  
+81. Public perception of carbon capture and storage (CCS): A review \- ResearchGate, accessed September 6, 2025, [https://www.researchgate.net/publication/278078108\_Public\_perception\_of\_carbon\_capture\_and\_storage\_CCS\_A\_review](https://www.researchgate.net/publication/278078108_Public_perception_of_carbon_capture_and_storage_CCS_A_review)  
+82. Public perception and acceptance of CCUS: preliminary findings of a qualitative case study in Greece. \- Open Research Europe \- European Union, accessed September 6, 2025, [https://open-research-europe.ec.europa.eu/articles/3-205](https://open-research-europe.ec.europa.eu/articles/3-205)  
+83. www.helmholtz-klima.de, accessed September 6, 2025, [https://www.helmholtz-klima.de/en/klimawissen/public-perception-co2-capture-and-storage\#:\~:text=Studies%20on%20public%20opinion%20about,existing%20or%20planned%20CCS%20project.](https://www.helmholtz-klima.de/en/klimawissen/public-perception-co2-capture-and-storage#:~:text=Studies%20on%20public%20opinion%20about,existing%20or%20planned%20CCS%20project.)  
+84. Factors Shaping Public Support for More Carbon Capture and Storage Projects in the United States \- Scholars' Mine, accessed September 6, 2025, [https://scholarsmine.mst.edu/cgi/viewcontent.cgi?article=1195\&context=econ\_facwork](https://scholarsmine.mst.edu/cgi/viewcontent.cgi?article=1195&context=econ_facwork)  
+85. The Role of Public Perception in Carbon Storage Policy Adoption. → Scenario, accessed September 6, 2025, [https://prism.sustainability-directory.com/scenario/the-role-of-public-perception-in-carbon-storage-policy-adoption/](https://prism.sustainability-directory.com/scenario/the-role-of-public-perception-in-carbon-storage-policy-adoption/)  
+86. Public Perception of Carbon Capture and Storage Technology \- Belfer Center, accessed September 6, 2025, [https://www.belfercenter.org/sites/default/files/pantheon\_files/files/publication/CCS\_Public\_Perception\_Workshop\_Report.pdf](https://www.belfercenter.org/sites/default/files/pantheon_files/files/publication/CCS_Public_Perception_Workshop_Report.pdf)  
+87. Carbon Capture: The Fossil Fuel Industry's False Climate Solution \- Earthjustice, accessed September 6, 2025, [https://earthjustice.org/article/carbon-capture-the-fossil-fuel-industrys-false-climate-solution](https://earthjustice.org/article/carbon-capture-the-fossil-fuel-industrys-false-climate-solution)  
+88. Carbon Capture and Storage \- OECD, accessed September 6, 2025, [https://www.oecd.org/en/publications/technology-roadmap-carbon-capture-and-storage\_9789264088122-en.html](https://www.oecd.org/en/publications/technology-roadmap-carbon-capture-and-storage_9789264088122-en.html)  
+89. Carbon capture and storage is at a pivotal moment for decarbonization. Here's why, accessed September 6, 2025, [https://www.weforum.org/stories/2025/08/carbon-capture-storage-decarbonization-pivotal-moment/](https://www.weforum.org/stories/2025/08/carbon-capture-storage-decarbonization-pivotal-moment/)  
+90. Global Collaborations | netl.doe.gov \- Department of Energy, accessed September 6, 2025, [https://netl.doe.gov/coal/carbon-storage/strategic-program-support/global-collaborations](https://netl.doe.gov/coal/carbon-storage/strategic-program-support/global-collaborations)  
+91. Global Collaborations | netl.doe.gov \- Department of Energy, accessed September 6, 2025, [https://netl.doe.gov/carbon-management/carbon-storage/globalcollaborations](https://netl.doe.gov/carbon-management/carbon-storage/globalcollaborations)  
+92. Commercial Carbon Capture Plants: International Operating CCS Projects, accessed September 6, 2025, [https://ccsknowledge.com/insight-accelerator/commercial-carbon-capture-plants-international-operating-ccs-projects/](https://ccsknowledge.com/insight-accelerator/commercial-carbon-capture-plants-international-operating-ccs-projects/)  
+93. GLOBAL KNOWLEDGE SHARING FRAMEWORK, accessed September 6, 2025, [https://www.globalccsinstitute.com/archive/hub/publications/12731/global-knowledge-sharing-framework-final.pdf](https://www.globalccsinstitute.com/archive/hub/publications/12731/global-knowledge-sharing-framework-final.pdf)
