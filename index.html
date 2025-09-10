@@ -685,6 +685,51 @@
                 display: none !important;
             }
         }
+        
+        /* Print styles for PDF generation */
+        @media print {
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+                color: black;
+                background: white;
+            }
+            
+            /* Hide interactive elements */
+            button, .nav-link, #mobile-menu-toggle, #mobile-menu-close {
+                display: none !important;
+            }
+            
+            /* Optimize spacing */
+            .container {
+                max-width: none;
+                padding: 0.5rem;
+            }
+            
+            /* Ensure proper page breaks */
+            .tech-card, .stat-card {
+                break-inside: avoid;
+                margin-bottom: 1rem;
+            }
+            
+            /* Make text more readable */
+            h1, h2, h3, h4 {
+                color: black;
+                page-break-after: avoid;
+            }
+            
+            /* Optimize chart for print */
+            .chart-container {
+                height: 300px;
+                break-inside: avoid;
+            }
+            
+            /* Remove shadows and borders for cleaner look */
+            .gradient-border {
+                border: 1px solid #ccc;
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -724,6 +769,12 @@
                 <button id="lang-toggle" class="ml-4 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors duration-200 flex items-center space-x-2">
                     <i class="fas fa-language"></i>
                     <span id="lang-text" data-en="عربي" data-ar="English">عربي</span>
+                </button>
+                
+                <!-- PDF Download Button -->
+                <button id="pdf-download" class="ml-2 px-3 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-medium transition-colors duration-200 flex items-center space-x-2">
+                    <i class="fas fa-file-pdf"></i>
+                    <span data-en="Download PDF" data-ar="تحميل PDF">Download PDF</span>
                 </button>
             </div>
             <div class="md:hidden">
@@ -941,30 +992,30 @@
                     </div>
                 </div>
                 <div id="content-pre-combustion" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
-                    <h3 class="text-2xl font-semibold mb-4">Pre-Combustion Capture</h3>
-                    <p class="text-gray-600 mb-4">In this method, carbon is removed from the fuel source before it is burned. The primary fuel undergoes gasification or steam methane reforming, reacting with steam and oxygen to form synthesis gas (syngas) - primarily carbon monoxide and hydrogen.</p>
+                    <h3 class="text-2xl font-semibold mb-4" data-en="Pre-Combustion Capture" data-ar="احتجاز ما قبل الاحتراق">Pre-Combustion Capture</h3>
+                    <p class="text-gray-600 mb-4" data-en="In this method, carbon is removed from the fuel source before it is burned. The primary fuel undergoes gasification or steam methane reforming, reacting with steam and oxygen to form synthesis gas (syngas) - primarily carbon monoxide and hydrogen." data-ar="في هذه الطريقة، يتم إزالة الكربون من مصدر الوقود قبل حرقه. الوقود الأساسي يخضع للتغويز أو إعادة تشكيل الميثان بالبخار، متفاعلاً مع البخار والأكسجين لتشكيل غاز التخليق (سينغاز) - بشكل أساسي أول أكسيد الكربون والهيدروجين.">In this method, carbon is removed from the fuel source before it is burned. The primary fuel undergoes gasification or steam methane reforming, reacting with steam and oxygen to form synthesis gas (syngas) - primarily carbon monoxide and hydrogen.</p>
                     
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                        <h4 class="font-semibold text-gray-800 mb-2">Process Flow:</h4>
+                        <h4 class="font-semibold text-gray-800 mb-2" data-en="Process Flow:" data-ar="تدفق العملية:">Process Flow:</h4>
                         <ol class="list-decimal list-inside text-gray-600 space-y-1">
-                            <li>Fuel undergoes gasification/steam reforming</li>
-                            <li>Water-gas-shift reaction converts CO to CO₂ + H₂</li>
-                            <li>High-pressure CO₂ separation (15-50% concentration)</li>
-                            <li>Hydrogen-rich fuel used for power generation</li>
+                            <li data-en="Fuel undergoes gasification/steam reforming" data-ar="الوقود يخضع للتغويز/إعادة التشكيل بالبخار">Fuel undergoes gasification/steam reforming</li>
+                            <li data-en="Water-gas-shift reaction converts CO to CO₂ + H₂" data-ar="تفاعل تحول الماء-الغاز يحول CO إلى CO₂ + H₂">Water-gas-shift reaction converts CO to CO₂ + H₂</li>
+                            <li data-en="High-pressure CO₂ separation (15-50% concentration)" data-ar="فصل CO₂ عالي الضغط (تركيز ١٥-٥٠٪)">High-pressure CO₂ separation (15-50% concentration)</li>
+                            <li data-en="Hydrogen-rich fuel used for power generation" data-ar="الوقود الغني بالهيدروجين يُستخدم لتوليد الطاقة">Hydrogen-rich fuel used for power generation</li>
                         </ol>
                     </div>
                     
                     <div class="bg-blue-50 p-4 rounded-lg mb-4">
-                        <h4 class="font-semibold text-blue-800 mb-2">Advantages:</h4>
+                        <h4 class="font-semibold text-blue-800 mb-2" data-en="Advantages:" data-ar="المزايا:">Advantages:</h4>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
-                            <li>Higher thermodynamic efficiency for capture</li>
-                            <li>Uses physical solvents (less energy-intensive)</li>
-                            <li>Core technology for low-carbon "blue" hydrogen production</li>
-                            <li>Lower cost increase (~37% vs 66% for post-combustion)</li>
+                            <li data-en="Higher thermodynamic efficiency for capture" data-ar="كفاءة حرارية أعلى للاحتجاز">Higher thermodynamic efficiency for capture</li>
+                            <li data-en="Uses physical solvents (less energy-intensive)" data-ar="يستخدم المذيبات الفيزيائية (أقل كثافة في الطاقة)">Uses physical solvents (less energy-intensive)</li>
+                            <li data-en="Core technology for low-carbon 'blue' hydrogen production" data-ar="التكنولوجيا الأساسية لإنتاج الهيدروجين 'الأزرق' منخفض الكربون">Core technology for low-carbon "blue" hydrogen production</li>
+                            <li data-en="Lower cost increase (~37% vs 66% for post-combustion)" data-ar="زيادة تكلفة أقل (~٣٧٪ مقابل ٦٦٪ لما بعد الاحتراق)">Lower cost increase (~37% vs 66% for post-combustion)</li>
                         </ul>
                     </div>
                     
-                    <p class="text-gray-600">This is more complex and typically better suited for new-build facilities rather than retrofits. It's fundamentally integrated into facility design and represents the pathway for hydrogen economy development.</p>
+                    <p class="text-gray-600" data-en="This is more complex and typically better suited for new-build facilities rather than retrofits. It's fundamentally integrated into facility design and represents the pathway for hydrogen economy development." data-ar="هذا أكثر تعقيداً وعادة ما يكون أكثر ملاءمة للمرافق الجديدة البناء بدلاً من التحديث التراجعي. إنه متكامل بشكل أساسي في تصميم المرافق ويمثل المسار لتطوير اقتصاد الهيدروجين.">This is more complex and typically better suited for new-build facilities rather than retrofits. It's fundamentally integrated into facility design and represents the pathway for hydrogen economy development.</p>
                 </div>
                 <div id="content-oxy-fuel" class="tab-content hidden bg-white p-8 rounded-lg shadow-md border border-gray-200">
                     <h3 class="text-2xl font-semibold mb-4" data-en="Oxy-Fuel Combustion" data-ar="احتراق الأكسي-وقود">Oxy-Fuel Combustion</h3>
@@ -1663,6 +1714,59 @@
         document.addEventListener('DOMContentLoaded', function () {
             console.log('DOM loaded, initializing...');
             
+            // Tab functionality - Initialize first
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.id.replace('tab-', 'content-');
+                    console.log('Tab clicked:', tab.id, 'Target:', targetId);
+                    
+                    // Remove active class from all tabs
+                    tabs.forEach(t => {
+                        t.classList.remove('active-tab');
+                        t.style.transform = '';
+                    });
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active-tab');
+                    
+                    // Hide all content immediately
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                        content.style.display = 'none';
+                    });
+                    
+                    // Show target content immediately
+                    const targetContent = document.getElementById(targetId);
+                    if (targetContent) {
+                        console.log('Showing content:', targetContent);
+                        targetContent.classList.remove('hidden');
+                        targetContent.style.display = 'block';
+                        targetContent.style.opacity = '1';
+                    } else {
+                        console.error('Target content not found:', targetId);
+                    }
+                });
+            });
+            
+            // PDF Download functionality
+            const pdfDownloadBtn = document.getElementById('pdf-download');
+            if (pdfDownloadBtn) {
+                pdfDownloadBtn.addEventListener('click', function() {
+                    // Create a temporary link to trigger download of the actual PDF file
+                    const link = document.createElement('a');
+                    link.href = 'The Global Carbon Capture _ Storage Landscape_ A Strategic Analysis of Technologies, Economics, and Deployment.pdf';
+                    link.download = 'Carbon-Capture-Storage-Report.pdf';
+                    
+                    // Append to body, click, and remove
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+            
             // Arabic Language Toggle Functionality
             let isArabic = false;
             const langToggle = document.getElementById('lang-toggle');
@@ -1691,6 +1795,10 @@
                 
                 // Update button text
                 langText.textContent = isArabic ? 'English' : 'عربي';
+                
+                // Update chart with new language
+                const currentLanguage = isArabic ? 'ar' : 'en';
+                createChart(currentLanguage);
                 
                 // Save preference
                 localStorage.setItem('preferred-language', isArabic ? 'ar' : 'en');
@@ -1757,50 +1865,6 @@
                 });
             });
 
-            // Tab functionality with smooth transitions
-            const tabs = document.querySelectorAll('.tab');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const targetId = tab.id.replace('tab-', 'content-');
-                    
-                    // Remove active class from all tabs
-                    tabs.forEach(t => {
-                        t.classList.remove('active-tab');
-                        t.style.transform = '';
-                    });
-                    
-                    // Add active class to clicked tab
-                    tab.classList.add('active-tab');
-                    
-                    // Hide all content with fade out
-                    tabContents.forEach(content => {
-                        if (content.classList.contains('tab-content')) {
-                            gsap.to(content, {
-                                duration: 0.3,
-                                opacity: 0,
-                                y: 20,
-                                onComplete: () => {
-                                    content.classList.add('hidden');
-                                }
-                            });
-                        }
-                    });
-                    
-                    // Show target content with fade in
-                    setTimeout(() => {
-                        const targetContent = document.getElementById(targetId);
-                        if (targetContent) {
-                            targetContent.classList.remove('hidden');
-                            gsap.fromTo(targetContent, 
-                                { opacity: 0, y: 20 }, 
-                                { duration: 0.5, opacity: 1, y: 0, ease: "power3.out" }
-                            );
-                        }
-                    }, 300);
-                });
-            });
             
             // Smooth scroll navigation
             const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
@@ -1831,32 +1895,54 @@
             });
 
             // Enhanced chart with better styling and error handling
-            const chartCanvas = document.getElementById('ccsProjectsChart');
-            if (chartCanvas && typeof Chart !== 'undefined') {
-                try {
-                    const ctx = chartCanvas.getContext('2d');
-                    const ccsProjectsChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['In Operation', 'In Construction', 'In Development'],
-                            datasets: [{
-                                label: 'Number of CCS Facilities (Global)',
-                                data: [41, 26, 325],
-                                backgroundColor: [
-                                    '#667eea',
-                                    '#f5576c',
-                                    '#00f2fe'
-                                ],
-                                borderColor: [
-                                    '#667eea',
-                                    '#f5576c',
-                                    '#00f2fe'
-                                ],
-                                borderWidth: 2,
-                                borderRadius: 12,
-                                borderSkipped: false,
-                            }]
-                        },
+            let ccsProjectsChart;
+            
+            // Chart labels in both languages
+            const chartLabels = {
+                en: {
+                    labels: ['In Operation', 'In Construction', 'In Development'],
+                    title: 'Global CCS Facility Pipeline (Source: Global CCS Institute 2025)',
+                    dataset: 'Number of CCS Facilities (Global)'
+                },
+                ar: {
+                    labels: ['في التشغيل', 'قيد الإنشاء', 'قيد التطوير'],
+                    title: 'خط أنابيب مرافق احتجاز وتخزين الكربون العالمية (المصدر: معهد احتجاز وتخزين الكربون العالمي ٢٠٢٥)',
+                    dataset: 'عدد مرافق احتجاز وتخزين الكربون (عالمياً)'
+                }
+            };
+
+            function createChart(language = 'en') {
+                const chartCanvas = document.getElementById('ccsProjectsChart');
+                if (chartCanvas && typeof Chart !== 'undefined') {
+                    try {
+                        // Destroy existing chart if it exists
+                        if (ccsProjectsChart) {
+                            ccsProjectsChart.destroy();
+                        }
+                        
+                        const ctx = chartCanvas.getContext('2d');
+                        ccsProjectsChart = new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: chartLabels[language].labels,
+                                datasets: [{
+                                    label: chartLabels[language].dataset,
+                                    data: [51, 44, 533],
+                                    backgroundColor: [
+                                        '#667eea',
+                                        '#f5576c',
+                                        '#00f2fe'
+                                    ],
+                                    borderColor: [
+                                        '#667eea',
+                                        '#f5576c',
+                                        '#00f2fe'
+                                    ],
+                                    borderWidth: 2,
+                                    borderRadius: 12,
+                                    borderSkipped: false,
+                                }]
+                            },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
@@ -1867,7 +1953,7 @@
                         },
                         title: {
                             display: true,
-                            text: 'Global CCS Facility Pipeline (Source: Global CCS Institute 2025)',
+                            text: chartLabels[language].title,
                             font: {
                                 size: 18,
                                 family: 'Space Grotesk',
@@ -1949,6 +2035,7 @@
             }
             } else {
                 console.warn('Chart canvas not found or Chart.js not loaded');
+            }
             }
 
             // Add hover effects to cards
@@ -2133,6 +2220,9 @@
             
             // Re-optimize on window resize
             window.addEventListener('resize', optimizeForMobile);
+            
+            // Initialize chart with default language
+            createChart('en');
 
         }); // End DOMContentLoaded
 
