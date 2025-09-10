@@ -1866,7 +1866,7 @@
             });
 
             
-            // Smooth scroll navigation
+            // Smooth scroll navigation - using native scrolling for reliability
             const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
@@ -1875,21 +1875,22 @@
                     const targetSection = document.querySelector(targetId);
                     
                     if (targetSection) {
-                        try {
-                            // Try GSAP scrollTo first
-                            gsap.to(window, {
-                                duration: 1.5,
-                                scrollTo: { y: targetSection.offsetTop - 100, autoKill: true },
-                                ease: "power3.inOut"
-                            });
-                        } catch (error) {
-                            console.warn('GSAP scrollTo failed, using native scrolling:', error);
-                            // Fallback to native smooth scrolling
-                            window.scrollTo({
-                                top: targetSection.offsetTop - 100,
-                                behavior: 'smooth'
-                            });
+                        // Update active state for desktop navigation
+                        const desktopNavLinks = document.querySelectorAll('.nav-link');
+                        desktopNavLinks.forEach(nav => nav.classList.remove('text-blue-400', 'border-blue-400'));
+                        if (this.classList.contains('nav-link')) {
+                            this.classList.add('text-blue-400', 'border-blue-400');
                         }
+                        
+                        // Native smooth scrolling
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        console.log('Scrolling to:', targetId, 'Position:', targetSection.offsetTop);
+                    } else {
+                        console.error('Target section not found:', targetId);
                     }
                 });
             });
