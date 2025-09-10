@@ -823,6 +823,21 @@
                 </a>
             </nav>
             
+            <!-- Mobile Action Buttons -->
+            <div class="mt-6 space-y-3">
+                <!-- Mobile Arabic Toggle Button -->
+                <button id="mobile-lang-toggle" class="w-full px-4 py-3 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
+                    <i class="fas fa-language"></i>
+                    <span id="mobile-lang-text" data-en="عربي" data-ar="English">عربي</span>
+                </button>
+                
+                <!-- Mobile PDF Download Button -->
+                <button id="mobile-pdf-download" class="w-full px-4 py-3 rounded-lg bg-red-600 hover:bg-red-700 text-white font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
+                    <i class="fas fa-file-pdf"></i>
+                    <span data-en="Download PDF" data-ar="تحميل PDF">Download PDF</span>
+                </button>
+            </div>
+            
             <div class="mt-auto pt-4 border-t border-gray-200 text-center text-sm text-gray-500">
                 Made by Ahmed Sabri
             </div>
@@ -1767,6 +1782,22 @@
                 });
             }
             
+            // Add click event to mobile PDF download button
+            const mobilePdfDownloadBtn = document.getElementById('mobile-pdf-download');
+            if (mobilePdfDownloadBtn) {
+                mobilePdfDownloadBtn.addEventListener('click', function() {
+                    // Create a temporary link to trigger download of the actual PDF file
+                    const link = document.createElement('a');
+                    link.href = 'The Global Carbon Capture _ Storage Landscape_ A Strategic Analysis of Technologies, Economics, and Deployment.pdf';
+                    link.download = 'Carbon-Capture-Storage-Report.pdf';
+                    
+                    // Append to body, click, and remove
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+            
             // Arabic Language Toggle Functionality
             let isArabic = false;
             const langToggle = document.getElementById('lang-toggle');
@@ -1796,6 +1827,12 @@
                 // Update button text
                 langText.textContent = isArabic ? 'English' : 'عربي';
                 
+                // Update mobile button text
+                const mobileLangText = document.getElementById('mobile-lang-text');
+                if (mobileLangText) {
+                    mobileLangText.textContent = isArabic ? 'English' : 'عربي';
+                }
+                
                 // Update chart with new language
                 const currentLanguage = isArabic ? 'ar' : 'en';
                 createChart(currentLanguage);
@@ -1809,6 +1846,12 @@
             // Add click event to language toggle button  
             if (langToggle) {
                 langToggle.addEventListener('click', switchLanguage);
+            }
+            
+            // Add click event to mobile language toggle button
+            const mobileLangToggle = document.getElementById('mobile-lang-toggle');
+            if (mobileLangToggle) {
+                mobileLangToggle.addEventListener('click', switchLanguage);
             }
 
             // Load saved language preference
